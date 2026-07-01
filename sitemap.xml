@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://indrajithbandara.is-a.dev/</loc>
+    <loc>https://indrajithbandara.github.io/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#about</loc>
+    <loc>https://indrajithbandara.github.io/#about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#skills</loc>
+    <loc>https://indrajithbandara.github.io/#skills</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#experience</loc>
+    <loc>https://indrajithbandara.github.io/#experience</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#certifications</loc>
+    <loc>https://indrajithbandara.github.io/#certifications</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#projects</loc>
+    <loc>https://indrajithbandara.github.io/#projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#badges</loc>
+    <loc>https://indrajithbandara.github.io/#badges</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://indrajithbandara.is-a.dev/#contact</loc>
+    <loc>https://indrajithbandara.github.io/#contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

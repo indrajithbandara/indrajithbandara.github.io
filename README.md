@@ -4,7 +4,7 @@ A premium, dark-themed, framework-free personal portfolio built with plain
 HTML, CSS, and JavaScript. Designed around a terminal / network-security
 visual language to reflect a cybersecurity and networking education career.
 
-**Live site:** https://indrajithbandara.is-a.dev
+**Live site:** https://indrajithbandara.github.io
 
 ---
 

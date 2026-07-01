@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://indrajithbandara.is-a.dev/sitemap.xml
+Sitemap: https://indrajithbandara.github.io/sitemap.xml
