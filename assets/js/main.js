@@ -362,22 +362,8 @@
     requestAnimationFrame(step);
   }
 
-  /* ---------- contact form (client-side only placeholder) ---------- */
   function initContactForm() {
     var form = document.getElementById("contactForm");
-    var note = document.getElementById("formNote");
-    if (!form || !note) return;
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) {
-        note.textContent = "Please fill in all fields correctly.";
-        note.style.color = "var(--danger)";
-        return;
-      }
-      note.style.color = "";
-      note.textContent = "Message ready — connect a form backend (e.g. Formspree) to deliver it.";
-      form.reset();
-    });
+    if (!form) return;
   }
 })();
