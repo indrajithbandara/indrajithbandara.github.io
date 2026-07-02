@@ -915,3 +915,113 @@
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+<!-- DEV.to Feed Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('articles-container');
+    if (!container) return;
+
+    const apiUrl = 'https://dev.to/api/articles?username=indrajithbandara&per_page=3';
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(articles => {
+            if (articles.length === 0) {
+                container.innerHTML = '<p class="text-center text-secondary">No articles found.</p>';
+                return;
+            }
+
+            container.innerHTML = '';
+            articles.forEach((article, index) => {
+                const card = document.createElement('div');
+                card.className = 'book-card';
+                card.style.animationDelay = `${index * 0.1}s`;
+
+                const imageUrl = article.cover_image || article.social_image || 'https://dev.to/assets/default-og-image.png';
+                const pubDate = new Date(article.published_at);
+                const formattedDate = pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric', month: 'long', day: 'numeric'
+                });
+
+                card.innerHTML = `
+                    <div class="book-cover-wrapper">
+                        <img src="${imageUrl}" alt="${article.title}" class="book-cover" loading="lazy">
+                        <div class="book-overlay">
+                            <span class="preview-text">📖 Read</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>${article.title}</h3>
+                        <div class="article-meta">
+                            <small>📅 ${formattedDate}</small>
+                            ${article.tag_list.length > 0 ? `<small>🏷️ ${article.tag_list.slice(0, 3).join(', ')}</small>` : ''}
+                        </div>
+                        <p class="article-excerpt">${article.description || article.body_markdown.substring(0, 120) + '...'}</p>
+                        <a href="${article.url}" target="_blank" class="btn btn-primary">Read on DEV.to</a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading articles:', error);
+            container.innerHTML = '<p class="text-center text-secondary">Unable to load articles. Please try again later.</p>';
+        });
+});
+</script>
+
+<!-- DEV.to Feed Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.getElementById('articles-container');
+    if (!container) return;
+
+    const apiUrl = 'https://dev.to/api/articles?username=indrajithbandara&per_page=3';
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(articles => {
+            if (articles.length === 0) {
+                container.innerHTML = '<p class="text-center text-secondary">No articles found.</p>';
+                return;
+            }
+
+            container.innerHTML = '';
+            articles.forEach((article, index) => {
+                const card = document.createElement('div');
+                card.className = 'book-card';
+                card.style.animationDelay = `${index * 0.1}s`;
+
+                const imageUrl = article.cover_image || article.social_image || 'https://dev.to/assets/default-og-image.png';
+                const pubDate = new Date(article.published_at);
+                const formattedDate = pubDate.toLocaleDateString('en-US', {
+                    year: 'numeric', month: 'long', day: 'numeric'
+                });
+
+                card.innerHTML = `
+                    <div class="book-cover-wrapper">
+                        <img src="${imageUrl}" alt="${article.title}" class="book-cover" loading="lazy">
+                        <div class="book-overlay">
+                            <span class="preview-text">📖 Read</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>${article.title}</h3>
+                        <div class="article-meta">
+                            <small>📅 ${formattedDate}</small>
+                            ${article.tag_list.length > 0 ? `<small>🏷️ ${article.tag_list.slice(0, 3).join(', ')}</small>` : ''}
+                        </div>
+                        <p class="article-excerpt">${article.description || article.body_markdown.substring(0, 120) + '...'}</p>
+                        <a href="${article.url}" target="_blank" class="btn btn-primary">Read on DEV.to</a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading articles:', error);
+            container.innerHTML = '<p class="text-center text-secondary">Unable to load articles. Please try again later.</p>';
+        });
+});
+</script>
