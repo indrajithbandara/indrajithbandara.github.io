@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Instructor 1 Year of Service was issued by Cisco to Bandara Mudiyanse.",
+        "issuer": "The 1 year of service badge recognizes an instructor for joining Cisco Networking Academy and teaching the first instructor-led course. The badge is a welcome to the instructor and a recognition of the potential impact that each instructor can have on students and the communities in which they live.",
+        "image": "https://images.credly.com/images/4802acaa-a2f7-49be-9a8e-666fa3f42e41/linkedin_thumb_C05-743250-00_Cisco_Networking_Academy_Badge_Instructor_v4a-01-no-year.png",
+        "url": "https://www.credly.com/badges/5d3f2b7d-d16c-4138-94d5-099418588835/public_url"
+    },
+    {
+        "title": "CCNP: Advanced Routing was issued by Cisco to Indrajith Bandara.",
+        "issuer": "Cisco verifies the earner of this badge successfully completed the professional level Advanced Routing course and achieved this student level credential. The holder of this credential has a deep understanding and the skills needed to deploy, troubleshoot, and optimize IPv4 and IPv6 routing technologies and VPN services along with management tools for automation and security best practices used in enterprise networks. Earner has completed 40+ hands-on labs using Cisco networking hardware.",
+        "image": "https://images.credly.com/images/3bb1a127-e4e4-47ac-b83f-6a9fbf343f00/linkedin_thumb_CCNP_ENARSI.png",
+        "url": "https://www.credly.com/badges/873303f9-176a-48e8-bb9d-a5664aee75ac/public_url"
+    },
+    {
+        "title": "Google Cybersecurity Professional Certificate V2 was issued by Coursera to Indrajith Bandara.",
+        "issuer": "Those who earn the Google Cybersecurity Certificate, developed by Google, have demonstrated their competence in foundational cybersecurity tactics. Through hands-on activities and assessments, graduates develop proficiency in identifying common risks and vulnerabilities and using Python, Linux, SQL, SIEM tools, and Intrusion Detection Systems to mitigate threats, preparing them for entry-level roles in cybersecurity.",
+        "image": "https://images.credly.com/images/0bf0f2da-a699-4c82-82e2-56dcf1f2e1c7/linkedin_thumb_image.png",
+        "url": "https://www.credly.com/badges/78a3a417-9217-45dd-8919-754853ba6f15/public_url"
+    },
+    {
+        "title": "Microsoft IT Support Specialist Professional Certificate was issued by Coursera to Indrajith Bandara.",
+        "issuer": "This Professional Certificate is ideal for those starting a career in IT support. The program builds foundational knowledge in IT infrastructure, device management, productivity tools, and Microsoft 365 services. Learners explore troubleshooting, system maintenance, and user support, while developing communication and customer service skills. Through hands-on labs, they are prepared for the MS-900 certification and entry-level IT roles.",
+        "image": "https://images.credly.com/images/3d067b05-426f-4650-ab83-ae3014e7e0c1/linkedin_thumb_blob",
+        "url": "https://www.credly.com/badges/60a3e6a2-b322-46e8-9a99-f5ecdb2cd910/public_url"
+    },
+    {
+        "title": "Multicloud Network Associate was issued by Aviatrix to Indrajith Bandara.",
+        "issuer": "The Aviatrix Certified Engineer (ACE) Multicloud Network Associate certification validates the earner’s understanding of basic networking and security concepts for AWS, Azure, GCP, and OCI as well as their limitations in meeting Enterprise requirements. An ACE Associate understands the basic design principles of a multicloud network architecture and can demonstrate knowledge of day 2 operational requirements.",
+        "image": "https://images.credly.com/images/e3c001fd-161d-433a-a7a4-049556d6112d/linkedin_thumb_blob",
+        "url": "https://www.credly.com/badges/ee279fd4-78e2-493a-ab58-4e8f0e96740f/public_url"
+    },
+    {
+        "title": "Google IT Support Certificate was issued by Coursera to Indrajith Bandara.",
+        "issuer": "Those who earn the Google IT Support Certificate, developed by Google, have demonstrated their competence in foundational IT service and troubleshooting. Through hands-on activities and assessments, graduates develop proficiency in troubleshooting and customer service, networking, operating systems, system administration, and security, preparing them for entry-level roles.",
+        "image": "https://images.credly.com/images/ae2f5bae-b110-4ea1-8e26-77cf5f76c81e/linkedin_thumb_GCC_badge_IT_Support_1000x1000.png",
+        "url": "https://www.credly.com/badges/b89c3626-4b78-4db2-9bd4-9dadc595a83c/public_url"
+    },
+    {
+        "title": "Fortinet Certified Fundamentals Cybersecurity (Expired) was issued by Fortinet to Indrajith Bandara.",
+        "issuer": "The Fortinet Certified Fundamentals in Cybersecurity certification validates that the earner has mastered the technical skills and knowledge that are required for any entry-level job role in cybersecurity. The curriculum covers today’s threat landscape and the fundamentals of cybersecurity.",
+        "image": "https://images.credly.com/images/22a0ece5-ff05-4594-8320-25e55e9ae203/linkedin_thumb_image.png",
+        "url": "https://www.credly.com/badges/2eeb928f-2880-4618-9618-0c0540278717/public_url"
+    },
+    {
+        "title": "GitOps Fundamentals was issued by Codefresh to Indrajith Bandara.",
+        "issuer": "This badge recognizes individuals who have demonstrated proficiency in GitOps principles and practices with Argo CD and Argo Rollouts. This certification certifies the earner’s ability to set up and manage Argo CD and progressive delivery using Argo Rollouts using GitOps principles and practices. Earners of this badge possess skills and have a grasp of applications, rollouts, and operation of Argo CD in a day-to-day end-user way while following the GitOps principles.",
+        "image": "https://images.credly.com/images/fbd71e9c-07f7-4a8b-a874-2bf5001a6dbf/linkedin_thumb_blob",
+        "url": "https://www.credly.com/badges/b0013760-4c7f-4320-90ff-42be2f42279d/public_url"
+    },
+    {
+        "title": "Getting Ready to Teach Cybersecurity Essentials was issued by Cisco to Indrajith Bandara.",
+        "issuer": "Cisco verifies the earner of this badge successfully completed the Getting Ready to Teach Cybersecurity Essentials course. The holder of this educator-level credential understands top pedagogical approaches, uses real-world scenarios, and engages in hands-on labs to teach cybersecurity principles effectively. They developed skills to create group activities, configure ACLs, design firewalls, and utilize security monitoring methods to prepare learners for the CCST Cybersecurity certification.",
+        "image": "https://images.credly.com/images/4f7b8e9d-bc9f-4041-a75b-e3b4a2b59fed/linkedin_thumb_blob",
+        "url": "https://www.credly.com/badges/9f7a9b0a-d94a-494c-a4b6-581cc3411f14/public_url"
+    },
+    {
+        "title": "Industrial Cybersecurity Essentials was issued by Cisco to Indrajith Bandara.",
+        "issuer": "Cisco verifies that the earner of this badge has successfully completed the Industrial Cybersecurity Essentials course. The earner has developed a foundational understanding of cybersecurity principles and practices tailored for industrial environments, including the analysis of cyberattacks, vulnerability and risk assessment, access control implementation, and network infrastructure hardening. Participated in up to 11 labs and 6 Cisco Packet Tracer activities simulating real-world scenarios.",
+        "image": "https://images.credly.com/images/94557bc5-88cf-4607-a99b-88cb12f387cf/linkedin_thumb_blob",
+        "url": "https://www.credly.com/badges/485f9368-c565-4d7c-b779-04f66c2c2fd9/public_url"
+    },
+    {
+ 	 "title": "Cisco Certified Network Associate (CCNA)",
+ 	 "issuer": "Cisco",
+	  "image": "https://images.credly.com/images/22e505cc-8182-4ca3-b829-ba9d55df27d5/linkedin_thumb_CCNA.png",
+ 	 "url": "https://www.credly.com/badges/4c82909b-444a-486b-8b9d-a5664aee75ac/public_url"
+	}
+    {
+        "title": "Meta Data Analyst Professional Certificate was issued by Coursera to Indrajith Bandara.",
+        "issuer": "The Meta Data Analyst Professional Certificate, hosted by Coursera, represents preparation for a career in the high-growth field of data analytics. In this program, you’ll build in-demand technical skills like Python, Statistics, and SQL in spreadsheets to get job-ready in 5 months or less, no prior experience needed. You'll also learn how generative AI tools and techniques are used in data analytics.",
+        "image": "https://images.credly.com/images/4dd82f2c-e7eb-4b64-bb24-f4351f596220/linkedin_thumb_image.png",
+        "url": "https://www.credly.com/badges/f23a378d-bf7c-4279-be78-3a2bfcc2962e/public_url"
+    }
+]
