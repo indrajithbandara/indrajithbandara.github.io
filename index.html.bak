@@ -419,46 +419,29 @@
       </div>
     </section>
 
-        <!-- ============ DIGITAL BADGES (upgraded) ============ -->
+    <!-- ============ DIGITAL BADGES ============ -->
     <section class="section section--alt" id="badges">
       <div class="container">
         <p class="eyebrow">$ curl badges --count</p>
         <h2 class="section__title">Digital <span class="text-accent">Badges</span></h2>
-        <p class="section__lede">A snapshot of verified credentials from a growing collection of <strong class="text-accent-soft">220+</strong> digital badges.</p>
+        <p class="section__lede">A snapshot from a growing collection of <strong class="text-accent-soft">220+</strong> verified digital credentials.</p>
 
-        <!-- Stats -->
-        <div class="badges__stats">
-          <div class="badge-stat">
-            <span class="badge-stat__num" data-count="220">0</span><span class="badge-stat__plus">+</span>
-            <span class="badge-stat__label">Digital Badges</span>
-          </div>
-          <div class="badge-stat">
-            <span class="badge-stat__num" data-count="9">0</span>
-            <span class="badge-stat__label">Academy Partnerships</span>
-          </div>
-          <div class="badge-stat">
-            <span class="badge-stat__label" style="font-size:14px;color:var(--accent-soft)">Continuous<br>Professional Development</span>
-          </div>
-        </div>
-
-        <!-- Badge Grid -->
-        <div class="badges__card-grid" id="badgesGrid">
-          <!-- JS injected -->
-          <div class="badges__loading" id="badgesLoading">
-            <span class="terminal__cursor">_</span> Loading badges...
-          </div>
-        </div>
-
-        <!-- View All -->
-        <div class="badges__cta">
-          <a href="https://www.credly.com/users/indrajithbandara" target="_blank" rel="noopener" class="btn btn--solid">
-            <span>View All 220+ Digital Badges</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+        <div class="badges__grid">
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🛡</span><span>Cybersecurity</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🌐</span><span>Networking</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">☁</span><span>Cloud Computing</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🔧</span><span>DevNet</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🐧</span><span>Linux</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🐍</span><span>Python</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🔐</span><span>API Security</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">📡</span><span>IoT</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🤖</span><span>AI</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">📊</span><span>Data Analytics</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🏛</span><span>Red Hat</span></div>
+          <div class="badge-card" data-aos><span class="badge-card__glyph">🔥</span><span>Fortinet</span></div>
         </div>
       </div>
     </section>
-
 
     <!-- ============ GITHUB STATISTICS ============ -->
     <section class="section" id="github-stats">

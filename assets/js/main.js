@@ -445,3 +445,86 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+/* =========================================================
+   Digital Badges — Credly API live fetch
+   ========================================================= */
+(function() {
+  var BADGE_IDS = [
+    '5d3f2b7d-d16c-4138-94d5-099418588835',
+    '873303f9-176a-48e8-bb9d-a5664aee75ac',
+    '78a3a417-9217-45dd-8919-754853ba6f15',
+    '60a3e6a2-b322-46e8-9a99-f5ecdb2cd910',
+    'ee279fd4-78e2-493a-ab58-4e8f0e96740f',
+    'b89c3626-4b78-4db2-9bd4-9dadc595a83c',
+    '2eeb928f-2880-4618-9618-0c0540278717',
+    'b0013760-4c7f-4320-90ff-42be2f42279d',
+    '9f7a9b0a-d94a-494c-a4b6-581cc3411f14',
+    '485f9368-c565-4d7c-b779-04f66c2c2fd9',
+    '4c82909b-444a-486b-8b9d-a5664aee75ac',
+    'f23a378d-bf7c-4279-be78-3a2bfcc2962e'
+  ];
+
+  var grid = document.getElementById('badgesGrid');
+  var loading = document.getElementById('badgesLoading');
+  if (!grid) return;
+
+  var loaded = 0;
+  var badges = new Array(BADGE_IDS.length).fill(null);
+
+  function renderBadge(data, idx) {
+    var card = document.createElement('article');
+    card.className = 'badge-card-pro';
+    card.setAttribute('data-aos', '');
+    card.style.animationDelay = (idx * 0.07) + 's';
+
+    var badgeUrl = 'https://www.credly.com/badges/' + BADGE_IDS[idx] + '/public_url';
+    var img = data && data.image ? data.image.url || data.image : 'assets/icons/favicon.svg';
+    var title = data && data.badge && data.badge.name ? data.badge.name : 'Digital Badge';
+    var issuer = data && data.badge && data.badge.issuer && data.badge.issuer.entities
+      ? data.badge.issuer.entities[0].entity.name
+      : data && data.issuer ? data.issuer : 'Credly';
+
+    card.innerHTML =
+      '<div class="badge-card-pro__img-wrap">' +
+        '<img src="' + img + '" alt="' + title + '" loading="lazy" onerror="this.src=\'assets/icons/favicon.svg\'">' +
+      '</div>' +
+      '<div class="badge-card-pro__body">' +
+        '<h3 class="badge-card-pro__title">' + title + '</h3>' +
+        '<p class="badge-card-pro__issuer">' + issuer + '</p>' +
+        '<a href="' + badgeUrl + '" target="_blank" rel="noopener" class="badge-card-pro__btn">' +
+          'View Badge' +
+          '<svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
+        '</a>' +
+      '</div>';
+
+    return card;
+  }
+
+  function checkDone() {
+    loaded++;
+    if (loaded === BADGE_IDS.length) {
+      if (loading) loading.remove();
+      badges.forEach(function(data, idx) {
+        grid.appendChild(renderBadge(data, idx));
+      });
+      // trigger scroll reveal
+      if (window.initScrollReveal) window.initScrollReveal();
+    }
+  }
+
+  BADGE_IDS.forEach(function(id, idx) {
+    fetch('https://api.credly.com/v1/obi/v3/badge_assertions/' + id, {
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(json) {
+      if (json && json.result) {
+        badges[idx] = json.result;
+      }
+      checkDone();
+    })
+    .catch(function() {
+      checkDone();
+    });
+  });
+})();
