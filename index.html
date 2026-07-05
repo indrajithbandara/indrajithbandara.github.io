@@ -918,70 +918,7 @@
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
   <script src="assets/js/main.js"></script>
-<script>/* =========================================================
-   Digital Badges — loads from badges.json
-   ========================================================= */
-(function () {
-  var grid = document.getElementById('badgesGrid');
-  var loading = document.getElementById('badgesLoading');
-  if (!grid) return;
 
-  fetch('badges.json')
-    .then(function (r) { return r.ok ? r.json() : []; })
-    .then(function (badges) {
-      if (loading) loading.remove();
-      badges.forEach(function (b, idx) {
-        var card = document.createElement('article');
-        card.className = 'badge-card-pro';
-        card.setAttribute('data-aos', '');
-        card.innerHTML =
-          '<div class="badge-card-pro__img-wrap">' +
-            '<img src="' + b.image + '" alt="' + b.title + '" loading="lazy" ' +
-            'onerror="this.onerror=null;this.src=\'assets/icons/favicon.svg\'">' +
-          '</div>' +
-          '<div class="badge-card-pro__body">' +
-            '<h3 class="badge-card-pro__title">' + b.title + '</h3>' +
-            '<p class="badge-card-pro__issuer">' + b.issuer + '</p>' +
-            '<a href="' + b.url + '" target="_blank" rel="noopener" class="badge-card-pro__btn">' +
-              'View Badge ' +
-              '<svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
-            '</a>' +
-          '</div>';
-        grid.appendChild(card);
-      });
-
-      /* trigger scroll reveal on new elements */
-      var items = grid.querySelectorAll('[data-aos]');
-      if ('IntersectionObserver' in window) {
-        var obs = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) {
-            if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); }
-          });
-        }, { threshold: 0.1 });
-        items.forEach(function (el) { obs.observe(el); });
-      } else {
-        items.forEach(function (el) { el.classList.add('is-visible'); });
-      }
-
-      /* re-trigger counters */
-      var counters = grid.closest('section').querySelectorAll('.badge-stat__num');
-      counters.forEach(function (el) {
-        var target = parseInt(el.getAttribute('data-count'), 10) || 0;
-        var start = null;
-        (function step(ts) {
-          if (!start) start = ts;
-          var p = Math.min((ts - start) / 1200, 1);
-          el.textContent = Math.floor((1 - Math.pow(1 - p, 3)) * target);
-          if (p < 1) requestAnimationFrame(step);
-          else el.textContent = target;
-        })(performance.now());
-      });
-    })
-    .catch(function () {
-      if (loading) loading.textContent = 'Could not load badges.';
-    });
-})();
-</script>
 </body>
 </html>
 
