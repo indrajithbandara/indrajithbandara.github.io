@@ -1323,3 +1323,49 @@ body::before {
     text-align: center;
     margin-top: 2.5rem;
 }
+/* =========================================================
+   CREDLY OFFICIAL EMBED GRID
+   ========================================================= */
+.badges__credly-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.credly-badge-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  min-height: 180px;
+}
+
+.credly-badge-wrap:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-dim);
+  box-shadow: 0 16px 40px -12px var(--accent-glow);
+}
+
+/* Credly embed resizes itself — constrain it */
+.credly-badge-wrap > div {
+  width: 100% !important;
+  max-width: 150px;
+}
+
+.credly-badge-wrap iframe {
+  width: 150px !important;
+  height: 270px !important;
+  border: none !important;
+}
+
+@media (max-width: 980px) {
+  .badges__credly-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 640px) {
+  .badges__credly-grid { grid-template-columns: repeat(2, 1fr); }
+}
