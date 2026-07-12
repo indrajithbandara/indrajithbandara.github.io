@@ -1,76 +1,74 @@
-cat > badges.json << 'EOF'
 [
   {
     "title": "Cisco Instructor Years of Service - 1 Year",
     "issuer": "Cisco",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
-    "url": "https://www.credly.com/badges/5d3f2b7d"
+    "image": "https://images.credly.com/images/4802acaa-a2f7-49be-9a8e-666fa3f42e41/C05-743250-00_Cisco_Networking_Academy_Badge_Instructor_v4a-01-no-year.png",
+    "url": "https://www.credly.com/badges/5d3f2b7d-d16c-4138-94d5-099418588835"
   },
   {
     "title": "CCNP Enterprise: Advanced Routing",
     "issuer": "Cisco",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/images/3bb1a127-e4e4-47ac-b83f-6a9fbf343f00/CCNP_ENARSI.png",
     "url": "https://www.credly.com/badges/873303f9"
   },
   {
     "title": "Fortinet Certified Fundamentals - Cybersecurity",
     "issuer": "Fortinet",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/size/680x680/images/20082fc1-94af-4773-9df0-28856b566748/image.png",
     "url": "https://www.credly.com/badges/78a3a417"
   },
   {
     "title": "IT Support Specialist",
     "issuer": "Microsoft & Coursera",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/size/680x680/images/3d067b05-426f-4650-ab83-ae3014e7e0c1/blob",
     "url": "https://www.credly.com/badges/60a3e6a2"
   },
   {
     "title": "Aviatrix ACE Associate",
     "issuer": "Aviatrix",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/images/e3c001fd-161d-433a-a7a4-049556d6112d/blob",
     "url": "https://www.credly.com/badges/ee279fd4"
   },
   {
     "title": "Fortinet Certified Fundamentals (2023)",
     "issuer": "Fortinet",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/size/680x680/images/22a0ece5-ff05-4594-8320-25e55e9ae203/image.png",
     "url": "https://www.credly.com/badges/b89c3626"
   },
   {
     "title": "Getting Ready to Teach Cybersecurity Essentials",
     "issuer": "Cisco",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/images/4f7b8e9d-bc9f-4041-a75b-e3b4a2b59fed/blob",
     "url": "https://www.credly.com/badges/2eeb928f"
   },
   {
     "title": "GitOps Certified Fundamentals",
     "issuer": "Octopus Deploy",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/images/fbd71e9c-07f7-4a8b-a874-2bf5001a6dbf/blob",
     "url": "https://www.credly.com/badges/b0013760"
   },
   {
     "title": "Google IT Support Certificate",
     "issuer": "Google & Coursera",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/size/680x680/images/ae2f5bae-b110-4ea1-8e26-77cf5f76c81e/GCC_badge_IT_Support_1000x1000.png",
     "url": "https://www.credly.com/badges/9f7a9b0a"
   },
   {
     "title": "Industrial Cybersecurity Essentials",
     "issuer": "Cisco",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/images/94557bc5-88cf-4607-a99b-88cb12f387cf/blob",
     "url": "https://www.credly.com/badges/485f9368"
   },
   {
     "title": "Meta Data Analyst Certificate",
     "issuer": "Meta & Coursera",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
+    "image": "https://images.credly.com/size/680x680/images/4dd82f2c-e7eb-4b64-bb24-f4351f596220/image.png",
     "url": "https://www.credly.com/badges/4c82909b"
   },
   {
     "title": "Cloud Essentials",
     "issuer": "IBM",
-    "image": "PASTE_EXACT_IMAGE_URL_HERE",
-    "url": "https://www.credly.com/badges/5eb16ca2"
+    "image": "https://images.credly.com/size/680x680/images/5ee26427-f944-4182-b802-459462184c9a/image.png",
+    "url": "https://www.credly.com/badges/5eb16ca2-d5c6-42ce-b729-773ce14619a7"
   }
 ]
-EOF
