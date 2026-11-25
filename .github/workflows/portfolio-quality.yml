@@ -48,3 +48,10 @@ jobs:
       - name: Verify deployed website at mobile and desktop widths
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: node tools/production-test.mjs
+      - name: Exercise all deployed platform views
+        if: github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+        env:
+          PORTFOLIO_URL: https://indrajithbandara.is-a.dev/
+        run: |
+          npm install --no-save --package-lock=false playwright@1.58.2 @axe-core/playwright@4.10.2
+          node tools/platform-test.mjs
