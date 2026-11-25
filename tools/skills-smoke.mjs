@@ -6,7 +6,7 @@ const base=process.env.PORTFOLIO_URL||'http://127.0.0.1:8000/';
 mkdirSync('qa-screenshots',{recursive:true});
 for(const [name,engine] of Object.entries({chromium,firefox,webkit})){
   const browser=await engine.launch({headless:true});try{
-    const page=await browser.newPage({viewport:{width:390,height:844},reducedMotion:'reduce'});await page.route('https://images.credly.com/**',r=>r.abort());
+    const context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:'reduce'}),page=await context.newPage();await page.route('https://images.credly.com/**',r=>r.abort());
     for(const path of ['index.html#skills','platform.html#skills']){
       await page.goto(base+path);const target=page.locator('.premium-skills-grid');await target.scrollIntoViewIfNeeded();await page.waitForFunction(()=>document.querySelectorAll('.skill-count').length===14&&[...document.querySelectorAll('.skill-count')].every(n=>n.textContent.endsWith('related records')));
       assert.equal(await page.locator('.premium-skill summary').count(),14);await page.locator('.premium-skill summary').first().click();await page.locator('.premium-skill[open] .skill-evidence ul').waitFor({state:'visible'});assert.equal(await page.locator('.skill-accent-line').first().evaluate(e=>getComputedStyle(e).animationName),'none');
