@@ -6,7 +6,7 @@ try{
   await page.route('https://api.github.com/**',route=>route.abort());
   await page.route('https://dev.to/**',route=>route.abort());
   await page.goto(process.env.PORTFOLIO_URL||'http://127.0.0.1:8000/');
-  await page.locator('#cd-status').getByText('Showing 1–18 of 280 records').waitFor();
+  await page.waitForFunction(()=>document.getElementById('cd-status').textContent==='Showing 1–18 of 280 records');
   assert.equal(await page.locator('.cd-card').count(),18);
   await page.locator('#cd-more').click();assert.match(await page.locator('#cd-status').innerText(),/19–36/);
   await page.locator('#cd-search').fill('Google IT Support');assert.match(await page.locator('#cd-status').innerText(),/of 1 records/);
