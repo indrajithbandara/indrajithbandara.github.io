@@ -2,6 +2,8 @@
 
 ## 2026-11-25
 
+- Restored the terminal typing sequence and finite cursor/scroll-indicator motion. Added opt-in viewport reveals, staggered dynamic credential cards, accessible data-driven counters and micro-interactions. Content remains visible without JavaScript and respects reduced motion.
+
 - Added a normalized public credential model, explicit unknown validity, multi-domain classification, detailed filtering, shareable URLs and detail dialogs.
 - Reconciled 279 public Credly badge cards against the 280 transcript records with official image URLs and individual verification paths (including 18 expired and one explicitly unexpired credential).
 - Added JSON and printable exports, improved CSV escaping, and removed obsolete backups from the published tree.

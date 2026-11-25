@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -25,4 +27,23 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: |
           python3 -m http.server 8000 &
+          test_pid=$!
+          trap 'kill "$test_pid" 2>/dev/null || true' EXIT
           node tools/browser-test.mjs
+      - name: Compare Lighthouse before and after motion restoration
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          npm install --no-save --package-lock=false lighthouse@12.8.2 playwright@1.58.2
+          baseline_dir=$(mktemp -d)
+          git archive "$BASE_SHA" | tar -x -C "$baseline_dir"
+          python3 -m http.server 8000 &
+          current_pid=$!
+          python3 -m http.server 8001 --directory "$baseline_dir" &
+          baseline_pid=$!
+          trap 'kill "$current_pid" "$baseline_pid" 2>/dev/null || true' EXIT
+          node tools/performance-test.mjs
+      - name: Verify deployed website at mobile and desktop widths
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: node tools/production-test.mjs

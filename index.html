@@ -32,15 +32,9 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 <meta name="referrer" content="strict-origin-when-cross-origin"><script src="assets/js/roadmap.js" defer></script><link rel="stylesheet" href="assets/css/roadmap.css"><link rel="stylesheet" href="assets/css/credentials.css"><script defer src="assets/js/credentials.js"></script>
+<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Indrajith Bandara","url":"https://indrajithbandara.is-a.dev/","sameAs":["https://github.com/indrajithbandara","https://www.linkedin.com/in/indrajithbandara","https://www.credly.com/users/indrajithbandara","https://dev.to/indrajithbandara"]},{"@type":"WebSite","name":"Indrajith Bandara — Professional Portfolio","url":"https://indrajithbandara.is-a.dev/"}]}</script></head>
 <body>
-
-  <!-- ============ PRELOADER ============ -->
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <span class="preloader__bracket">&lt;</span>
-    <span class="preloader__text">IB</span>
-    <span class="preloader__bracket">/&gt;</span>
-  </div>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
@@ -88,10 +82,10 @@
             </div>
             <div class="terminal__body" id="terminalBody">
               <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> whoami</p>
-              <p class="terminal__out" id="typedName"></p>
+              <p class="terminal__out" id="typedName"><span>Indrajith Bandara</span></p>
               <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> cat role.txt</p>
-              <p class="terminal__out terminal__out--role" id="typedRole"></p>
-              <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> <span class="terminal__cursor" id="cmdCursor">_</span></p>
+              <p class="terminal__out terminal__out--role" id="typedRole"><span>Networking · Cybersecurity · AI · Cloud</span></p>
+              <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> <span class="terminal__cursor" id="cmdCursor" aria-hidden="true">_</span></p>
             </div>
           </div>
         </div>
@@ -403,7 +397,7 @@
     </section>
 
                                             <!-- ============ DIGITAL BADGES ============ -->
-    <section class="section section--alt" id="badges"><div class="container"><h2 class="section__title">Digital Credentials Center</h2><p class="section__lede">Explore 280 credential records from the official Credly transcript, dated 22 November 2026. Historical records may include expired credentials. Topic labels are inferred from credential titles, not official issuer classifications.</p><div id="credential-directory"><div class="cd-stats" id="cd-stats"></div><p id="cd-sync" class="cd-note"></p><details class="cd-insights"><summary>Credential analytics</summary><div id="cd-analytics" class="cd-analytics"></div></details><div class="cd-controls"><label>Search credentials<input id="cd-search" type="search" placeholder="Title, issuer or authorizing organization"></label><label>Issuer<select id="cd-issuer"><option value="">All issuers</option></select></label><label>Year<select id="cd-year"><option value="">All years</option></select></label><label>Topic (inferred)<select id="cd-topic"><option value="">All topics</option></select></label><label>Authorizing organization<select id="cd-org"><option value="">All organizations</option></select></label><label>Validity<select id="cd-state"><option value="">All statuses</option></select></label><label>Credential type<select id="cd-type"><option value="">All types</option></select></label><label>Sort<select id="cd-sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">Title A–Z</option></select></label><button type="button" id="cd-reset" class="btn btn--outline">Reset filters</button></div><div class="cd-toolbar"><button type="button" id="cd-view" class="btn btn--outline" aria-pressed="false">Compact view</button><button type="button" id="cd-export" class="btn btn--outline">Export filtered CSV</button><button type="button" id="cd-json" class="btn btn--outline">Export public JSON</button><button type="button" id="cd-print" class="btn btn--outline">Print filtered directory</button></div><dialog id="cd-dialog" aria-label="Credential details"><form method="dialog"><button class="btn btn--outline" autofocus>Close details</button></form><div id="cd-detail"></div></dialog><p id="cd-status" role="status">Loading credentials…</p><div id="cd-grid" class="cd-grid"></div><nav class="cd-pagination" aria-label="Credential pages"><button type="button" id="cd-prev" class="btn btn--outline">Previous</button><span id="cd-page"></span><button type="button" id="cd-more" class="btn btn--outline">Next</button></nav></div><p><a href="https://www.credly.com/users/indrajithbandara" target="_blank" rel="noopener noreferrer">View public Credly profile</a> · Individual verification links and current validity are not available for every transcript record.</p></div></section>
+    <section class="section section--alt" id="badges"><div class="container"><h2 class="section__title">Digital Credentials Center</h2><p class="section__lede">Explore 280 credential records from the official Credly transcript, dated 22 November 2026. Historical records may include expired credentials. Topic labels are inferred from credential titles, not official issuer classifications.</p><div id="credential-directory"><noscript><p>The interactive directory needs JavaScript. The public Credly profile remains available below.</p></noscript><div class="cd-stats" id="cd-stats"></div><p id="cd-sync" class="cd-note"></p><details class="cd-insights"><summary>Credential analytics</summary><div id="cd-analytics" class="cd-analytics"></div></details><div class="cd-controls"><label>Search credentials<input id="cd-search" type="search" placeholder="Title, issuer or authorizing organization"></label><label>Issuer<select id="cd-issuer"><option value="">All issuers</option></select></label><label>Year<select id="cd-year"><option value="">All years</option></select></label><label>Topic (inferred)<select id="cd-topic"><option value="">All topics</option></select></label><label>Authorizing organization<select id="cd-org"><option value="">All organizations</option></select></label><label>Validity<select id="cd-state"><option value="">All statuses</option></select></label><label>Credential type<select id="cd-type"><option value="">All types</option></select></label><label>Sort<select id="cd-sort"><option value="new">Newest first</option><option value="old">Oldest first</option><option value="az">Title A–Z</option></select></label><button type="button" id="cd-reset" class="btn btn--outline">Reset filters</button></div><div class="cd-toolbar"><button type="button" id="cd-view" class="btn btn--outline" aria-pressed="false">Compact view</button><button type="button" id="cd-export" class="btn btn--outline">Export filtered CSV</button><button type="button" id="cd-json" class="btn btn--outline">Export public JSON</button><button type="button" id="cd-print" class="btn btn--outline">Print filtered directory</button></div><dialog id="cd-dialog" aria-label="Credential details"><form method="dialog"><button class="btn btn--outline" autofocus>Close details</button></form><div id="cd-detail"></div></dialog><p id="cd-status" role="status">Loading credentials…</p><div id="cd-grid" class="cd-grid"></div><nav class="cd-pagination" aria-label="Credential pages"><button type="button" id="cd-prev" class="btn btn--outline">Previous</button><span id="cd-page"></span><button type="button" id="cd-more" class="btn btn--outline">Next</button></nav></div><p><a href="https://www.credly.com/users/indrajithbandara" target="_blank" rel="noopener noreferrer">View public Credly profile</a> · Individual verification links and current validity are not available for every transcript record.</p></div></section>
 
 
 
@@ -598,6 +592,7 @@
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
+  <script src="assets/js/motion.js" defer></script>
   <script src="assets/js/main.js"></script>
 
 <script src="assets/js/articles.js" defer></script>
