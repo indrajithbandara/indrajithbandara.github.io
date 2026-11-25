@@ -2,7 +2,9 @@
 document.addEventListener('DOMContentLoaded',()=>{
   const reduce=window.PortfolioPreferences?.motionQuery||matchMedia('(prefers-reduced-motion: reduce)');
   const seen=new WeakSet(),running=new Map(),pending=new Set();
-  const selector='[data-aos],.hero__content,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num';
+  const original='[data-aos],.hero__content,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num';
+  const selector=original+',.section > .container > .eyebrow,.section__lede,.section > .container > p,.platform-view > h2,.platform-view > .platform-note,.platform-card,.platform-row,.article-card,.blog-card,.ghstats__grid > *';
+  const signature='#skills,#experience,#education,#projects,#achievements,.platform-view';
   function count(node){
     if(!/^\d+$/.test(node.textContent.trim()))return;
     const value=Number(node.textContent),original=document.createElement('span'),display=document.createElement('span');
@@ -33,11 +35,13 @@ document.addEventListener('DOMContentLoaded',()=>{
   },{threshold:.4}):null;
   if(!reduce.matches&&terminal)typingObserver?.observe(terminal);
   const observer='IntersectionObserver' in window?new IntersectionObserver(entries=>{
-    for(const e of entries){if(!e.isIntersecting)continue;observer.unobserve(e.target);pending.delete(e.target);if(seen.has(e.target))continue;seen.add(e.target);if(reduce.matches||document.hidden)continue;e.target.classList.add('motion-seen','motion-enter');setTimeout(()=>e.target.classList.remove('motion-enter'),650);if(e.target.matches('.stat__num'))count(e.target);else if(e.target.matches('.cd-stat')){const n=e.target.querySelector('strong');if(n)count(n);}}
+    for(const e of entries){if(!e.isIntersecting)continue;observer.unobserve(e.target);pending.delete(e.target);if(seen.has(e.target))continue;seen.add(e.target);if(reduce.matches||document.hidden)continue;const el=e.target;el.classList.add('motion-seen');if(el.matches(signature)){el.classList.add('cinematic-signature-seen');continue;}/* Keep initial above-fold content fully painted, including dashboard metrics. */if(scrollY<16&&!el.matches(original))continue;if(el.closest('.premium-skill'))continue;el.classList.add('motion-enter');setTimeout(()=>el.classList.remove('motion-enter'),800);if(el.matches('.stat__num'))count(el);else if(el.matches('.cd-stat')){const n=el.querySelector('strong');if(n)count(n);}}
   },{threshold:.12}):null;
-  function observe(scope=document){if(!observer||reduce.matches)return;for(const el of pending)if(!el.isConnected){observer.unobserve(el);pending.delete(el);}for(const el of scope.querySelectorAll(selector))if(!seen.has(el)&&!pending.has(el)){pending.add(el);observer.observe(el);}}
+  function observe(scope=document){if(!observer||reduce.matches)return;for(const el of pending)if(!el.isConnected){observer.unobserve(el);pending.delete(el);}const targets=[...(scope.matches?.(selector+','+signature)?[scope]:[]),...scope.querySelectorAll(selector+','+signature)];for(const el of targets)if(!seen.has(el)&&!pending.has(el)){pending.add(el);observer.observe(el);}}
   observe();
   document.addEventListener('portfolio:credentials-render',e=>observe(e.target));
+  /* Observe only newly rendered content, not every scroll event or text/counter update. */
+  if('MutationObserver' in window){const dynamic=new MutationObserver(records=>{for(const record of records)for(const node of record.addedNodes)if(node.nodeType===1)observe(node);});for(const root of document.querySelectorAll('#platform-view,#blog,#github-stats'))dynamic.observe(root,{childList:true,subtree:true});}
   reduce.addEventListener('change',()=>{if(reduce.matches){observer?.disconnect();typingObserver?.disconnect();pending.clear();stopTyping();for(const stop of [...running.values()])stop();document.querySelectorAll('.motion-enter,.terminal-animate').forEach(el=>el.classList.remove('motion-enter','terminal-animate'));}else{observe();if(!typingStarted&&terminal)typingObserver?.observe(terminal);}});
   if('IntersectionObserver' in window){const links=[...document.querySelectorAll('.nav__link[href^="#"]')],sections=links.map(a=>document.getElementById(a.hash.slice(1))).filter(Boolean);const active=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){for(const a of links){if(a.hash==='#'+e.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');}}},{rootMargin:'-18% 0px -65% 0px'});sections.forEach(s=>active.observe(s));}
 });

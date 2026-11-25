@@ -765,6 +765,35 @@ body::before {
 @keyframes portfolio-enter { from { opacity:.65; transform:translateY(14px) scale(.992); } to { opacity:1; transform:none; } }
 .motion-enter:focus-within { animation:none; }
 
+/* Cinematic Terminal — progressive enhancement, no pre-hidden content. */
+:root{--cinematic-ease:cubic-bezier(.22,.72,.26,1);--cinematic-accent:var(--accent)}
+.section__title.motion-enter,.platform-view>h2.motion-enter{animation:cinematic-title 640ms var(--cinematic-ease) both}
+.section__title,.platform-view>h2{position:relative}
+.section__title::after,.platform-view>h2::after{content:"";display:block;width:48px;height:2px;margin-top:10px;background:linear-gradient(90deg,var(--cinematic-accent),transparent);transform-origin:left}
+.section__title.motion-enter::after,.platform-view>h2.motion-enter::after{animation:cinematic-draw 680ms var(--cinematic-ease) both}
+.section__title.motion-enter .text-accent{animation:cinematic-accent 600ms var(--cinematic-ease) both}
+.section__lede.motion-enter,.section>.container>.eyebrow.motion-enter,.platform-view>.platform-note.motion-enter{animation:cinematic-copy 560ms var(--cinematic-ease) both}
+:is(.project-card,.cd-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card,.platform-row,.timeline__item).motion-enter{animation:cinematic-card 510ms var(--cinematic-ease) both}
+:is(.project-card,.cd-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card,.platform-row,.timeline__item):nth-child(3n+2).motion-enter{animation-delay:55ms}
+:is(.project-card,.cd-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card,.platform-row,.timeline__item):nth-child(3n).motion-enter{animation-delay:110ms}
+@keyframes cinematic-title{from{clip-path:inset(0 0 14% 0);opacity:.72;transform:translateY(10px)}to{clip-path:inset(0);opacity:1;transform:none}}
+@keyframes cinematic-copy{from{opacity:.72;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes cinematic-card{from{opacity:.75;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes cinematic-draw{from{transform:scaleX(.15);opacity:.45}to{transform:scaleX(1);opacity:1}}
+@keyframes cinematic-accent{from{opacity:.65}to{opacity:1}}
+:is(#skills,#experience,#education,#projects,#achievements){background-image:radial-gradient(ellipse at 88% 8%,var(--accent-glow),transparent 45%);background-size:100% 100%;background-repeat:no-repeat}
+:is(#skills,#experience,#education,#projects,#achievements)::after,.platform-view::after{content:"";pointer-events:none;position:absolute;inset:24px auto 24px max(8px,calc((100% - var(--container))/2 + 7px));width:1px;background:linear-gradient(180deg,transparent,var(--accent),var(--accent-glow),transparent);opacity:.45;transform-origin:top}
+.platform-view{position:relative}.platform-view::after{inset:0 auto 0 -14px}
+.cinematic-signature-seen::after{animation:cinematic-trace 780ms var(--cinematic-ease) both}
+@keyframes cinematic-trace{from{transform:scaleY(.08);opacity:.15}to{transform:scaleY(1);opacity:.45}}
+@supports(animation-timeline:view()){html[data-motion=full] :is(#skills,#experience,#education,#projects,#achievements)::after{animation:cinematic-trace linear both;animation-timeline:view();animation-range:entry 0% cover 85%}}
+@media(hover:hover) and (pointer:fine){:is(.project-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card):hover{border-color:var(--accent);transform:translateY(-2px)}}
+@media(max-width:760px){.platform-view::after{inset-inline-start:-8px}:is(#skills,#experience,#education,#projects,#achievements){background-image:radial-gradient(ellipse at 100% 0%,var(--accent-glow),transparent 35%)}}
+html[data-motion=reduce] .motion-enter,html[data-motion=reduce] .motion-enter::after,html[data-motion=reduce] .motion-enter .text-accent,html[data-motion=reduce] .cinematic-signature-seen::after{animation:none!important;transform:none!important;clip-path:none!important;opacity:1!important}
+@media(prefers-reduced-motion:reduce){html:not([data-motion]) .motion-enter,html:not([data-motion]) .motion-enter::after,html:not([data-motion]) .motion-enter .text-accent,html:not([data-motion]) .cinematic-signature-seen::after{animation:none!important;transform:none!important;clip-path:none!important;opacity:1!important}}
+.motion-enter:focus-within,.motion-enter:focus-within::after{animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important}
+@media print{.section__title::after,.platform-view::after,.cinematic-signature-seen::after{animation:none!important}}
+
 /* =========================================================
    RESPONSIVE
    ========================================================= */

@@ -2,6 +2,8 @@
 
 ## 2026-11-25
 
+- Introduced Cinematic Terminal scroll motion: section typography, staggered card entrances, emerald signature lines, quiet ambient accents, platform motion and progress tracking. Preserved native scrolling and reduced-motion behavior.
+
 - Redesigned Technical Skills in both the homepage and platform with 14 evidence-based categories, expandable credential links and decorative motion. Deferred dashboard API requests and reused the credential dataset across views; stabilized the mobile header and added cross-browser and production performance checks.
 
 - Added the integrated professional platform with search and command palette, simulated terminal, deep-linkable credentials, issuer directory, evidence-based skills, learning and career timelines, knowledge graph, project case studies, public repositories/releases, article research and activity views.
