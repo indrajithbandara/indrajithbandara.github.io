@@ -800,8 +800,17 @@ body::before {
 
 @media (max-width: 480px) {
   .hero__cta { flex-direction: column; align-items: stretch; }
-  .btn { justify-content: center; }
+  .btn { justify-content: center; max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+  .container { padding-inline: 16px; }
+  .hero__grid,.about__grid,.skills__grid,.ghstats__grid,.contact__grid { grid-template-columns:minmax(0,1fr); }
+  .projects__grid,.cert__grid,.teaching__grid,.achieve__grid,.blog__grid { grid-template-columns: minmax(0,1fr); }
+  .project-card,.contact-link,.contact-link span,.social-pill,.chip,.hero__terminal,.hero__content { min-width:0; overflow-wrap:anywhere; }
+  .contact-link{padding:14px;gap:10px;}
+  .social-category{padding:16px;}
+  .terminal__body{overflow-wrap:anywhere;}
 }
+[data-aos]{opacity:1!important;transform:none!important;}
+.terminal__cursor{animation:none!important;}
 
 /* =========================================================
    SOCIAL HUB

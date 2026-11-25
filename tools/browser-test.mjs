@@ -14,7 +14,7 @@ try{
   await page.locator('.cd-card button').first().click();assert.ok(await page.locator('#cd-dialog').isVisible());await page.keyboard.press('Escape');assert.ok(!(await page.locator('#cd-dialog').isVisible()));
   const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#cd-export').click()]);assert.equal(download.suggestedFilename(),'credentials-filtered.csv');
   await page.locator('#cd-reset').click();await page.locator('#cd-sort').selectOption('old');assert.match(await page.locator('.cd-card').first().innerText(),/2021-03-23/);
-  for(const width of [320,360,390,430,768,1024,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`Horizontal overflow at ${width}px`);}
+  for(const width of [320,360,390,430,768,1024,1440]){await page.setViewportSize({width,height:900});const result=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,overflow:[...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>innerWidth+1&&e.getBoundingClientRect().width>0).slice(0,10).map(e=>[e.tagName,e.className,e.getBoundingClientRect().right])}));assert.ok(result.scrollWidth<=width+1,`Horizontal overflow at ${width}px: ${JSON.stringify(result)}`);}
   await page.locator('#themeToggle').click();assert.equal(await page.locator('html').getAttribute('data-theme'),'light');
   console.log('Directory, pagination, combined filters, details, CSV, sort, responsive widths and theme passed.');
 }finally{await browser.close();}
