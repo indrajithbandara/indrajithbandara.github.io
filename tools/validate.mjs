@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+const data=JSON.parse(readFileSync('credential-directory.json','utf8'));
+const original=JSON.parse(readFileSync('credentials.json','utf8'));
+assert.equal(data.records.length,original.length);assert.equal(original.length,280);
+assert.equal(new Set(data.records.map(r=>r.id)).size,280);
+assert.equal(new Set(data.records.map(r=>r.issuer)).size,29);
+for(const r of data.records){assert.match(r.id,/^transcript-[a-f0-9]{24}$/);assert.ok(r.title&&r.issuer);assert.match(r.issueDate,/^\d{4}-\d{2}-\d{2}$/);assert.ok(['active','expired','no-expiration','unavailable'].includes(r.status));assert.ok(r.domains.length);assert.equal(r.domainClassification,'inferred');if(!r.expirationDate)assert.ok(['unavailable','no-expiration'].includes(r.status));for(const [key,host] of [['badgeImage','images.credly.com'],['verificationUrl','www.credly.com']])if(r[key]){const url=new URL(r[key]);assert.equal(url.protocol,'https:');assert.equal(url.hostname,host);}}
+const html=readFileSync('index.html','utf8');
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size,'Duplicate HTML IDs');
+for(const m of html.matchAll(/\b(?:href|src)="([^"#]+)"/g)){const url=m[1];if(!/^(?:[a-z]+:|\/\/)/i.test(url))assert.ok(existsSync(url.split('?')[0]),'Missing asset: '+url);}
+for(const m of html.matchAll(/href="#([^"]+)"/g))assert.ok(ids.includes(m[1]),'Broken fragment: '+m[1]);
+assert.ok(!html.includes("script-src 'self' 'unsafe-inline'"));
+assert.equal(readFileSync('CNAME','utf8').trim(),'indrajithbandara.is-a.dev');
+console.log(`Validated ${data.records.length} records, 29 issuers, unique IDs, asset paths, fragments and custom domain.`);
