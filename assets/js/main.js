@@ -221,7 +221,7 @@
 
   /* ---------- skill bars ---------- */
   function initSkillBars() {
-    var skills = document.querySelectorAll(".skill");
+    var skills = document.querySelectorAll(".skill[data-level]");
     if (skills.length === 0 || !("IntersectionObserver" in window)) return;
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {

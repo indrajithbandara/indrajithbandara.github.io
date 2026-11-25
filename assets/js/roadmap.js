@@ -1,0 +1,6 @@
+document.addEventListener("DOMContentLoaded", () => {
+const grid=document.getElementById("badges-container"), search=document.getElementById("credential-search"), issuer=document.getElementById("credential-issuer"), count=document.getElementById("credential-count");
+if(!grid||!search||!issuer||!count)return;
+function refresh(){const cards=[...grid.querySelectorAll(".badge-card-pro")];const selected=issuer.value;const names=cards.map(c=>c.querySelector(".badge-card-pro__issuer")?.textContent.trim()||"").filter(Boolean);issuer.replaceChildren(new Option("All issuers",""),...[...new Set(names)].sort().map(n=>new Option(n,n)));issuer.value=selected;let visible=0;for(const card of cards){const name=card.querySelector(".badge-card-pro__issuer")?.textContent.trim()||"";card.hidden=!(card.textContent.toLowerCase().includes(search.value.toLowerCase())&&(!issuer.value||name===issuer.value));if(!card.hidden)visible++;}count.textContent=visible+" of "+cards.length+" listed credentials";}
+search.addEventListener("input",refresh);issuer.addEventListener("change",refresh);new MutationObserver(refresh).observe(grid,{childList:true});refresh();
+});
