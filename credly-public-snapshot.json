@@ -1,0 +1,2797 @@
+{
+  "capturedAt": "2026-11-25T09:37:57.127Z",
+  "source": "Public Credly badge wallet; manually observed rendered cards",
+  "otherPublicCount": 7,
+  "records": [
+    {
+      "publicCredentialId": "5d3f2b7d-d16c-4138-94d5-099418588835",
+      "title": "Instructor 1 Year of Service",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-13",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4802acaa-a2f7-49be-9a8e-666fa3f42e41/C05-743250-00_Cisco_Networking_Academy_Badge_Instructor_v4a-01-no-year.png",
+      "verificationUrl": "https://www.credly.com/badges/5d3f2b7d-d16c-4138-94d5-099418588835"
+    },
+    {
+      "publicCredentialId": "bc9a8ff3-155f-4f11-be56-ccfe587e3814",
+      "title": "Introduction to Cybersecurity",
+      "issuer": "Cisco",
+      "issueDate": "2021-03-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/bc9a8ff3-155f-4f11-be56-ccfe587e3814"
+    },
+    {
+      "publicCredentialId": "dd701ba9-7d74-4cc8-b037-a49cacb2ddde",
+      "title": "Introduction to IoT",
+      "issuer": "Cisco",
+      "issueDate": "2021-04-01",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/fce226c2-0f13-4e17-b60c-24fa6ffd88cb/Intro2IoT.png",
+      "verificationUrl": "https://www.credly.com/badges/dd701ba9-7d74-4cc8-b037-a49cacb2ddde"
+    },
+    {
+      "publicCredentialId": "36420b96-e3d4-47b2-92b1-a87c520f97c7",
+      "title": "Introduction to Packet Tracer",
+      "issuer": "Cisco",
+      "issueDate": "2021-04-01",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/09b6d58c-763a-4b40-aea1-787d8f46bbcd/Intro2PT.png",
+      "verificationUrl": "https://www.credly.com/badges/36420b96-e3d4-47b2-92b1-a87c520f97c7"
+    },
+    {
+      "publicCredentialId": "a49fb787-4a2a-4daa-87d5-396cf81c621d",
+      "title": "Cybersecurity Fundamentals",
+      "issuer": "IBM-SkillsBuild",
+      "issueDate": "2021-06-03",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/50b96632-6cbb-40b7-ac0e-b83f49ff7f94/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a49fb787-4a2a-4daa-87d5-396cf81c621d"
+    },
+    {
+      "publicCredentialId": "f14a1e5d-8da2-42a7-a160-c172022cf70f",
+      "title": "Cloud Native Security Conference - DevSecOps",
+      "issuer": "IBM",
+      "issueDate": "2021-06-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/01d39c6e-56b8-41d2-b994-fb9d4587240f/Cloud_Native_Sec_Conf_-_DevSecOps_Security.png",
+      "verificationUrl": "https://www.credly.com/badges/f14a1e5d-8da2-42a7-a160-c172022cf70f"
+    },
+    {
+      "publicCredentialId": "0eea0a43-11fe-4093-95be-c5580708604d",
+      "title": "Cloud Native Security Conference - Data Security",
+      "issuer": "IBM",
+      "issueDate": "2021-06-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/640641c6-0917-430b-b319-88d5e0eeb8eb/Cloud_Native_Sec_Conf_-_Data_Security.png",
+      "verificationUrl": "https://www.credly.com/badges/0eea0a43-11fe-4093-95be-c5580708604d"
+    },
+    {
+      "publicCredentialId": "d54ae12d-bf44-4463-9e1e-b658ebb5cf7e",
+      "title": "Cloud Native Security Conference - App Security",
+      "issuer": "IBM",
+      "issueDate": "2021-06-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d0d5241d-ffd7-432d-963d-fc5a0dcdc51a/Cloud_Native_Sec_Conf_-_App_Security.png",
+      "verificationUrl": "https://www.credly.com/badges/d54ae12d-bf44-4463-9e1e-b658ebb5cf7e"
+    },
+    {
+      "publicCredentialId": "a524c9ce-80c2-475a-a104-e136948feff4",
+      "title": "Cyber Security Foundation Professional Certificate - CSFPC™ !",
+      "issuer": "Certiprof",
+      "issueDate": null,
+      "expirationDate": "2023-06-05",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/8a0fb550-4d51-41d0-be50-6c1f54526539/Cybersecurity-Foundation-Professional-Certificate-CSFPC.png",
+      "verificationUrl": "https://www.credly.com/badges/a524c9ce-80c2-475a-a104-e136948feff4"
+    },
+    {
+      "publicCredentialId": "247011c9-828f-464f-b561-ce0bd44179fe",
+      "title": "Data Science Tools",
+      "issuer": "IBM",
+      "issueDate": "2021-06-08",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/aa8b8df6-98d7-4bf5-9546-dd4c1103d718/blob",
+      "verificationUrl": "https://www.credly.com/badges/247011c9-828f-464f-b561-ce0bd44179fe"
+    },
+    {
+      "publicCredentialId": "5eb16ca2-d5c6-42ce-b729-773ce14619a7",
+      "title": "Cloud Essentials",
+      "issuer": "IBM",
+      "issueDate": "2021-06-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5ee26427-f944-4182-b802-459462184c9a/image.png",
+      "verificationUrl": "https://www.credly.com/badges/5eb16ca2-d5c6-42ce-b729-773ce14619a7"
+    },
+    {
+      "publicCredentialId": "0ba3aa4d-9305-481c-87f6-edb6baa71dcb",
+      "title": "Data Science Methodologies",
+      "issuer": "IBM",
+      "issueDate": "2021-06-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3e42e90a-da56-4680-9f9b-140e8a1dd6d4/blob",
+      "verificationUrl": "https://www.credly.com/badges/0ba3aa4d-9305-481c-87f6-edb6baa71dcb"
+    },
+    {
+      "publicCredentialId": "f13bb458-8453-4104-b773-326b85ca1f7b",
+      "title": "Build Your Own Chatbot - Level 1",
+      "issuer": "IBM",
+      "issueDate": "2021-06-13",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/745b7433-8c95-4978-87ed-a5b280fcb1aa/blob",
+      "verificationUrl": "https://www.credly.com/badges/f13bb458-8453-4104-b773-326b85ca1f7b"
+    },
+    {
+      "publicCredentialId": "e0b97c4c-da1d-4b4b-8d4b-9c5cac8f6a0b",
+      "title": "IBM Blockchain Foundation Developer V2",
+      "issuer": "IBM",
+      "issueDate": "2021-06-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7671b89f-4102-455a-be3a-0413b734a59b/IBM-Blockchain-Foundation-Developer-V2.png",
+      "verificationUrl": "https://www.credly.com/badges/e0b97c4c-da1d-4b4b-8d4b-9c5cac8f6a0b"
+    },
+    {
+      "publicCredentialId": "ec656eb2-e0dc-4e30-9680-4930dbac3296",
+      "title": "IBM Blockchain Essentials V2",
+      "issuer": "IBM",
+      "issueDate": "2021-06-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2f9eee24-6834-4595-b2b6-e8e585190a0d/IBM-Blockchain-Essentials-V2.png",
+      "verificationUrl": "https://www.credly.com/badges/ec656eb2-e0dc-4e30-9680-4930dbac3296"
+    },
+    {
+      "publicCredentialId": "30aa3480-e939-4fa8-89b0-f707a30b75f9",
+      "title": "Deep Learning Essentials",
+      "issuer": "IBM",
+      "issueDate": "2021-06-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ef4b79d9-5b12-4d26-b4f2-a8fc22b0351b/blob",
+      "verificationUrl": "https://www.credly.com/badges/30aa3480-e939-4fa8-89b0-f707a30b75f9"
+    },
+    {
+      "publicCredentialId": "5a4d76f0-cac0-4203-be06-53b47ee451a2",
+      "title": "IBM Cloud Essentials",
+      "issuer": "IBM",
+      "issueDate": "2021-06-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7d768acf-ce3c-4a05-9778-a5013b1211c9/blob",
+      "verificationUrl": "https://www.credly.com/badges/5a4d76f0-cac0-4203-be06-53b47ee451a2"
+    },
+    {
+      "publicCredentialId": "84ed80e7-f819-456c-8352-be36b32e96ad",
+      "title": "Cybersecurity Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2021-12-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/054913b2-e271-49a2-a1a4-9bf1c1f9a404/CyberEssentials.png",
+      "verificationUrl": "https://www.credly.com/badges/84ed80e7-f819-456c-8352-be36b32e96ad"
+    },
+    {
+      "publicCredentialId": "9fb2690b-8caa-4738-817d-c9104e23a3af",
+      "title": "Endpoint Security",
+      "issuer": "Cisco",
+      "issueDate": "2022-04-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0ca5f542-fb5e-4a22-9b7a-c1a1ce4c3db7/EndpointSecurity.png",
+      "verificationUrl": "https://www.credly.com/badges/9fb2690b-8caa-4738-817d-c9104e23a3af"
+    },
+    {
+      "publicCredentialId": "fbd3226c-28f5-439b-9207-2ecf5828db3f",
+      "title": "Cyber Threat Management",
+      "issuer": "Cisco",
+      "issueDate": "2022-04-30",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5d5ac32b-d239-42b8-9665-8a921dc3ab47/image.png",
+      "verificationUrl": "https://www.credly.com/badges/fbd3226c-28f5-439b-9207-2ecf5828db3f"
+    },
+    {
+      "publicCredentialId": "221e14c4-90c4-4947-8631-449daa21c5e9",
+      "title": "CCNA: Introduction to Networks",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-03",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/221e14c4-90c4-4947-8631-449daa21c5e9"
+    },
+    {
+      "publicCredentialId": "44722cc7-098e-47dc-a9cd-bf367b778313",
+      "title": "Network Defense",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-04",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/51526f76-711b-4caf-b04d-27f89512b112/NetworkDefense_v1_091721.png",
+      "verificationUrl": "https://www.credly.com/badges/44722cc7-098e-47dc-a9cd-bf367b778313"
+    },
+    {
+      "publicCredentialId": "b2d02a46-960a-439d-9318-564882961780",
+      "title": "Junior Cybersecurity Analyst Career Path",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/441578ec-c0f3-46cc-95fc-86b27e90cf4f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b2d02a46-960a-439d-9318-564882961780"
+    },
+    {
+      "publicCredentialId": "9bda7342-5641-4722-bc7a-a2a06344e148",
+      "title": "Networking Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d7f73336-9adb-4833-a602-761837a33ba3/NetworkingEssentials-01.png",
+      "verificationUrl": "https://www.credly.com/badges/9bda7342-5641-4722-bc7a-a2a06344e148"
+    },
+    {
+      "publicCredentialId": "ad799fbb-4e6c-429d-bddd-d459f8e331f9",
+      "title": "Networking Basics",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5bdd6a39-3e03-4444-9510-ecff80c9ce79/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ad799fbb-4e6c-429d-bddd-d459f8e331f9"
+    },
+    {
+      "publicCredentialId": "601315a1-a7c6-4a57-9431-939ad09f0010",
+      "title": "Networking Devices and Initial Configuration",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/88316fe8-5651-4e61-a6be-5be1558f049e/image.png",
+      "verificationUrl": "https://www.credly.com/badges/601315a1-a7c6-4a57-9431-939ad09f0010"
+    },
+    {
+      "publicCredentialId": "810a25f3-65f6-4491-95f6-c0d1c4426f77",
+      "title": "Text Analytics - Level 1 (V2)",
+      "issuer": "IBM",
+      "issueDate": "2022-05-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e754d95d-8026-419e-8ea8-3effa9edb132/blob",
+      "verificationUrl": "https://www.credly.com/badges/810a25f3-65f6-4491-95f6-c0d1c4426f77"
+    },
+    {
+      "publicCredentialId": "39d8377d-2851-4450-8b9d-7bb6f38787e0",
+      "title": "Big Data Foundations - Level 1",
+      "issuer": "IBM",
+      "issueDate": "2022-05-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/73055bb1-016d-4aaf-8d03-77904eeedf92/blob",
+      "verificationUrl": "https://www.credly.com/badges/39d8377d-2851-4450-8b9d-7bb6f38787e0"
+    },
+    {
+      "publicCredentialId": "46a9af23-bed8-4d1a-b6dd-31478a2cee5f",
+      "title": "DataOps Methodology",
+      "issuer": "IBM",
+      "issueDate": "2022-05-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/17e0a22a-e676-485d-83c8-8537014eb5c8/blob",
+      "verificationUrl": "https://www.credly.com/badges/46a9af23-bed8-4d1a-b6dd-31478a2cee5f"
+    },
+    {
+      "publicCredentialId": "44b3f0f3-1505-448a-8495-a380d6086294",
+      "title": "IBM Cloud Essentials",
+      "issuer": "IBM",
+      "issueDate": "2022-05-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7d768acf-ce3c-4a05-9778-a5013b1211c9/blob",
+      "verificationUrl": "https://www.credly.com/badges/44b3f0f3-1505-448a-8495-a380d6086294"
+    },
+    {
+      "publicCredentialId": "36f19c4f-390c-49a1-84d7-e89dad748fae",
+      "title": "Containers & Kubernetes Essentials",
+      "issuer": "IBM",
+      "issueDate": "2022-05-21",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/82966826-6630-4768-80d4-6028b3fab414/image.png",
+      "verificationUrl": "https://www.credly.com/badges/36f19c4f-390c-49a1-84d7-e89dad748fae"
+    },
+    {
+      "publicCredentialId": "0f57a96d-9fde-42e7-a2ab-01690d1b07f9",
+      "title": "Advanced Kubernetes Operators",
+      "issuer": "IBM",
+      "issueDate": "2022-05-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/711b1833-527f-44c1-bece-67c570e480b9/blob",
+      "verificationUrl": "https://www.credly.com/badges/0f57a96d-9fde-42e7-a2ab-01690d1b07f9"
+    },
+    {
+      "publicCredentialId": "ea117fa0-d1cd-4122-85e9-076729c619d7",
+      "title": "Cloud Pak for Integration Essentials",
+      "issuer": "IBM",
+      "issueDate": "2022-05-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/709c49a4-5268-4738-a94a-2c9b29b41d06/Cloud_Pak_for_Integration_Essentials.png",
+      "verificationUrl": "https://www.credly.com/badges/ea117fa0-d1cd-4122-85e9-076729c619d7"
+    },
+    {
+      "publicCredentialId": "c00ec9af-ec3e-4b36-80e6-55b45813ec92",
+      "title": "Digital Advertising Fundamentals",
+      "issuer": "Microsoft Advertising",
+      "issueDate": "2022-05-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0e9411af-738a-4fdf-a49a-c51b123a4f3f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/c00ec9af-ec3e-4b36-80e6-55b45813ec92"
+    },
+    {
+      "publicCredentialId": "98778fda-d1c5-4d2a-8e0f-2bac5b28f61d",
+      "title": "Spark - Level 1",
+      "issuer": "IBM",
+      "issueDate": "2022-05-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/06cb0d8e-06f7-4f5e-9265-359e37008fcd/blob",
+      "verificationUrl": "https://www.credly.com/badges/98778fda-d1c5-4d2a-8e0f-2bac5b28f61d"
+    },
+    {
+      "publicCredentialId": "be2fbc32-5f1f-4632-9cb0-90f0202df117",
+      "title": "IT Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/04e8034c-81f5-4f7f-ab23-e8b428c31ce9/ITE.png",
+      "verificationUrl": "https://www.credly.com/badges/be2fbc32-5f1f-4632-9cb0-90f0202df117"
+    },
+    {
+      "publicCredentialId": "ac12c3fc-835a-4d80-9d3f-87a300c47c7c",
+      "title": "CCNA: Switching, Routing, and Wireless Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/ac12c3fc-835a-4d80-9d3f-87a300c47c7c"
+    },
+    {
+      "publicCredentialId": "d900c747-ea66-4f87-a314-08b5a3df0507",
+      "title": "CCNA: Enterprise Networking, Security, and Automation",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0a6d331e-8abf-4272-a949-33f754569a76/CCNAENSA__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/d900c747-ea66-4f87-a314-08b5a3df0507"
+    },
+    {
+      "publicCredentialId": "60892783-41c6-42c9-8d7e-8262130db60c",
+      "title": "CyberOps Associate",
+      "issuer": "Cisco",
+      "issueDate": "2022-05-30",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/53f37f83-04a1-4935-9b1e-21a99cc6e1b2/CyberOpsAssoc.png",
+      "verificationUrl": "https://www.credly.com/badges/60892783-41c6-42c9-8d7e-8262130db60c"
+    },
+    {
+      "publicCredentialId": "98b94bc1-1649-4ea5-9d74-09be99794c5d",
+      "title": "Remote Work Professional Certification - RWPC™ !",
+      "issuer": "Certiprof",
+      "issueDate": null,
+      "expirationDate": "2024-06-01",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/ea2c9f2e-b7e1-4a5a-a82e-7e94b67b35bd/image.png",
+      "verificationUrl": "https://www.credly.com/badges/98b94bc1-1649-4ea5-9d74-09be99794c5d"
+    },
+    {
+      "publicCredentialId": "d2365b8e-19ba-4c88-80a6-dbd404cf3ebe",
+      "title": "DevNet Associate",
+      "issuer": "Cisco",
+      "issueDate": "2022-06-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/35985f2b-38d6-4b6f-8e63-42b17d3b5c69/DEVASC_Learning_Badge.png",
+      "verificationUrl": "https://www.credly.com/badges/d2365b8e-19ba-4c88-80a6-dbd404cf3ebe"
+    },
+    {
+      "publicCredentialId": "365686ae-829c-4894-9104-3243778ed105",
+      "title": "Network Security",
+      "issuer": "Cisco",
+      "issueDate": "2022-06-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f7387386-553c-4be5-b3f3-077f78152f31/Network_Security.png",
+      "verificationUrl": "https://www.credly.com/badges/365686ae-829c-4894-9104-3243778ed105"
+    },
+    {
+      "publicCredentialId": "b070555d-1509-460d-a198-702b35363ce5",
+      "title": "Foundations of Operationalizing MITRE ATT&CK",
+      "issuer": "AttackIQ",
+      "issueDate": "2022-06-21",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/466bf45d-c48d-46c3-a613-fd950d1dd9f9/Foundations_of_MITRE_ATT_CK_Badge.png",
+      "verificationUrl": "https://www.credly.com/badges/b070555d-1509-460d-a198-702b35363ce5"
+    },
+    {
+      "publicCredentialId": "67766896-1789-431d-9343-6cc8bbd5c53e",
+      "title": "Strategic Cybersecurity Management",
+      "issuer": "AttackIQ",
+      "issueDate": "2022-06-21",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/507d90a0-49c9-4f64-8800-090732b47526/Strategic_Cybersecurity_Management_Badge.png",
+      "verificationUrl": "https://www.credly.com/badges/67766896-1789-431d-9343-6cc8bbd5c53e"
+    },
+    {
+      "publicCredentialId": "65c03674-ca51-4e3d-acc7-43ff3b235b52",
+      "title": "Serverless Computing using Cloud Functions - Developer I",
+      "issuer": "IBM",
+      "issueDate": "2022-06-21",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c6c88c5f-79ea-4151-952d-b21c02b9a9fd/blob",
+      "verificationUrl": "https://www.credly.com/badges/65c03674-ca51-4e3d-acc7-43ff3b235b52"
+    },
+    {
+      "publicCredentialId": "312e5303-f7ea-4e87-be5c-ac7c8eee607f",
+      "title": "Building Scalable Systems",
+      "issuer": "IBM",
+      "issueDate": "2022-06-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0d7f102d-038a-4321-b2e1-21dc82b83b73/blob",
+      "verificationUrl": "https://www.credly.com/badges/312e5303-f7ea-4e87-be5c-ac7c8eee607f"
+    },
+    {
+      "publicCredentialId": "2656f9e1-d258-4534-a9ea-0c133dcf0d09",
+      "title": "Survey Contributor of The Agile Adoption Report 2022",
+      "issuer": "Certiprof",
+      "issueDate": "2022-07-21",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/78fc0757-e9d9-4e92-936e-2490815b4965/image.png",
+      "verificationUrl": "https://www.credly.com/badges/2656f9e1-d258-4534-a9ea-0c133dcf0d09"
+    },
+    {
+      "publicCredentialId": "fc3015a7-cb13-4287-9cba-619f2173592d",
+      "title": "OPSWAT Introduction to Critical Infrastructure Protection (ICIP)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-02",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/f9f3c533-9b5a-47eb-8a3e-5734663116c0/image.png",
+      "verificationUrl": "https://www.credly.com/badges/fc3015a7-cb13-4287-9cba-619f2173592d"
+    },
+    {
+      "publicCredentialId": "85dcdc78-7257-4031-af04-d662d0c25069",
+      "title": "OPSWAT Data Transfer Security Associate (ODSA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-03",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/caaba5fa-bbe0-4e8e-a33b-48f680bd57d9/image.png",
+      "verificationUrl": "https://www.credly.com/badges/85dcdc78-7257-4031-af04-d662d0c25069"
+    },
+    {
+      "publicCredentialId": "e8bf480f-b2d7-43c0-afed-c41485833174",
+      "title": "OPSWAT Secure Storage Associate (OSSA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-03",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/0e3803ae-3d1c-49bc-b26d-03fde9dd8e95/image.png",
+      "verificationUrl": "https://www.credly.com/badges/e8bf480f-b2d7-43c0-afed-c41485833174"
+    },
+    {
+      "publicCredentialId": "a4d54f70-c63f-4430-9f35-3e71720d9ffe",
+      "title": "OPSWAT Legacy System Associate (OLSA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-04",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/58a15fdf-1e29-458e-9431-e80e7484cdaa/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a4d54f70-c63f-4430-9f35-3e71720d9ffe"
+    },
+    {
+      "publicCredentialId": "b04b897e-24bb-4bcf-9c92-f5c719d032e6",
+      "title": "OPSWAT Web Traffic Protection Associate (OWPA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-04",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/3a239500-f712-48b2-bf60-23b6c9cebf76/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b04b897e-24bb-4bcf-9c92-f5c719d032e6"
+    },
+    {
+      "publicCredentialId": "a1fb97f0-9e4a-490d-8fb6-d1cb92139c94",
+      "title": "OPSWAT Email Security Associate (OESA)",
+      "issuer": "OPSWAT",
+      "issueDate": "2022-08-04",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/29f296fa-3b5e-466e-b9d2-76dd676c98fd/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a1fb97f0-9e4a-490d-8fb6-d1cb92139c94"
+    },
+    {
+      "publicCredentialId": "57654a87-5258-4f26-a8fd-8750e1731777",
+      "title": "OPSWAT Endpoint Compliance Associate (OECA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-04",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/990bb74e-5577-4b83-bc92-f2f96d878626/image.png",
+      "verificationUrl": "https://www.credly.com/badges/57654a87-5258-4f26-a8fd-8750e1731777"
+    },
+    {
+      "publicCredentialId": "b9d92cc6-c152-4b42-a094-20f13c9eacb3",
+      "title": "OPSWAT Network Security Associate (ONSA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-04",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/dc127965-5e04-4d3d-87c2-83c981741c4a/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b9d92cc6-c152-4b42-a094-20f13c9eacb3"
+    },
+    {
+      "publicCredentialId": "23475946-d50a-4ffe-bff0-494e31b816af",
+      "title": "OPSWAT File Security Associate (OFSA)",
+      "issuer": "OPSWAT",
+      "issueDate": null,
+      "expirationDate": "2023-08-06",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/13a41f72-0d4b-4c88-b775-0badf995b59d/image.png",
+      "verificationUrl": "https://www.credly.com/badges/23475946-d50a-4ffe-bff0-494e31b816af"
+    },
+    {
+      "publicCredentialId": "ea00934f-220d-475b-936a-069d28107755",
+      "title": "IT Academy: Network Virtualization Concepts",
+      "issuer": "Broadcom",
+      "issueDate": "2022-08-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/930cc3e4-8a2e-41ae-84b8-40fcf471f786/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ea00934f-220d-475b-936a-069d28107755"
+    },
+    {
+      "publicCredentialId": "8aee4073-e963-4a19-9718-a28ec2206230",
+      "title": "IT Academy: Software Defined Storage Concepts",
+      "issuer": "Broadcom",
+      "issueDate": "2022-08-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8402299b-f265-4a94-bfea-08fc925e7d0b/image.png",
+      "verificationUrl": "https://www.credly.com/badges/8aee4073-e963-4a19-9718-a28ec2206230"
+    },
+    {
+      "publicCredentialId": "4c82909b-444a-486b-8b9c-dd30f0fb395c",
+      "title": "IT Academy: Cloud and Virtualization Concepts",
+      "issuer": "Broadcom",
+      "issueDate": "2022-08-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8ca28f8d-5ac0-49d7-b783-608cd4a61072/image.png",
+      "verificationUrl": "https://www.credly.com/badges/4c82909b-444a-486b-8b9c-dd30f0fb395c"
+    },
+    {
+      "publicCredentialId": "e9aa7f13-c867-42a6-be23-a893664abb15",
+      "title": "Lifelong Learning",
+      "issuer": "Certiprof",
+      "issueDate": "2021-06-13",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/21e16d4d-d2df-46e6-9098-526caab49e63/blob",
+      "verificationUrl": "https://www.credly.com/badges/e9aa7f13-c867-42a6-be23-a893664abb15"
+    },
+    {
+      "publicCredentialId": "255b936c-0b1a-463d-846e-4227472652ca",
+      "title": "Microsoft Advertising Search Certification",
+      "issuer": "Microsoft Advertising",
+      "issueDate": null,
+      "expirationDate": "2023-04-28",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/b72420dc-38fc-4e8c-8b7d-61edf3f87258/image.png",
+      "verificationUrl": "https://www.credly.com/badges/255b936c-0b1a-463d-846e-4227472652ca"
+    },
+    {
+      "publicCredentialId": "7df24d32-fd2c-440c-b659-53e2469e5e2d",
+      "title": "Microsoft Advertising Display & Video Certification",
+      "issuer": "Microsoft Advertising",
+      "issueDate": null,
+      "expirationDate": "2023-05-24",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/db28265f-9e42-4f5c-b5ea-f744be740d56/image.png",
+      "verificationUrl": "https://www.credly.com/badges/7df24d32-fd2c-440c-b659-53e2469e5e2d"
+    },
+    {
+      "publicCredentialId": "28982765-33cd-4b3f-a5fc-48c9632286bd",
+      "title": "Microsoft Advertising Retail Certification",
+      "issuer": "Microsoft Advertising",
+      "issueDate": null,
+      "expirationDate": "2023-05-24",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/b39d807c-0f08-4ded-a33c-efdb73b2a70b/image.png",
+      "verificationUrl": "https://www.credly.com/badges/28982765-33cd-4b3f-a5fc-48c9632286bd"
+    },
+    {
+      "publicCredentialId": "7154c960-284f-4fb3-a2a1-eb17bbdeede2",
+      "title": "ISC2 Candidate",
+      "issuer": "ISC2",
+      "issueDate": null,
+      "expirationDate": "2023-09-08",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/9180921d-4a13-429e-9357-6f9706a554f0/image.png",
+      "verificationUrl": "https://www.credly.com/badges/7154c960-284f-4fb3-a2a1-eb17bbdeede2"
+    },
+    {
+      "publicCredentialId": "b89c3626-4b78-4db2-9bd4-9dadc595a83c",
+      "title": "Google IT Support Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2022-09-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ae2f5bae-b110-4ea1-8e26-77cf5f76c81e/GCC_badge_IT_Support_1000x1000.png",
+      "verificationUrl": "https://www.credly.com/badges/b89c3626-4b78-4db2-9bd4-9dadc595a83c"
+    },
+    {
+      "publicCredentialId": "3a90115e-9c98-4383-9ba3-dd31010ec4b0",
+      "title": "Google Data Analytics Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2022-09-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png",
+      "verificationUrl": "https://www.credly.com/badges/3a90115e-9c98-4383-9ba3-dd31010ec4b0"
+    },
+    {
+      "publicCredentialId": "e3675377-71c6-4420-969a-062189e633c3",
+      "title": "LFQ101: Fundamentals of Quantum Computing",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/6ab043c6-a7cb-40ec-a4c5-c1ca7640fc19/blob",
+      "verificationUrl": "https://www.credly.com/badges/e3675377-71c6-4420-969a-062189e633c3"
+    },
+    {
+      "publicCredentialId": "f7f8551c-0f2e-4034-b8d7-85708958ff8d",
+      "title": "LFD103: A Beginner's Guide to Linux Kernel Development",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c6d2f560-62c8-4b89-a825-aa982fdafed7/blob",
+      "verificationUrl": "https://www.credly.com/badges/f7f8551c-0f2e-4034-b8d7-85708958ff8d"
+    },
+    {
+      "publicCredentialId": "1fa0aacb-8f71-448b-b42b-bea216adc499",
+      "title": "LFS169: Introduction to GitOps",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/032a65da-a036-4d05-ad80-8fc1274363ab/blob",
+      "verificationUrl": "https://www.credly.com/badges/1fa0aacb-8f71-448b-b42b-bea216adc499"
+    },
+    {
+      "publicCredentialId": "75742b6f-3680-477b-a751-53e0f6523c13",
+      "title": "LFC101: Inclusive Speaker Orientation",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/16fbd343-192a-49ee-b9b9-de7bd1d4bf17/blob",
+      "verificationUrl": "https://www.credly.com/badges/75742b6f-3680-477b-a751-53e0f6523c13"
+    },
+    {
+      "publicCredentialId": "f841e788-0c33-4f67-b067-36e61bab8326",
+      "title": "LFC191: Open Source Licensing Basics for Software Developers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e80f8a97-fb95-4b3d-b272-4b955b9f4025/blob",
+      "verificationUrl": "https://www.credly.com/badges/f841e788-0c33-4f67-b067-36e61bab8326"
+    },
+    {
+      "publicCredentialId": "5f7589a1-4834-457a-8747-810fea21e9e3",
+      "title": "LFC110: Fundamentals of Professional Open Source Management",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/1719bbab-f97e-4160-9487-beaa0e0a28f5/Training_Badges_Master_osbestpractices.png",
+      "verificationUrl": "https://www.credly.com/badges/5f7589a1-4834-457a-8747-810fea21e9e3"
+    },
+    {
+      "publicCredentialId": "b86c4d75-1422-4912-959e-1f63959a5e49",
+      "title": "LFD102: A Beginner's Guide to Open Source Software Development",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e99e035b-06c9-4a97-b96e-2cad2756180c/blob",
+      "verificationUrl": "https://www.credly.com/badges/b86c4d75-1422-4912-959e-1f63959a5e49"
+    },
+    {
+      "publicCredentialId": "a6605ca8-27e4-4c54-a85c-51ff4dc5da18",
+      "title": "LFC102: Inclusive Open Source Community Orientation",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2022-09-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4c923ac7-3490-4198-8ee6-fa9d3eb99b0d/blob",
+      "verificationUrl": "https://www.credly.com/badges/a6605ca8-27e4-4c54-a85c-51ff4dc5da18"
+    },
+    {
+      "publicCredentialId": "96c7b968-9e32-43c0-83de-c10cb70789d2",
+      "title": "Python Essentials 1",
+      "issuer": "Cisco",
+      "issueDate": "2022-09-26",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/68c0b94d-f6ac-40b1-a0e0-921439eb092e/image.png",
+      "verificationUrl": "https://www.credly.com/badges/96c7b968-9e32-43c0-83de-c10cb70789d2"
+    },
+    {
+      "publicCredentialId": "d9a9414c-c14b-499a-a773-7e3192c42651",
+      "title": "Python Essentials 2",
+      "issuer": "Cisco",
+      "issueDate": "2022-09-26",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3f802526-7274-4230-91ab-f6d1a35340e6/image.png",
+      "verificationUrl": "https://www.credly.com/badges/d9a9414c-c14b-499a-a773-7e3192c42651"
+    },
+    {
+      "publicCredentialId": "4129ebfb-2fc1-41d7-a457-1574a495d672",
+      "title": "Introduction to Data Science",
+      "issuer": "Cisco",
+      "issueDate": "2022-10-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/b38a42e0-dc58-4ce2-b6c0-28d978e8aaad/image.png",
+      "verificationUrl": "https://www.credly.com/badges/4129ebfb-2fc1-41d7-a457-1574a495d672"
+    },
+    {
+      "publicCredentialId": "a0fa6ba5-56ff-43df-a32c-fed0636bd470",
+      "title": "Career Preparation Workshop",
+      "issuer": "Cisco",
+      "issueDate": "2023-01-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8d97e39e-2a05-4ed7-88a3-3413bc88c7bd/CPW.png",
+      "verificationUrl": "https://www.credly.com/badges/a0fa6ba5-56ff-43df-a32c-fed0636bd470"
+    },
+    {
+      "publicCredentialId": "70c30039-4aee-422b-a662-5b9453ac20ef",
+      "title": "Computer Hardware Basics",
+      "issuer": "Cisco",
+      "issueDate": "2023-01-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/19e742ef-13be-4d26-87ed-ac8f5fd0643c/image.png",
+      "verificationUrl": "https://www.credly.com/badges/70c30039-4aee-422b-a662-5b9453ac20ef"
+    },
+    {
+      "publicCredentialId": "8eb2009c-b90f-4d62-8821-f4e789c24467",
+      "title": "Operating Systems Basics",
+      "issuer": "Cisco",
+      "issueDate": "2023-01-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/dcdf1a3c-2594-4f4c-a33a-050b4bca58b5/image.png",
+      "verificationUrl": "https://www.credly.com/badges/8eb2009c-b90f-4d62-8821-f4e789c24467"
+    },
+    {
+      "publicCredentialId": "5e5b5d00-7fe0-43e6-bee7-642ab756f3e0",
+      "title": "Network Addressing and Basic Troubleshooting",
+      "issuer": "Cisco",
+      "issueDate": "2023-01-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/49c099bd-8542-4f48-8c03-f21799dcaf51/image.png",
+      "verificationUrl": "https://www.credly.com/badges/5e5b5d00-7fe0-43e6-bee7-642ab756f3e0"
+    },
+    {
+      "publicCredentialId": "4cfdd2ce-c70c-4b11-a1ff-eb610ac28e52",
+      "title": "Data Analytics Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2023-02-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/1fdfeaeb-e61c-4450-bdfe-a07bd4e715df/image.png",
+      "verificationUrl": "https://www.credly.com/badges/4cfdd2ce-c70c-4b11-a1ff-eb610ac28e52"
+    },
+    {
+      "publicCredentialId": "ee581eaf-8a13-4584-9c4a-de62a4dd57b4",
+      "title": "LFS145: Introduction to Protocol Buffers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-03-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/bd4f7858-39da-4504-b0a0-e9da488c260f/blob",
+      "verificationUrl": "https://www.credly.com/badges/ee581eaf-8a13-4584-9c4a-de62a4dd57b4"
+    },
+    {
+      "publicCredentialId": "83553a9f-bf94-4e87-b49d-203f2ac7847d",
+      "title": "LFC192: Generating a Software Bill of Materials",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-03-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3ec4dc00-c5ca-4271-98e7-baf91654f838/blob",
+      "verificationUrl": "https://www.credly.com/badges/83553a9f-bf94-4e87-b49d-203f2ac7847d"
+    },
+    {
+      "publicCredentialId": "59e57d6b-7bfd-4a03-99ed-5db6bfe7d1e6",
+      "title": "LFC194: Implementing Open Source License Compliance Management",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-03-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/efb4ebc9-5b26-49e4-bf8d-52a5996d247a/blob",
+      "verificationUrl": "https://www.credly.com/badges/59e57d6b-7bfd-4a03-99ed-5db6bfe7d1e6"
+    },
+    {
+      "publicCredentialId": "353327c2-c8d8-444c-bf37-d5778c523fe5",
+      "title": "LFC131: Green Software for Practitioners",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-03-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f28a92f1-2837-4770-add0-70008be15e89/image.png",
+      "verificationUrl": "https://www.credly.com/badges/353327c2-c8d8-444c-bf37-d5778c523fe5"
+    },
+    {
+      "publicCredentialId": "2813e2d2-44c1-47d5-8a1b-8503f45e7431",
+      "title": "LFC103: Inclusive Strategies for Open Source",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-03-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ec7dd913-1a42-4986-b627-08121eec53e3/blob",
+      "verificationUrl": "https://www.credly.com/badges/2813e2d2-44c1-47d5-8a1b-8503f45e7431"
+    },
+    {
+      "publicCredentialId": "6de5fadb-5b4e-40ad-962c-5fadb4c8f73b",
+      "title": "Justice U Human Trafficking Awareness Badge",
+      "issuer": "Justice U™",
+      "issueDate": "2023-03-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/24b53c30-8eb2-4887-99b2-bc3a59a09c57/153742.png",
+      "verificationUrl": "https://www.credly.com/badges/6de5fadb-5b4e-40ad-962c-5fadb4c8f73b"
+    },
+    {
+      "publicCredentialId": "fbc314a9-684f-4856-8955-a50cf6f0cd73",
+      "title": "Job Application Essentials",
+      "issuer": "IBM-SkillsBuild",
+      "issueDate": "2023-03-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7ae738cc-d7af-45fd-ad53-3e21666cdeca/Job_Application_Essentials.png",
+      "verificationUrl": "https://www.credly.com/badges/fbc314a9-684f-4856-8955-a50cf6f0cd73"
+    },
+    {
+      "publicCredentialId": "08e430a3-952c-4a7d-b29a-53460540ed28",
+      "title": "Microsoft Advertising Certified Professional",
+      "issuer": "Microsoft Advertising",
+      "issueDate": null,
+      "expirationDate": "2023-04-28",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/a235db07-a757-4575-92ef-1087aaeacc8f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/08e430a3-952c-4a7d-b29a-53460540ed28"
+    },
+    {
+      "publicCredentialId": "9ada61b7-4007-4997-9d0c-ec67d644e153",
+      "title": "Beyond the Basics: Istio and IBM Cloud Kubernetes Service",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/1cbf0444-1752-4ac8-b43c-3389004bec2a/blob",
+      "verificationUrl": "https://www.credly.com/badges/9ada61b7-4007-4997-9d0c-ec67d644e153"
+    },
+    {
+      "publicCredentialId": "9b90213d-1052-45e6-a0f5-d6e6cb1dadb7",
+      "title": "Getting Started with Microservices with Istio and IBM Cloud Kubernetes Service",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/adcbf36e-8fb6-433c-91d9-10f01eca10ce/blob",
+      "verificationUrl": "https://www.credly.com/badges/9b90213d-1052-45e6-a0f5-d6e6cb1dadb7"
+    },
+    {
+      "publicCredentialId": "0087407d-f1b1-41f5-97d7-a43d8da16627",
+      "title": "Game-playing AI with Swift for TensorFlow",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/22cd9c90-8372-4d15-a501-b8e48abcdce4/blob",
+      "verificationUrl": "https://www.credly.com/badges/0087407d-f1b1-41f5-97d7-a43d8da16627"
+    },
+    {
+      "publicCredentialId": "c5991597-3355-4c18-b011-2abb6dc3b489",
+      "title": "Data Visualization Using Python",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/90baa00c-2d2b-4544-8c11-77c99068728a/blob",
+      "verificationUrl": "https://www.credly.com/badges/c5991597-3355-4c18-b011-2abb6dc3b489"
+    },
+    {
+      "publicCredentialId": "1908d324-1feb-4377-8b91-bba60e39a6f5",
+      "title": "Machine Learning with Python - Level 1",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ede27d34-ab6b-4eef-8808-f266564df2a2/blob",
+      "verificationUrl": "https://www.credly.com/badges/1908d324-1feb-4377-8b91-bba60e39a6f5"
+    },
+    {
+      "publicCredentialId": "3497a467-835b-4a56-90d8-7ff27d86695d",
+      "title": "Python for Data Science",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/b40db465-587f-45eb-a854-af8630a630e7/blob",
+      "verificationUrl": "https://www.credly.com/badges/3497a467-835b-4a56-90d8-7ff27d86695d"
+    },
+    {
+      "publicCredentialId": "d2388db6-f0ce-4a31-a934-1d55ed1d29fd",
+      "title": "Data Science with Scala",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/31161e97-2afe-4b28-9a63-0fc788de0f69/blob",
+      "verificationUrl": "https://www.credly.com/badges/d2388db6-f0ce-4a31-a934-1d55ed1d29fd"
+    },
+    {
+      "publicCredentialId": "3680ad6c-51d5-4656-ba09-42e7a8657964",
+      "title": "Data Privacy Fundamentals",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/95272ba4-d722-4e3c-8727-d3235c75e4d6/blob",
+      "verificationUrl": "https://www.credly.com/badges/3680ad6c-51d5-4656-ba09-42e7a8657964"
+    },
+    {
+      "publicCredentialId": "713ce383-061d-4b8a-ade6-a331a9c478a6",
+      "title": "Open Source Foundations",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/dd2eca53-5605-42f1-b1c5-0f1f5aba6925/blob",
+      "verificationUrl": "https://www.credly.com/badges/713ce383-061d-4b8a-ade6-a331a9c478a6"
+    },
+    {
+      "publicCredentialId": "124574d1-34ce-4b79-81f6-701d211df738",
+      "title": "Machine Learning with R - Level 1",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ee9e5c86-e36e-471b-840c-4cf9e481d67a/blob",
+      "verificationUrl": "https://www.credly.com/badges/124574d1-34ce-4b79-81f6-701d211df738"
+    },
+    {
+      "publicCredentialId": "dc34d134-9873-4e67-8ac9-edea9da134d0",
+      "title": "Simplifying Data Pipelines with Apache Kafka",
+      "issuer": "IBM",
+      "issueDate": "2023-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e326783e-e92d-41a6-b2e6-1eb5bc91b7ad/blob",
+      "verificationUrl": "https://www.credly.com/badges/dc34d134-9873-4e67-8ac9-edea9da134d0"
+    },
+    {
+      "publicCredentialId": "7d62ea87-ebfb-40f9-a450-27a038017515",
+      "title": "LFC108: Cybersecurity Essentials",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-03-31",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e79f9317-b3f7-4b57-a859-f24d5f25fe36/blob",
+      "verificationUrl": "https://www.credly.com/badges/7d62ea87-ebfb-40f9-a450-27a038017515"
+    },
+    {
+      "publicCredentialId": "16a40202-4332-45fd-8be7-4293d7b2fde6",
+      "title": "Network Support and Security",
+      "issuer": "Cisco",
+      "issueDate": "2023-04-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a4dd891f-7bf5-4938-8241-50dc81e8cc00/image.png",
+      "verificationUrl": "https://www.credly.com/badges/16a40202-4332-45fd-8be7-4293d7b2fde6"
+    },
+    {
+      "publicCredentialId": "834b8c0e-9329-4a18-8028-7c481269ad7a",
+      "title": "Network Technician Career Path",
+      "issuer": "Cisco",
+      "issueDate": "2023-04-26",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/978f88dc-c247-4093-9d39-6efac3651297/image.png",
+      "verificationUrl": "https://www.credly.com/badges/834b8c0e-9329-4a18-8028-7c481269ad7a"
+    },
+    {
+      "publicCredentialId": "31e0ac45-05e5-4fe8-a6ae-c811e18d84cd",
+      "title": "JavaScript Essentials 1",
+      "issuer": "Cisco",
+      "issueDate": "2023-06-04",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/b93bf373-3da6-4ada-9879-a0c39d6a11f8/image.png",
+      "verificationUrl": "https://www.credly.com/badges/31e0ac45-05e5-4fe8-a6ae-c811e18d84cd"
+    },
+    {
+      "publicCredentialId": "0290ebab-47e6-4e50-a96c-aed247f0ff68",
+      "title": "Emerging Technologies Workshop: Model Driven Programmability",
+      "issuer": "Cisco",
+      "issueDate": "2023-06-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2406383c-16f4-4876-b297-6ad951c6b96b/ETW-MDP.png",
+      "verificationUrl": "https://www.credly.com/badges/0290ebab-47e6-4e50-a96c-aed247f0ff68"
+    },
+    {
+      "publicCredentialId": "bc9de3ba-25b8-4ce0-b2c2-20b6d45e0a87",
+      "title": "CCNP: Core Networking",
+      "issuer": "Cisco",
+      "issueDate": "2023-07-07",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8b0ca811-bd98-4083-ba50-512ab9f6262b/CCNPENCOR__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/bc9de3ba-25b8-4ce0-b2c2-20b6d45e0a87"
+    },
+    {
+      "publicCredentialId": "873303f9-176a-48e8-bb9d-a5664aee75ac",
+      "title": "CCNP: Advanced Routing",
+      "issuer": "Cisco",
+      "issueDate": "2023-07-07",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3bb1a127-e4e4-47ac-b83f-6a9fbf343f00/CCNP_ENARSI.png",
+      "verificationUrl": "https://www.credly.com/badges/873303f9-176a-48e8-bb9d-a5664aee75ac"
+    },
+    {
+      "publicCredentialId": "78a3a417-9217-45dd-8919-754853ba6f15",
+      "title": "Google Cybersecurity Professional Certificate V2",
+      "issuer": "Coursera",
+      "issueDate": "2023-07-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0bf0f2da-a699-4c82-82e2-56dcf1f2e1c7/image.png",
+      "verificationUrl": "https://www.credly.com/badges/78a3a417-9217-45dd-8919-754853ba6f15"
+    },
+    {
+      "publicCredentialId": "1754b4f1-51b7-4d4b-9112-99fe3b7e189e",
+      "title": "English for IT 1",
+      "issuer": "Cisco",
+      "issueDate": "2023-07-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/77b1ea15-6287-4d97-8ecd-c5afa2d137ea/image.png",
+      "verificationUrl": "https://www.credly.com/badges/1754b4f1-51b7-4d4b-9112-99fe3b7e189e"
+    },
+    {
+      "publicCredentialId": "a1725621-0856-470d-9028-f24d793550b6",
+      "title": "English for IT 2",
+      "issuer": "Cisco",
+      "issueDate": "2023-07-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ca317486-3494-488b-b2a7-b49270d98f21/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a1725621-0856-470d-9028-f24d793550b6"
+    },
+    {
+      "publicCredentialId": "034e5d0f-ce0d-4df1-ae9a-d96150c6bf5b",
+      "title": "Engaging Stakeholders for Success",
+      "issuer": "Cisco",
+      "issueDate": "2023-07-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/11a35743-6bcd-4406-83cd-bf74d1c8f646/image.png",
+      "verificationUrl": "https://www.credly.com/badges/034e5d0f-ce0d-4df1-ae9a-d96150c6bf5b"
+    },
+    {
+      "publicCredentialId": "5eaeec3d-3ba2-469e-99d2-ea747c5cdfc8",
+      "title": "Discovering Entrepreneurship",
+      "issuer": "Cisco",
+      "issueDate": "2023-07-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0c77c11b-e3cf-4734-8fd4-2d920151ae0b/image.png",
+      "verificationUrl": "https://www.credly.com/badges/5eaeec3d-3ba2-469e-99d2-ea747c5cdfc8"
+    },
+    {
+      "publicCredentialId": "295bed99-2d9d-4a8f-9631-317986738549",
+      "title": "Google Project Management Certificate (v1)",
+      "issuer": "Coursera",
+      "issueDate": "2023-08-02",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/771cff46-3573-4d12-bfd8-528745f00957/GCC_badge_PGM_1000x1000.png",
+      "verificationUrl": "https://www.credly.com/badges/295bed99-2d9d-4a8f-9631-317986738549"
+    },
+    {
+      "publicCredentialId": "0679a3aa-1889-4ab7-96ca-77daaca1a438",
+      "title": "LFEL1003: Creating Edge IoT Solutions with EdgeX Foundry",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-08-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/875ed07f-a2aa-41b6-936d-0d5454916b85/blob",
+      "verificationUrl": "https://www.credly.com/badges/0679a3aa-1889-4ab7-96ca-77daaca1a438"
+    },
+    {
+      "publicCredentialId": "688e173d-9ad6-4fe3-9b2e-b84941381afe",
+      "title": "LFEL1000: Introduction to FDC3",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-08-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/03d4e5e4-2d54-4b8a-b052-d57c06630efe/blob",
+      "verificationUrl": "https://www.credly.com/badges/688e173d-9ad6-4fe3-9b2e-b84941381afe"
+    },
+    {
+      "publicCredentialId": "c058766f-d9b1-402a-9632-ad11aae986b1",
+      "title": "LFQ102: Quantum Computing Essentials For Senior Leaders",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-08-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d7560bed-21fd-475d-99bb-010fa2ca66e6/blob",
+      "verificationUrl": "https://www.credly.com/badges/c058766f-d9b1-402a-9632-ad11aae986b1"
+    },
+    {
+      "publicCredentialId": "1ac1aa6a-395f-446d-bb27-a365a1ede225",
+      "title": "Google Digital Marketing and E-Commerce Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2023-08-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/941fa490-a052-46ae-beff-1ac8e55c117f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/1ac1aa6a-395f-446d-bb27-a365a1ede225"
+    },
+    {
+      "publicCredentialId": "1b946aee-d920-4c45-8fa2-d2270ff64825",
+      "title": "Ethical Hacker",
+      "issuer": "Cisco",
+      "issueDate": "2023-08-24",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png",
+      "verificationUrl": "https://www.credly.com/badges/1b946aee-d920-4c45-8fa2-d2270ff64825"
+    },
+    {
+      "publicCredentialId": "27de797a-960e-4691-b62a-61d95ad9cf36",
+      "title": "Google Business Intelligence Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2023-09-03",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/cbe961ef-3536-47a1-be43-14c461a3216e/image.png",
+      "verificationUrl": "https://www.credly.com/badges/27de797a-960e-4691-b62a-61d95ad9cf36"
+    },
+    {
+      "publicCredentialId": "c56e6cc7-22cd-42a7-8c85-63edb89c326e",
+      "title": "Google UX Design Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2023-09-02",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f4b9febb-69f6-46d8-8797-1e504ebfe0f8/GCC_badge_UX_1000x1000.png",
+      "verificationUrl": "https://www.credly.com/badges/c56e6cc7-22cd-42a7-8c85-63edb89c326e"
+    },
+    {
+      "publicCredentialId": "fa827a40-dac0-4e8a-945d-12d4b32b503e",
+      "title": "Google Advanced Data Analytics Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2023-09-07",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9267a387-1a51-4ebe-8c05-976a5ec4c3d0/image.png",
+      "verificationUrl": "https://www.credly.com/badges/fa827a40-dac0-4e8a-945d-12d4b32b503e"
+    },
+    {
+      "publicCredentialId": "ce08e03a-f95e-4cdb-9b66-6de37ad6b083",
+      "title": "AWS Educate Getting Started with Networking - Training Badge",
+      "issuer": "Amazon Web Services Training and Certification",
+      "issueDate": "2023-09-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f5095707-7683-4886-940c-3e8e4a2085ca/blob",
+      "verificationUrl": "https://www.credly.com/badges/ce08e03a-f95e-4cdb-9b66-6de37ad6b083"
+    },
+    {
+      "publicCredentialId": "38df562d-e030-4b13-b837-7c873a3ad812",
+      "title": "LFEL1005: Security Self-Assessments for Open Source Projects",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-09-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3f266148-172f-427c-ba86-d25c73a29d1c/blob",
+      "verificationUrl": "https://www.credly.com/badges/38df562d-e030-4b13-b837-7c873a3ad812"
+    },
+    {
+      "publicCredentialId": "1564f172-b913-416f-b3a1-82ff2073a7a2",
+      "title": "SKF100: Understanding the OWASP® Top 10 Security Threats",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-09-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/18d8c64f-cf68-4259-b0ef-2a116e9224f1/blob",
+      "verificationUrl": "https://www.credly.com/badges/1564f172-b913-416f-b3a1-82ff2073a7a2"
+    },
+    {
+      "publicCredentialId": "a8fcb04a-be92-47f9-bc3c-d62ee9a7212a",
+      "title": "LFEL1006: Securing Projects with OpenSSF Scorecard",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-09-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/6835309d-5d53-4231-abd7-a3aead632fc0/blob",
+      "verificationUrl": "https://www.credly.com/badges/a8fcb04a-be92-47f9-bc3c-d62ee9a7212a"
+    },
+    {
+      "publicCredentialId": "b27d8b0e-5022-4054-b081-be0c036220cf",
+      "title": "LFEL1007: Automating Supply Chain Security - SBOMs and Signatures",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2023-09-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e12cee9e-cfc0-4adf-bac1-e062986edaf0/blob",
+      "verificationUrl": "https://www.credly.com/badges/b27d8b0e-5022-4054-b081-be0c036220cf"
+    },
+    {
+      "publicCredentialId": "b2149389-df8f-4b79-956b-f11f666bd675",
+      "title": "Fortinet FortiGate 7.4 Operator",
+      "issuer": "Fortinet",
+      "issueDate": "2023-10-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4b6db74c-f2da-4958-ad21-27288f2dd7f3/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b2149389-df8f-4b79-956b-f11f666bd675"
+    },
+    {
+      "publicCredentialId": "b2667f9d-cf59-40c9-9c29-0166b18169b2",
+      "title": "Fortinet Certified Associate Cybersecurity",
+      "issuer": "Fortinet",
+      "issueDate": null,
+      "expirationDate": "2025-10-05",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/20082fc1-94af-4773-9df0-28856b566748/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b2667f9d-cf59-40c9-9c29-0166b18169b2"
+    },
+    {
+      "publicCredentialId": "76761822-c4f9-4684-9597-995d0c36caf2",
+      "title": "Introduction to the Threat Landscape 2.0",
+      "issuer": "Fortinet",
+      "issueDate": "2023-10-07",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/083854d8-3a8f-465c-b414-19507f9703d9/image.png",
+      "verificationUrl": "https://www.credly.com/badges/76761822-c4f9-4684-9597-995d0c36caf2"
+    },
+    {
+      "publicCredentialId": "f3412868-df3c-4505-80b6-e0c373333ca1",
+      "title": "AWS Knowledge: Cloud Essentials - Training Badge",
+      "issuer": "Amazon Web Services Training and Certification",
+      "issueDate": "2023-10-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7cf036b0-c609-4378-a7be-9969e1dea7ab/blob",
+      "verificationUrl": "https://www.credly.com/badges/f3412868-df3c-4505-80b6-e0c373333ca1"
+    },
+    {
+      "publicCredentialId": "93c24ab9-f677-40ac-94a7-ad0dc5a4b827",
+      "title": "AWS Knowledge: AWS for Games: Cloud Game Development - Training Badge",
+      "issuer": "Amazon Web Services Training and Certification",
+      "issueDate": "2023-10-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7ad52d33-5620-411e-997a-546b22ed33b7/blob",
+      "verificationUrl": "https://www.credly.com/badges/93c24ab9-f677-40ac-94a7-ad0dc5a4b827"
+    },
+    {
+      "publicCredentialId": "7206dc15-e1ad-4cea-b3f4-9d2671db23cf",
+      "title": "Creating Compelling Reports",
+      "issuer": "Cisco",
+      "issueDate": "2023-10-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/37b16109-9083-4b08-8eec-b9d8f4bb88a8/image.png",
+      "verificationUrl": "https://www.credly.com/badges/7206dc15-e1ad-4cea-b3f4-9d2671db23cf"
+    },
+    {
+      "publicCredentialId": "9a8ad87d-d63e-4d7b-a8da-63328b3be211",
+      "title": "Launching a Business Venture",
+      "issuer": "Cisco",
+      "issueDate": "2023-10-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/94b6738e-01d9-42b6-865a-65fc26573ea4/image.png",
+      "verificationUrl": "https://www.credly.com/badges/9a8ad87d-d63e-4d7b-a8da-63328b3be211"
+    },
+    {
+      "publicCredentialId": "ee1c2a81-7e62-437b-bf51-f0e7863759b9",
+      "title": "Cyber Security and InfoSec",
+      "issuer": "SkillStorm",
+      "issueDate": "2023-10-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a8666f76-5c61-48a3-9a23-c555695e5389/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ee1c2a81-7e62-437b-bf51-f0e7863759b9"
+    },
+    {
+      "publicCredentialId": "ab51049c-4a0b-4b20-b19c-a6a571240f06",
+      "title": "JavaScript Essentials 2",
+      "issuer": "Cisco",
+      "issueDate": "2023-11-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e090c1e1-dbd4-40f8-bbb3-93cc07884d7f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ab51049c-4a0b-4b20-b19c-a6a571240f06"
+    },
+    {
+      "publicCredentialId": "ec58d6fe-1b6e-42c2-b87c-91ea63ae154d",
+      "title": "Fundamentals of Predictive Project Management",
+      "issuer": "Project Management Institute",
+      "issueDate": "2023-11-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/37f7183c-9a25-4c72-916d-0c21572f5875/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ec58d6fe-1b6e-42c2-b87c-91ea63ae154d"
+    },
+    {
+      "publicCredentialId": "718f197c-47cf-4148-be39-d1fb9a0ae3f3",
+      "title": "API Security Fundamentals (2 hours)",
+      "issuer": "APIsec University",
+      "issueDate": "2023-11-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4f17161c-0357-416f-8507-04f4517b1c2f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/718f197c-47cf-4148-be39-d1fb9a0ae3f3"
+    },
+    {
+      "publicCredentialId": "9473f13a-12cd-4b68-a808-5ffd0eca3742",
+      "title": "API Documentation Best Practices (2 hours)",
+      "issuer": "APIsec University",
+      "issueDate": "2023-11-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d45a2a64-2af4-4916-a9da-1bc51fc1219b/image.png",
+      "verificationUrl": "https://www.credly.com/badges/9473f13a-12cd-4b68-a808-5ffd0eca3742"
+    },
+    {
+      "publicCredentialId": "1e55986d-ca6d-4de2-baab-f81987225bf8",
+      "title": "API Security for PCI Compliance",
+      "issuer": "APIsec University",
+      "issueDate": "2023-11-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a178c95b-2f9d-48b2-a27e-1c1357943dc3/image.png",
+      "verificationUrl": "https://www.credly.com/badges/1e55986d-ca6d-4de2-baab-f81987225bf8"
+    },
+    {
+      "publicCredentialId": "547996dc-c1e1-41f7-8bcc-860d1e3493bd",
+      "title": "Securing API Servers (2 hours)",
+      "issuer": "APIsec University",
+      "issueDate": "2023-11-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/71296528-e07b-44af-b5cd-7723599793cf/image.png",
+      "verificationUrl": "https://www.credly.com/badges/547996dc-c1e1-41f7-8bcc-860d1e3493bd"
+    },
+    {
+      "publicCredentialId": "fb1e0ae6-a466-4e4f-9a92-fbcc9cf7d085",
+      "title": "OWASP API Security Top 10 (2 hours)",
+      "issuer": "APIsec University",
+      "issueDate": "2023-11-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/66fb5b06-7caf-4b23-a0c3-d262ba57e3c2/image.png",
+      "verificationUrl": "https://www.credly.com/badges/fb1e0ae6-a466-4e4f-9a92-fbcc9cf7d085"
+    },
+    {
+      "publicCredentialId": "48e23ccc-3c31-402e-92f9-e95790e0699b",
+      "title": "Webex Insider Advocacy",
+      "issuer": "Cisco",
+      "issueDate": "2023-11-13",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/6b178c7b-6d06-43de-a60b-e4f956b752d3/image.png",
+      "verificationUrl": "https://www.credly.com/badges/48e23ccc-3c31-402e-92f9-e95790e0699b"
+    },
+    {
+      "publicCredentialId": "2db175a7-7cc2-499f-bc80-bee9c603bd01",
+      "title": "Webex Insider User Research",
+      "issuer": "Cisco",
+      "issueDate": "2023-11-30",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/201cc0c8-9278-43a6-8179-e374630489bf/image.png",
+      "verificationUrl": "https://www.credly.com/badges/2db175a7-7cc2-499f-bc80-bee9c603bd01"
+    },
+    {
+      "publicCredentialId": "8b91b115-dbe9-45b1-a638-a8cdbbda57cd",
+      "title": "Getting Started in Cybersecurity 2.0",
+      "issuer": "Fortinet",
+      "issueDate": "2023-12-02",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/39641a02-c97f-40d0-8773-d3a475954e9e/image.png",
+      "verificationUrl": "https://www.credly.com/badges/8b91b115-dbe9-45b1-a638-a8cdbbda57cd"
+    },
+    {
+      "publicCredentialId": "2eeb928f-2880-4618-9618-0c0540278717",
+      "title": "Fortinet Certified Fundamentals Cybersecurity",
+      "issuer": "Fortinet",
+      "issueDate": null,
+      "expirationDate": "2025-12-02",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/22a0ece5-ff05-4594-8320-25e55e9ae203/image.png",
+      "verificationUrl": "https://www.credly.com/badges/2eeb928f-2880-4618-9618-0c0540278717"
+    },
+    {
+      "publicCredentialId": "b7d611ef-6df0-41bd-ae11-1e34bfe37d8c",
+      "title": "Technical Introduction to Cybersecurity 1.0",
+      "issuer": "Fortinet",
+      "issueDate": "2023-12-02",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/38484a57-5b41-4411-aaf3-63030da63993/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b7d611ef-6df0-41bd-ae11-1e34bfe37d8c"
+    },
+    {
+      "publicCredentialId": "bed6ecdc-05d8-499f-b526-7178d8369fc9",
+      "title": "AI for Product Management",
+      "issuer": "Pendo",
+      "issueDate": "2023-12-04",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d7e06f28-2a0b-41b1-9af3-bcd8024e7627/image.png",
+      "verificationUrl": "https://www.credly.com/badges/bed6ecdc-05d8-499f-b526-7178d8369fc9"
+    },
+    {
+      "publicCredentialId": "6e871717-ea1e-4343-b399-b1828aca8d17",
+      "title": "ZEDEDA Certified Edge Computing Associate (ZCEA)",
+      "issuer": "ZEDEDA",
+      "issueDate": "2023-12-06",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/fca71862-8de3-4240-a75f-902c42b72079/image.png",
+      "verificationUrl": "https://www.credly.com/badges/6e871717-ea1e-4343-b399-b1828aca8d17"
+    },
+    {
+      "publicCredentialId": "796fb621-cd1e-4439-9fd7-f48920f1e2de",
+      "title": "ZEDEDA Edge Orchestration Essentials",
+      "issuer": "ZEDEDA",
+      "issueDate": "2023-12-08",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/1d38473a-1bdf-4229-9da4-688c0fb8b916/image.png",
+      "verificationUrl": "https://www.credly.com/badges/796fb621-cd1e-4439-9fd7-f48920f1e2de"
+    },
+    {
+      "publicCredentialId": "6582e180-7f5b-471e-9c27-e7a6c2a99b87",
+      "title": "Kubernetes Monitoring Learning Path",
+      "issuer": "Datadog",
+      "issueDate": "2023-12-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e4c38805-e2fd-469c-83fc-8dab303be440/blob",
+      "verificationUrl": "https://www.credly.com/badges/6582e180-7f5b-471e-9c27-e7a6c2a99b87"
+    },
+    {
+      "publicCredentialId": "5d9f3aa0-9059-4bb4-be32-60bf6472ae25",
+      "title": "Datadog Fundamentals I",
+      "issuer": "Datadog",
+      "issueDate": "2023-12-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/20fe51ea-c003-469e-947a-3b66f39e48af/blob",
+      "verificationUrl": "https://www.credly.com/badges/5d9f3aa0-9059-4bb4-be32-60bf6472ae25"
+    },
+    {
+      "publicCredentialId": "e4c58abb-1d48-421f-af9d-74621206bee8",
+      "title": "Log Management Fundamentals",
+      "issuer": "Datadog",
+      "issueDate": "2023-12-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/b799f717-8c9c-439f-a255-1743dd6bae0e/blob",
+      "verificationUrl": "https://www.credly.com/badges/e4c58abb-1d48-421f-af9d-74621206bee8"
+    },
+    {
+      "publicCredentialId": "6a82a729-6235-471d-b4db-5f38d299ceed",
+      "title": "Pinterest Advertising Essentials",
+      "issuer": "Pinterest",
+      "issueDate": null,
+      "expirationDate": "2025-12-14",
+      "status": "expired",
+      "badgeImage": "https://images.credly.com/images/a33d5a59-810a-407a-b6af-14ce6a81e9c1/blob",
+      "verificationUrl": "https://www.credly.com/badges/6a82a729-6235-471d-b4db-5f38d299ceed"
+    },
+    {
+      "publicCredentialId": "a1bfce31-fecd-472f-a253-153f5b5995cd",
+      "title": "Applied Marketing Mail Certified",
+      "issuer": "Direct Effect",
+      "issueDate": "2023-12-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5039488d-b443-4b0c-ab48-06c018e3acb0/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a1bfce31-fecd-472f-a253-153f5b5995cd"
+    },
+    {
+      "publicCredentialId": "30a6cf21-593c-42ac-bbb8-cf71cf4a05b0",
+      "title": "Activation Certified",
+      "issuer": "Direct Effect",
+      "issueDate": "2023-12-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/6159e955-866d-43d2-b127-0efdfadef9c2/image.png",
+      "verificationUrl": "https://www.credly.com/badges/30a6cf21-593c-42ac-bbb8-cf71cf4a05b0"
+    },
+    {
+      "publicCredentialId": "2bdc0172-e690-4ba6-aa46-c3b93a82df50",
+      "title": "Direct Mail Fundamentals Certified",
+      "issuer": "Direct Effect",
+      "issueDate": "2023-12-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a6b54d36-d221-4044-bf2f-93b249f8eec4/image.png",
+      "verificationUrl": "https://www.credly.com/badges/2bdc0172-e690-4ba6-aa46-c3b93a82df50"
+    },
+    {
+      "publicCredentialId": "f50f8b0f-6762-4de3-826e-4539772c8e61",
+      "title": "Miro essentials",
+      "issuer": "Miro",
+      "issueDate": "2023-12-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/cdc37495-2a06-4dba-8553-94057e85443c/blob",
+      "verificationUrl": "https://www.credly.com/badges/f50f8b0f-6762-4de3-826e-4539772c8e61"
+    },
+    {
+      "publicCredentialId": "dfe2a495-a30b-4c1d-a698-c2e4e2bfede8",
+      "title": "Networking Academy Learn-A-Thon 2023",
+      "issuer": "Cisco",
+      "issueDate": "2023-11-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/b1395248-483c-48cd-b40d-7fe93837c37d/image.png",
+      "verificationUrl": "https://www.credly.com/badges/dfe2a495-a30b-4c1d-a698-c2e4e2bfede8"
+    },
+    {
+      "publicCredentialId": "1fc9d9b8-d0e6-4fe5-a4af-a55783e4246b",
+      "title": "LFC114: Remote Work at Scale",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-01-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4e7092ff-b0df-4a99-8c57-dd9c3fa9c1f5/blob",
+      "verificationUrl": "https://www.credly.com/badges/1fc9d9b8-d0e6-4fe5-a4af-a55783e4246b"
+    },
+    {
+      "publicCredentialId": "02e8e921-69e5-4fbb-a527-ca58b6450394",
+      "title": "LFC112: Creating Effective Documentation for Developers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-01-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/62081479-8c0a-4db6-8cfa-3cfbd8b5b7e6/blob",
+      "verificationUrl": "https://www.credly.com/badges/02e8e921-69e5-4fbb-a527-ca58b6450394"
+    },
+    {
+      "publicCredentialId": "ebabb314-8ffa-4289-97ae-4737f5e178d7",
+      "title": "Client Collaboration",
+      "issuer": "Miro",
+      "issueDate": "2024-01-27",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0dec46c3-9917-4906-a409-f79473ce5829/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ebabb314-8ffa-4289-97ae-4737f5e178d7"
+    },
+    {
+      "publicCredentialId": "c359a3dc-478c-4355-8075-4a11ef1d4970",
+      "title": "LFD137: Open Source Contribution in Finance",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-01-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ff55a3b1-ffef-431d-b486-096bd93de299/blob",
+      "verificationUrl": "https://www.credly.com/badges/c359a3dc-478c-4355-8075-4a11ef1d4970"
+    },
+    {
+      "publicCredentialId": "1627bdbc-1d6a-441e-b5a7-61132b22f82e",
+      "title": "Managing a Business Venture",
+      "issuer": "Cisco",
+      "issueDate": "2024-02-04",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/397c4c71-2f0b-4476-8f61-6a6c726d6cd4/image.png",
+      "verificationUrl": "https://www.credly.com/badges/1627bdbc-1d6a-441e-b5a7-61132b22f82e"
+    },
+    {
+      "publicCredentialId": "c82819a3-cccc-4c4b-862c-1a854407a124",
+      "title": "Foundations in AI for Adult Ed",
+      "issuer": "World Education",
+      "issueDate": "2024-02-12",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/838098d0-5284-4b00-855d-3a738640ed13/image.png",
+      "verificationUrl": "https://www.credly.com/badges/c82819a3-cccc-4c4b-862c-1a854407a124"
+    },
+    {
+      "publicCredentialId": "ca5f4482-3fbe-4a11-826e-76efffba9799",
+      "title": "Introduction to Cybersecurity Tools & Cyber Attacks",
+      "issuer": "Coursera",
+      "issueDate": "2024-03-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5ed0eac3-8986-4fab-a16b-cab70d4a920e/blob",
+      "verificationUrl": "https://www.credly.com/badges/ca5f4482-3fbe-4a11-826e-76efffba9799"
+    },
+    {
+      "publicCredentialId": "a78b864a-edfa-4643-8f67-89a8bdba1639",
+      "title": "LFEL1014: Scaling Cloud Native Applications with KEDA",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-04-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c35303ff-2b71-4f77-8fb2-c985c39dbf7f/blob",
+      "verificationUrl": "https://www.credly.com/badges/a78b864a-edfa-4643-8f67-89a8bdba1639"
+    },
+    {
+      "publicCredentialId": "ed1332b4-b741-47d8-83c7-e5c5cc66bc1f",
+      "title": "LFS179: Introduction to Nephio",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-04-27",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/764dabf3-73eb-40e1-9d75-4218b7f6c984/blob",
+      "verificationUrl": "https://www.credly.com/badges/ed1332b4-b741-47d8-83c7-e5c5cc66bc1f"
+    },
+    {
+      "publicCredentialId": "9d529c21-4352-4b13-bf91-a5f4ffe7e76a",
+      "title": "LFD110: Introduction to RISC-V",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/fe724d20-7a05-417e-b10a-29e458a3fc04/blob",
+      "verificationUrl": "https://www.credly.com/badges/9d529c21-4352-4b13-bf91-a5f4ffe7e76a"
+    },
+    {
+      "publicCredentialId": "d25835f7-ee12-4ceb-99f3-9c40f737aa15",
+      "title": "LFD133: Introduction to WebAssembly",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c8c237d0-9abf-4752-840b-4a0801753975/blob",
+      "verificationUrl": "https://www.credly.com/badges/d25835f7-ee12-4ceb-99f3-9c40f737aa15"
+    },
+    {
+      "publicCredentialId": "61ee9015-a542-4961-9586-5b55750fbc0b",
+      "title": "LFS101: Introduction to Linux",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/97a95d07-04c3-4afb-952a-6bcf46ddb87e/blob",
+      "verificationUrl": "https://www.credly.com/badges/61ee9015-a542-4961-9586-5b55750fbc0b"
+    },
+    {
+      "publicCredentialId": "09d1cfcb-4d59-43fb-84a0-6fce477cfed8",
+      "title": "LFS112: Ethics in AI and Data Science",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ec31c32f-3594-40ec-951b-75720d07efbf/blob",
+      "verificationUrl": "https://www.credly.com/badges/09d1cfcb-4d59-43fb-84a0-6fce477cfed8"
+    },
+    {
+      "publicCredentialId": "265b5e06-ffe1-49ef-b1c8-bc9b5d622885",
+      "title": "LFS116: PyTorch and Deep Learning for Decision Makers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9b88ea8b-bd05-4196-b338-10521ec8305d/blob",
+      "verificationUrl": "https://www.credly.com/badges/265b5e06-ffe1-49ef-b1c8-bc9b5d622885"
+    },
+    {
+      "publicCredentialId": "428d1bca-ce92-4981-88ff-610250fb4ef8",
+      "title": "LFS118: Ethical Principles for Conversational AI",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/d504af50-e3f2-4fc8-87bb-9d4452fb09f9/blob",
+      "verificationUrl": "https://www.credly.com/badges/428d1bca-ce92-4981-88ff-610250fb4ef8"
+    },
+    {
+      "publicCredentialId": "aa48b65f-6b57-4dc9-9804-754d8c8051b5",
+      "title": "LFS142: Introduction to Backstage - Developer Portals Made Easy",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/7caa3e89-2da5-4afc-a694-ebc4c5045c8f/blob",
+      "verificationUrl": "https://www.credly.com/badges/aa48b65f-6b57-4dc9-9804-754d8c8051b5"
+    },
+    {
+      "publicCredentialId": "7062cec3-a68e-4300-af55-56ffd82dedbc",
+      "title": "LFS144: Introduction to Istio",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/6166f9b5-2213-45f5-b7de-ba0e58048d23/blob",
+      "verificationUrl": "https://www.credly.com/badges/7062cec3-a68e-4300-af55-56ffd82dedbc"
+    },
+    {
+      "publicCredentialId": "cb0747f2-5df6-47d5-8fa8-ed6f65d7b7b3",
+      "title": "LFS146: Introduction to Cilium",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9ede332e-3868-44d6-8e09-e93f70a8f9cd/blob",
+      "verificationUrl": "https://www.credly.com/badges/cb0747f2-5df6-47d5-8fa8-ed6f65d7b7b3"
+    },
+    {
+      "publicCredentialId": "fd0279d0-c8a4-4a27-a44c-328993b4929e",
+      "title": "LFS151: Introduction to Cloud Infrastructure Technologies",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c52b0e6e-e171-41c2-a459-b8e618ea1e72/blob",
+      "verificationUrl": "https://www.credly.com/badges/fd0279d0-c8a4-4a27-a44c-328993b4929e"
+    },
+    {
+      "publicCredentialId": "ce5af21f-3147-47f8-962a-e59b149f613a",
+      "title": "LFS157: Introduction to Serverless on Kubernetes",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3cdbeb68-f2c2-43e9-ad18-c97cb719c3b0/blob",
+      "verificationUrl": "https://www.credly.com/badges/ce5af21f-3147-47f8-962a-e59b149f613a"
+    },
+    {
+      "publicCredentialId": "26818502-c3b5-4dbe-ad85-24588e6ccd31",
+      "title": "LFS158: Introduction to Kubernetes",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4b5a8636-c554-482d-bbdc-7925fb3624c3/blob",
+      "verificationUrl": "https://www.credly.com/badges/26818502-c3b5-4dbe-ad85-24588e6ccd31"
+    },
+    {
+      "publicCredentialId": "5fa24917-3876-4e90-8657-a18f4856a9b8",
+      "title": "LFS162: Introduction to DevOps and Site Reliability Engineering",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2397c05c-eb0e-4b08-be97-9e8261d43125/blob",
+      "verificationUrl": "https://www.credly.com/badges/5fa24917-3876-4e90-8657-a18f4856a9b8"
+    },
+    {
+      "publicCredentialId": "fb420e10-054d-48cb-97fc-2e2588c84aa1",
+      "title": "LFS166: Introduction to Magma - Cloud Native Wireless Networking",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3e2b162f-ef24-4e08-b663-062b64632cc7/blob",
+      "verificationUrl": "https://www.credly.com/badges/fb420e10-054d-48cb-97fc-2e2588c84aa1"
+    },
+    {
+      "publicCredentialId": "e1767d17-22ec-457c-8a57-f77c8941842a",
+      "title": "LFS167: Introduction to Jenkins",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0f5127c3-639b-47f2-abca-01107591c639/blob",
+      "verificationUrl": "https://www.credly.com/badges/e1767d17-22ec-457c-8a57-f77c8941842a"
+    },
+    {
+      "publicCredentialId": "941be8c2-e94a-4a9c-96ef-eb3645ead632",
+      "title": "LFS170: Blockchain - Understanding Its Uses and Implications",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4f81c0a9-6f06-4975-b104-13eb02850444/blob",
+      "verificationUrl": "https://www.credly.com/badges/941be8c2-e94a-4a9c-96ef-eb3645ead632"
+    },
+    {
+      "publicCredentialId": "713568a5-00aa-4554-9136-2ee8f2929cbe",
+      "title": "LFS171: Introduction to Hyperledger Blockchain Technologies",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/6f5b47e6-a4d9-45fa-84c0-79adfdd8dafd/blob",
+      "verificationUrl": "https://www.credly.com/badges/713568a5-00aa-4554-9136-2ee8f2929cbe"
+    },
+    {
+      "publicCredentialId": "aca3e042-3572-4d1d-bc4a-4b086c06bee3",
+      "title": "LFS178: Getting Started with Self-Sovereign Identity",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3559f4ef-84b8-42be-8493-ba5ecc519288/blob",
+      "verificationUrl": "https://www.credly.com/badges/aca3e042-3572-4d1d-bc4a-4b086c06bee3"
+    },
+    {
+      "publicCredentialId": "3e1b9459-fcf2-43c0-905b-75b2e5090cdc",
+      "title": "LFS180: Introduction to DevSecOps for Managers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/64e6e2af-459c-4615-9202-3d2697a21b35/blob",
+      "verificationUrl": "https://www.credly.com/badges/3e1b9459-fcf2-43c0-905b-75b2e5090cdc"
+    },
+    {
+      "publicCredentialId": "a89bdedc-7e8f-4c86-8966-7e1bf82e44fc",
+      "title": "LFS182: Securing Your Software Supply Chain with Sigstore",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c5f5deb2-1b83-43eb-ae9c-f984928b4e39/blob",
+      "verificationUrl": "https://www.credly.com/badges/a89bdedc-7e8f-4c86-8966-7e1bf82e44fc"
+    },
+    {
+      "publicCredentialId": "31c12533-dbed-4a81-8e0f-54df4f275226",
+      "title": "LFS183: Introduction to Zero Trust",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/030d09ff-a748-4dad-a76f-da3fc4d2c25b/blob",
+      "verificationUrl": "https://www.credly.com/badges/31c12533-dbed-4a81-8e0f-54df4f275226"
+    },
+    {
+      "publicCredentialId": "4f348fd0-07c5-4f2a-b4aa-438b16c3ce2e",
+      "title": "LFW111: Introduction to Node.js",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/80f8381f-784d-4872-8959-a0af8bfe9609/blob",
+      "verificationUrl": "https://www.credly.com/badges/4f348fd0-07c5-4f2a-b4aa-438b16c3ce2e"
+    },
+    {
+      "publicCredentialId": "32a52693-0bf9-4cf2-894a-a9ee12406910",
+      "title": "LFC120: Leading High-Performance Working Group Meetings",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-05-21",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/34172571-ac59-4495-a938-9f731018d696/blob",
+      "verificationUrl": "https://www.credly.com/badges/32a52693-0bf9-4cf2-894a-a9ee12406910"
+    },
+    {
+      "publicCredentialId": "20ee4ea4-8f71-41bd-9293-50ec5e3b0ff3",
+      "title": "Networking Academy Learn-A-Thon 2024",
+      "issuer": "Cisco",
+      "issueDate": "2024-04-26",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e360c3e0-4031-479b-ad7b-5ce878bc29d7/image.png",
+      "verificationUrl": "https://www.credly.com/badges/20ee4ea4-8f71-41bd-9293-50ec5e3b0ff3"
+    },
+    {
+      "publicCredentialId": "a293ef6e-7081-4e40-8422-7a04e0a121eb",
+      "title": "API Authentication (2 hours)",
+      "issuer": "APIsec University",
+      "issueDate": "2024-06-06",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c8d189b6-bbf0-43e8-b047-02e81f1cdb0f/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a293ef6e-7081-4e40-8422-7a04e0a121eb"
+    },
+    {
+      "publicCredentialId": "4f20ef65-41c0-4ac6-819f-5f3db8207cd3",
+      "title": "API Security for Connected Cars and Fleets (1 hour)",
+      "issuer": "APIsec University",
+      "issueDate": "2024-06-06",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f5ceb8aa-9080-4abb-8fb5-83f2f0c5cbd9/image.png",
+      "verificationUrl": "https://www.credly.com/badges/4f20ef65-41c0-4ac6-819f-5f3db8207cd3"
+    },
+    {
+      "publicCredentialId": "d82441c5-9671-4bc4-8125-0ba404965fad",
+      "title": "LFEL1011: OpenAPI Fundamentals",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-06-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/702cdbe4-2925-496b-a77f-96fdf90404a7/blob",
+      "verificationUrl": "https://www.credly.com/badges/d82441c5-9671-4bc4-8125-0ba404965fad"
+    },
+    {
+      "publicCredentialId": "b0013760-4c7f-4320-90ff-42be2f42279d",
+      "title": "GitOps Fundamentals",
+      "issuer": "Codefresh",
+      "issueDate": "2022-09-06",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/fbd71e9c-07f7-4a8b-a874-2bf5001a6dbf/blob",
+      "verificationUrl": "https://www.credly.com/badges/b0013760-4c7f-4320-90ff-42be2f42279d"
+    },
+    {
+      "publicCredentialId": "7386bd53-cb27-4dfa-9c2d-fbf7b1e585d5",
+      "title": "Google AI Essentials V1",
+      "issuer": "Coursera",
+      "issueDate": "2024-06-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ea3eec65-ddad-4242-9c59-1defac0fa2d9/image.png",
+      "verificationUrl": "https://www.credly.com/badges/7386bd53-cb27-4dfa-9c2d-fbf7b1e585d5"
+    },
+    {
+      "publicCredentialId": "16bb19f4-7a52-425e-976c-e0552d7c7ba5",
+      "title": "LFS111: Open Source and the 5G Transition",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-07-13",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2a7254bb-1832-40aa-912a-7f85900f93ce/blob",
+      "verificationUrl": "https://www.credly.com/badges/16bb19f4-7a52-425e-976c-e0552d7c7ba5"
+    },
+    {
+      "publicCredentialId": "5eb8aff9-1b66-4e73-9a61-03ce0d590175",
+      "title": "Cybersecurity Awareness - CAPC !",
+      "issuer": "Certiprof",
+      "issueDate": "2024-07-31",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/712a773b-9acc-4bc8-90fa-6afdfc95da1e/image.png",
+      "verificationUrl": "https://www.credly.com/badges/5eb8aff9-1b66-4e73-9a61-03ce0d590175"
+    },
+    {
+      "publicCredentialId": "db8692b1-e883-40bc-beab-78b85dff172e",
+      "title": "AI in Financial Services Professional Certification",
+      "issuer": "Upstart",
+      "issueDate": "2024-08-06",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f9494df4-a862-4191-8456-e0b420a2f369/image.png",
+      "verificationUrl": "https://www.credly.com/badges/db8692b1-e883-40bc-beab-78b85dff172e"
+    },
+    {
+      "publicCredentialId": "930585f4-0179-4d94-8077-8f50d346d9e4",
+      "title": "Computer Vision and Image Processing Essentials",
+      "issuer": "Coursera",
+      "issueDate": "2024-08-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/030dff43-c0f1-4328-83d3-31e3124ca068/image.png",
+      "verificationUrl": "https://www.credly.com/badges/930585f4-0179-4d94-8077-8f50d346d9e4"
+    },
+    {
+      "publicCredentialId": "b2d465a1-160d-4263-9d57-e82d52ac9116",
+      "title": "Using Computer and Mobile Devices",
+      "issuer": "Cisco",
+      "issueDate": "2024-08-27",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9835a120-6adb-492f-88f5-dbf62df300b6/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b2d465a1-160d-4263-9d57-e82d52ac9116"
+    },
+    {
+      "publicCredentialId": "0545934c-5547-458f-b800-9e91ad38bf57",
+      "title": "Digital Awareness",
+      "issuer": "Cisco",
+      "issueDate": "2024-08-27",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/29e7c859-4719-4081-a12f-6bdc073a43d2/image.png",
+      "verificationUrl": "https://www.credly.com/badges/0545934c-5547-458f-b800-9e91ad38bf57"
+    },
+    {
+      "publicCredentialId": "f23a378d-bf7c-4279-be78-3a2bfcc2962e",
+      "title": "Meta Data Analyst Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2024-08-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4dd82f2c-e7eb-4b64-bb24-f4351f596220/image.png",
+      "verificationUrl": "https://www.credly.com/badges/f23a378d-bf7c-4279-be78-3a2bfcc2962e"
+    },
+    {
+      "publicCredentialId": "436e395c-639f-41e7-8384-71023a5d18bf",
+      "title": "LFEL1010: XSS Exploits and Defenses",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-09-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4bed41e1-eab6-48e1-bc8f-00a44d331311/image.png",
+      "verificationUrl": "https://www.credly.com/badges/436e395c-639f-41e7-8384-71023a5d18bf"
+    },
+    {
+      "publicCredentialId": "0d22cb8f-934f-4580-9b91-d40a2da64680",
+      "title": "LFD134: WebAssembly Components - From Cloud to Edge",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-10-09",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/da88c4ee-7962-42f9-bcdc-4485e509a629/blob",
+      "verificationUrl": "https://www.credly.com/badges/0d22cb8f-934f-4580-9b91-d40a2da64680"
+    },
+    {
+      "publicCredentialId": "4f5764d3-cde1-43c9-accc-bc1a67e43598",
+      "title": "Credly Top Legacy Badge Earner",
+      "issuer": "Credly",
+      "issueDate": "2024-10-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3cfeed0f-fbfe-456e-ae16-d2c866fb06e7/blob",
+      "verificationUrl": "https://www.credly.com/badges/4f5764d3-cde1-43c9-accc-bc1a67e43598"
+    },
+    {
+      "publicCredentialId": "3bf5ecbc-10c2-4f18-91a5-71984cafded9",
+      "title": "Google Prompting Essentials V1",
+      "issuer": "Coursera",
+      "issueDate": "2024-10-31",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c72688c2-f32f-4f34-862d-a13a7c5f6294/blob",
+      "verificationUrl": "https://www.credly.com/badges/3bf5ecbc-10c2-4f18-91a5-71984cafded9"
+    },
+    {
+      "publicCredentialId": "4ac20a91-d95d-4dbe-b3d3-711d734c08ff",
+      "title": "LFS148: Getting Started with OpenTelemetry",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-11-08",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a13653a5-3902-4eb9-96ca-790f6b535d4e/blob",
+      "verificationUrl": "https://www.credly.com/badges/4ac20a91-d95d-4dbe-b3d3-711d734c08ff"
+    },
+    {
+      "publicCredentialId": "e22acec2-f42a-4f60-bfb4-0471f8500a6a",
+      "title": "Introduction to Modern AI",
+      "issuer": "Cisco",
+      "issueDate": "2024-11-26",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e2d12302-10f9-40d4-8ff1-066a7008b61d/blob",
+      "verificationUrl": "https://www.credly.com/badges/e22acec2-f42a-4f60-bfb4-0471f8500a6a"
+    },
+    {
+      "publicCredentialId": "455a63b0-c94e-4d91-88e1-9055e546badb",
+      "title": "Create Digital Content, Communicate and Collaborate Online",
+      "issuer": "Cisco",
+      "issueDate": "2024-12-22",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/af525f6d-70fb-4345-80d4-ca62fca81b45/blob",
+      "verificationUrl": "https://www.credly.com/badges/455a63b0-c94e-4d91-88e1-9055e546badb"
+    },
+    {
+      "publicCredentialId": "d50b05be-7571-4475-9c7c-29c790a2de16",
+      "title": "LFS120: Conversational AI: Ensuring Compliance and Mitigating Risks",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-12-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9d8c577d-d242-4b2a-b64f-79dfdcf72ee8/blob",
+      "verificationUrl": "https://www.credly.com/badges/d50b05be-7571-4475-9c7c-29c790a2de16"
+    },
+    {
+      "publicCredentialId": "7ed8d5ad-899c-49dd-9b07-5acd2e1f664f",
+      "title": "LFEL1009: Getting Started with OpenTofu",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2024-12-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e05777b4-2eba-4421-9741-90547ac41d58/blob",
+      "verificationUrl": "https://www.credly.com/badges/7ed8d5ad-899c-49dd-9b07-5acd2e1f664f"
+    },
+    {
+      "publicCredentialId": "2b153652-d2f1-48fd-8ee7-6048180a2f72",
+      "title": "Cybersecurity Awareness Learner 2025",
+      "issuer": "Certiprof",
+      "issueDate": "2024-12-30",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5a388f8e-891a-48dc-9c01-dfa04ced241a/blob",
+      "verificationUrl": "https://www.credly.com/badges/2b153652-d2f1-48fd-8ee7-6048180a2f72"
+    },
+    {
+      "publicCredentialId": "df12c0a9-1971-4910-90d5-44aa7a741217",
+      "title": "Introduction to Neural Networks with PyTorch",
+      "issuer": "Coursera",
+      "issueDate": "2025-01-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/335a694d-1fc4-4c83-a467-f140862a0a1e/Coursera_20Introduction_20to_20Neural_20Networks_20with_20PyTorch.png",
+      "verificationUrl": "https://www.credly.com/badges/df12c0a9-1971-4910-90d5-44aa7a741217"
+    },
+    {
+      "publicCredentialId": "95ac8669-50fc-48bf-8c34-eae1c5a3de94",
+      "title": "APIsec University Ambassador",
+      "issuer": "APIsec University",
+      "issueDate": "2025-02-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e70932a7-c54c-464e-9a79-c7506546fe67/blob",
+      "verificationUrl": "https://www.credly.com/badges/95ac8669-50fc-48bf-8c34-eae1c5a3de94"
+    },
+    {
+      "publicCredentialId": "0dc3e62e-773c-46ab-83e8-aee0bc81e2b1",
+      "title": "CSS Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-01",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/bd2bba36-66ad-4de2-9d91-e29433e51a16/blob",
+      "verificationUrl": "https://www.credly.com/badges/0dc3e62e-773c-46ab-83e8-aee0bc81e2b1"
+    },
+    {
+      "publicCredentialId": "d990f74b-ba7c-4b0d-af53-0a2eb2a526ce",
+      "title": "HTML Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-01",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/b1c17d0c-e76b-45fc-9b28-87b01ae1caf3/blob",
+      "verificationUrl": "https://www.credly.com/badges/d990f74b-ba7c-4b0d-af53-0a2eb2a526ce"
+    },
+    {
+      "publicCredentialId": "9d77177e-d2c4-444d-bcab-a44c80386464",
+      "title": "LFD125: Security for Software Development Managers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2025-03-03",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/76c8bc91-42a6-4f06-9484-df961be2b0c8/blob",
+      "verificationUrl": "https://www.credly.com/badges/9d77177e-d2c4-444d-bcab-a44c80386464"
+    },
+    {
+      "publicCredentialId": "4ac5dc4a-702e-47c1-8ed7-f45ebad38650",
+      "title": "AI Power User Launchpad",
+      "issuer": "Cisco",
+      "issueDate": "2026-11-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8025ffd4-17eb-4538-b9a5-bd98022be8b4/blob",
+      "verificationUrl": "https://www.credly.com/badges/4ac5dc4a-702e-47c1-8ed7-f45ebad38650"
+    },
+    {
+      "publicCredentialId": "29e82b60-5401-4946-bb3e-869b760cc631",
+      "title": "Core Generative AI Skills",
+      "issuer": "Cisco",
+      "issueDate": "2026-11-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0eeee9e5-b14b-4e82-97c0-199a6fdac5a1/blob",
+      "verificationUrl": "https://www.credly.com/badges/29e82b60-5401-4946-bb3e-869b760cc631"
+    },
+    {
+      "publicCredentialId": "bd3edee1-8987-45b3-848b-00d5bea9352c",
+      "title": "Data Center Foundations",
+      "issuer": "Cisco",
+      "issueDate": "2026-11-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/35180cb0-e030-4a6c-aa33-499fd135d5a6/blob",
+      "verificationUrl": "https://www.credly.com/badges/bd3edee1-8987-45b3-848b-00d5bea9352c"
+    },
+    {
+      "publicCredentialId": "97e849bd-a61b-4d9e-bf6b-55c17a7adbce",
+      "title": "Learn with AI",
+      "issuer": "Cisco",
+      "issueDate": "2026-11-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/bab0df5b-c7e1-4941-9dd9-d6b9ad295bbd/blob",
+      "verificationUrl": "https://www.credly.com/badges/97e849bd-a61b-4d9e-bf6b-55c17a7adbce"
+    },
+    {
+      "publicCredentialId": "4bb53530-d9e1-498b-b145-837ede24201e",
+      "title": "Optimizing Generative AI",
+      "issuer": "Cisco",
+      "issueDate": "2026-11-17",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5606cea4-7bf7-4e9e-98cc-ce9f2f61b654/blob",
+      "verificationUrl": "https://www.credly.com/badges/4bb53530-d9e1-498b-b145-837ede24201e"
+    },
+    {
+      "publicCredentialId": "c4ba73b3-1ad8-4568-b1ca-c6bf4adca462",
+      "title": "Prompt Like an Engineer",
+      "issuer": "Cisco",
+      "issueDate": "2026-08-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/cafee69a-0443-4054-9916-e6644dd75961/blob",
+      "verificationUrl": "https://www.credly.com/badges/c4ba73b3-1ad8-4568-b1ca-c6bf4adca462"
+    },
+    {
+      "publicCredentialId": "c9efcf91-a34b-46e5-95d4-5adfff355f11",
+      "title": "Getting Ready to Teach Industrial Networking Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2026-07-08",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/985b6d41-1b89-471e-b88b-5dcce62aadd7/blob",
+      "verificationUrl": "https://www.credly.com/badges/c9efcf91-a34b-46e5-95d4-5adfff355f11"
+    },
+    {
+      "publicCredentialId": "71bc0762-4bb2-4088-b60f-6dbdb376bc1f",
+      "title": "Google Network Security",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9d06e635-f89c-4c75-9e1a-bbbf9f7cf61d/blob",
+      "verificationUrl": "https://www.credly.com/badges/71bc0762-4bb2-4088-b60f-6dbdb376bc1f"
+    },
+    {
+      "publicCredentialId": "0f3d9b46-8573-4d4c-9a0d-2004c80deba5",
+      "title": "Google AI for App Building",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2cf18bea-6b75-401a-bf9d-ac0a23f582fd/blob",
+      "verificationUrl": "https://www.credly.com/badges/0f3d9b46-8573-4d4c-9a0d-2004c80deba5"
+    },
+    {
+      "publicCredentialId": "d82c3b43-ec92-420f-b61c-8e131c37d86e",
+      "title": "Google AI for Brainstorming and Planning",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/fb6dc8be-1471-4aab-b2ab-da1f76080ecf/blob",
+      "verificationUrl": "https://www.credly.com/badges/d82c3b43-ec92-420f-b61c-8e131c37d86e"
+    },
+    {
+      "publicCredentialId": "29cd9576-d3a2-43b4-a7e8-0e8d5a0755ee",
+      "title": "Google AI for Content Creation",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f0c5c16d-1480-4968-9259-50851d03f79a/blob",
+      "verificationUrl": "https://www.credly.com/badges/29cd9576-d3a2-43b4-a7e8-0e8d5a0755ee"
+    },
+    {
+      "publicCredentialId": "b559b465-2d49-4081-95e0-372f24e42b56",
+      "title": "Google AI for Data Analysis",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/97e068dc-d64a-4806-a6cd-5c4e68fa3d5f/blob",
+      "verificationUrl": "https://www.credly.com/badges/b559b465-2d49-4081-95e0-372f24e42b56"
+    },
+    {
+      "publicCredentialId": "0309adcd-c15a-4e66-827d-99a254625334",
+      "title": "Google AI for Research and Insights",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c065d009-d51b-40f8-8f9b-4b90cb4ece67/blob",
+      "verificationUrl": "https://www.credly.com/badges/0309adcd-c15a-4e66-827d-99a254625334"
+    },
+    {
+      "publicCredentialId": "530074fa-65ec-415f-889f-f94b40e1caf1",
+      "title": "Google AI for Writing and Communicating",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/791a77e5-1590-40bc-92a9-c69126fa4e4b/blob",
+      "verificationUrl": "https://www.credly.com/badges/530074fa-65ec-415f-889f-f94b40e1caf1"
+    },
+    {
+      "publicCredentialId": "fdf25bdf-b911-42b3-ae99-94f191314d51",
+      "title": "Google AI Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/782f33e7-c4b5-4d1d-a7ce-02f25b7b9a1e/blob",
+      "verificationUrl": "https://www.credly.com/badges/fdf25bdf-b911-42b3-ae99-94f191314d51"
+    },
+    {
+      "publicCredentialId": "7901b920-1b7c-4d37-80f0-a47806e9c21a",
+      "title": "Cybersecurity Defense Analyst Career Path",
+      "issuer": "Cisco",
+      "issueDate": "2026-04-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a8d6cb9c-e0e3-4705-aab0-160cc9d10a11/blob",
+      "verificationUrl": "https://www.credly.com/badges/7901b920-1b7c-4d37-80f0-a47806e9c21a"
+    },
+    {
+      "publicCredentialId": "60a3e6a2-b322-46e8-9a99-f5ecdb2cd910",
+      "title": "Microsoft IT Support Specialist Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2026-04-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3d067b05-426f-4650-ab83-ae3014e7e0c1/blob",
+      "verificationUrl": "https://www.credly.com/badges/60a3e6a2-b322-46e8-9a99-f5ecdb2cd910"
+    },
+    {
+      "publicCredentialId": "ddaaf8b1-e8f1-47cf-b2e8-098ddcedf5af",
+      "title": "Getting Ready to Teach IT Support Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2026-03-01",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a8c2e2c7-a46f-4eaf-93d2-ebf3a7ba1212/blob",
+      "verificationUrl": "https://www.credly.com/badges/ddaaf8b1-e8f1-47cf-b2e8-098ddcedf5af"
+    },
+    {
+      "publicCredentialId": "10a236f5-3f53-4aca-97fe-fe342ce82a81",
+      "title": "IT Support Specialist Career Path",
+      "issuer": "Cisco",
+      "issueDate": "2026-02-28",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0d2f3dee-c2b4-469e-9445-fbf6fa019b9a/blob",
+      "verificationUrl": "https://www.credly.com/badges/10a236f5-3f53-4aca-97fe-fe342ce82a81"
+    },
+    {
+      "publicCredentialId": "7f38aa93-9fbd-46e4-9835-1948a652ff4f",
+      "title": "Networking Academy Learn-A-Thon 2025",
+      "issuer": "Cisco",
+      "issueDate": "2026-01-14",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8bf3e17f-1982-4539-a1f7-ba85c749407a/blob",
+      "verificationUrl": "https://www.credly.com/badges/7f38aa93-9fbd-46e4-9835-1948a652ff4f"
+    },
+    {
+      "publicCredentialId": "15e69e0a-2399-49a6-b20a-bff3f0cbd40f",
+      "title": "English for IT: Describing and Comparing",
+      "issuer": "Cisco",
+      "issueDate": "2025-12-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/234d24cb-46bc-4518-a63b-783d8d689381/blob",
+      "verificationUrl": "https://www.credly.com/badges/15e69e0a-2399-49a6-b20a-bff3f0cbd40f"
+    },
+    {
+      "publicCredentialId": "c8c9b3ba-38b0-4e80-9ae6-22eb7e932197",
+      "title": "English for IT: Needs and Responsibilities",
+      "issuer": "Cisco",
+      "issueDate": "2025-12-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/aed0f95d-0445-4c72-82fa-8d6e37dc72a7/blob",
+      "verificationUrl": "https://www.credly.com/badges/c8c9b3ba-38b0-4e80-9ae6-22eb7e932197"
+    },
+    {
+      "publicCredentialId": "c58b8786-5106-4661-9eb9-6e56396bb422",
+      "title": "English for IT: People and Quantities",
+      "issuer": "Cisco",
+      "issueDate": "2025-12-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9001b50e-796a-49f2-9717-98d0eb206773/blob",
+      "verificationUrl": "https://www.credly.com/badges/c58b8786-5106-4661-9eb9-6e56396bb422"
+    },
+    {
+      "publicCredentialId": "8176fe0e-1ddd-4a64-8f0f-ebd3ef00d439",
+      "title": "English for IT: Advice and Time",
+      "issuer": "Cisco",
+      "issueDate": "2025-12-22",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/1d3340b2-71cd-4b78-a395-94c67dd462aa/blob",
+      "verificationUrl": "https://www.credly.com/badges/8176fe0e-1ddd-4a64-8f0f-ebd3ef00d439"
+    },
+    {
+      "publicCredentialId": "41b266f1-be3d-4309-8dfd-00f28b826a04",
+      "title": "Build Your Resume with AI",
+      "issuer": "Cisco",
+      "issueDate": "2025-11-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f8561eaa-3263-4a14-b8e6-2b31484963be/blob",
+      "verificationUrl": "https://www.credly.com/badges/41b266f1-be3d-4309-8dfd-00f28b826a04"
+    },
+    {
+      "publicCredentialId": "20710047-1720-4932-91c6-535730bb2a78",
+      "title": "Industrial IoT and Control Systems in Manufacturing",
+      "issuer": "Cisco",
+      "issueDate": "2025-10-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/abdd7c87-09e8-4cdd-9d29-47e08a8967d8/blob",
+      "verificationUrl": "https://www.credly.com/badges/20710047-1720-4932-91c6-535730bb2a78"
+    },
+    {
+      "publicCredentialId": "93e128e1-b1f7-4bf0-9e5d-15942b6c58ad",
+      "title": "Industrial IoT and Control Systems in Energy",
+      "issuer": "Cisco",
+      "issueDate": "2025-10-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2787adfe-00c6-47fb-81a7-086410940168/blob",
+      "verificationUrl": "https://www.credly.com/badges/93e128e1-b1f7-4bf0-9e5d-15942b6c58ad"
+    },
+    {
+      "publicCredentialId": "485f9368-c565-4d7c-b779-04f66c2c2fd9",
+      "title": "Industrial Cybersecurity Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-10-18",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/94557bc5-88cf-4607-a99b-88cb12f387cf/blob",
+      "verificationUrl": "https://www.credly.com/badges/485f9368-c565-4d7c-b779-04f66c2c2fd9"
+    },
+    {
+      "publicCredentialId": "906d8557-fb5e-4f23-9ba8-2c3faea9f0cb",
+      "title": "CCNP: Advanced Routing",
+      "issuer": "Cisco",
+      "issueDate": "2025-10-12",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/3bb1a127-e4e4-47ac-b83f-6a9fbf343f00/CCNP_ENARSI.png",
+      "verificationUrl": "https://www.credly.com/badges/906d8557-fb5e-4f23-9ba8-2c3faea9f0cb"
+    },
+    {
+      "publicCredentialId": "87888738-937a-4512-a3fe-20a48376e33b",
+      "title": "CCNP: Core Networking",
+      "issuer": "Cisco",
+      "issueDate": "2025-10-10",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8b0ca811-bd98-4083-ba50-512ab9f6262b/CCNPENCOR__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/87888738-937a-4512-a3fe-20a48376e33b"
+    },
+    {
+      "publicCredentialId": "ee279fd4-78e2-493a-ab58-4e8f0e96740f",
+      "title": "Multicloud Network Associate",
+      "issuer": "Aviatrix",
+      "issueDate": null,
+      "expirationDate": "2028-09-24",
+      "status": "active",
+      "badgeImage": "https://images.credly.com/images/e3c001fd-161d-433a-a7a4-049556d6112d/blob",
+      "verificationUrl": "https://www.credly.com/badges/ee279fd4-78e2-493a-ab58-4e8f0e96740f"
+    },
+    {
+      "publicCredentialId": "ffe71ea7-03a0-4800-85d0-0fc5b9dfcd12",
+      "title": "CCNA: Enterprise Networking, Security, and Automation",
+      "issuer": "Cisco",
+      "issueDate": "2025-09-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/0a6d331e-8abf-4272-a949-33f754569a76/CCNAENSA__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/ffe71ea7-03a0-4800-85d0-0fc5b9dfcd12"
+    },
+    {
+      "publicCredentialId": "fb57829d-464f-498f-9d75-ae6628acf4b8",
+      "title": "CCNA: Introduction to Networks",
+      "issuer": "Cisco",
+      "issueDate": "2025-09-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/fb57829d-464f-498f-9d75-ae6628acf4b8"
+    },
+    {
+      "publicCredentialId": "42c66331-f45e-449f-80d0-4e6477235f7c",
+      "title": "CCNA: Switching, Routing, and Wireless Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-09-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f4ccdba9-dd65-4349-baad-8f05df116443/CCNASRWE__1_.png",
+      "verificationUrl": "https://www.credly.com/badges/42c66331-f45e-449f-80d0-4e6477235f7c"
+    },
+    {
+      "publicCredentialId": "1273e3ab-c246-4b55-beb7-c13dad9d52bd",
+      "title": "Find Insights with AI",
+      "issuer": "Cisco",
+      "issueDate": "2025-08-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/5ba48a47-11b2-452f-a641-5184ba2f6a67/blob",
+      "verificationUrl": "https://www.credly.com/badges/1273e3ab-c246-4b55-beb7-c13dad9d52bd"
+    },
+    {
+      "publicCredentialId": "0f11c65f-dbea-412f-90f0-6ea07c9a3697",
+      "title": "IT Support Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-08-23",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a3423dca-2810-43d7-a1b1-5d585b568944/blob",
+      "verificationUrl": "https://www.credly.com/badges/0f11c65f-dbea-412f-90f0-6ea07c9a3697"
+    },
+    {
+      "publicCredentialId": "b7a39733-a639-4320-9c86-37fb8b3e2ab9",
+      "title": "Hardware and Upgrade Support",
+      "issuer": "Cisco",
+      "issueDate": "2025-08-08",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/94cbdf0d-3e44-44b2-b213-866fe22aa7d5/blob",
+      "verificationUrl": "https://www.credly.com/badges/b7a39733-a639-4320-9c86-37fb8b3e2ab9"
+    },
+    {
+      "publicCredentialId": "54d2c875-c8f7-40ee-8897-dcc01daf5556",
+      "title": "Security and Connectivity Support",
+      "issuer": "Cisco",
+      "issueDate": "2025-08-08",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a42c5fcd-6617-429c-b4a9-8805310e0b10/blob",
+      "verificationUrl": "https://www.credly.com/badges/54d2c875-c8f7-40ee-8897-dcc01daf5556"
+    },
+    {
+      "publicCredentialId": "2150ed9f-f0fd-4d23-9d38-ae4d83b342b9",
+      "title": "Data Science Essentials With Python",
+      "issuer": "Cisco",
+      "issueDate": "2025-07-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/62db59ef-19f9-4652-a00c-7582baee8177/blob",
+      "verificationUrl": "https://www.credly.com/badges/2150ed9f-f0fd-4d23-9d38-ae4d83b342b9"
+    },
+    {
+      "publicCredentialId": "f4fafa00-7ca4-4621-82ef-1f37ffb79297",
+      "title": "Cybersecurity Essentials",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/c1426860-8205-4220-a0d5-5e6d4f07db17/blob",
+      "verificationUrl": "https://www.credly.com/badges/f4fafa00-7ca4-4621-82ef-1f37ffb79297"
+    },
+    {
+      "publicCredentialId": "b4de5c15-a060-486a-83e9-cdc5b296a3f0",
+      "title": "Hardware and Operating System Essentials",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/74e18558-da29-41a1-9850-fa73231327a0/image.png",
+      "verificationUrl": "https://www.credly.com/badges/b4de5c15-a060-486a-83e9-cdc5b296a3f0"
+    },
+    {
+      "publicCredentialId": "838c6035-6f3d-4c11-a2fc-f9e25c275de5",
+      "title": "IBM IT Support Professional Certificate",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/9db3be28-e7e7-4162-8baa-667d59230bfd/image.png",
+      "verificationUrl": "https://www.credly.com/badges/838c6035-6f3d-4c11-a2fc-f9e25c275de5"
+    },
+    {
+      "publicCredentialId": "ab1b8367-ccd2-499d-b908-59a19715a404",
+      "title": "Introduction to Cloud Computing",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a9d0fe89-a11c-4266-8940-9eca7762b294/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ab1b8367-ccd2-499d-b908-59a19715a404"
+    },
+    {
+      "publicCredentialId": "9f6d9a88-c497-47ee-b07c-839c4d0658d3",
+      "title": "Networking and Storage Essentials",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/80194bcb-03a9-4f5f-a31f-71c3a845972d/image.png",
+      "verificationUrl": "https://www.credly.com/badges/9f6d9a88-c497-47ee-b07c-839c4d0658d3"
+    },
+    {
+      "publicCredentialId": "60c71414-b439-4536-b91e-12a50fe05c10",
+      "title": "Software, Programming, and Database Essentials",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/ec9c50a6-1253-4eec-a503-765dda21b6d5/image.png",
+      "verificationUrl": "https://www.credly.com/badges/60c71414-b439-4536-b91e-12a50fe05c10"
+    },
+    {
+      "publicCredentialId": "e4d3c024-b37e-4e3c-ae82-a3bd4d4213e9",
+      "title": "Technical Support Basics",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8b1dd44e-9a13-420b-b755-d100b13f1321/image.png",
+      "verificationUrl": "https://www.credly.com/badges/e4d3c024-b37e-4e3c-ae82-a3bd4d4213e9"
+    },
+    {
+      "publicCredentialId": "19fd622c-ecf5-45c7-b39a-2416e2f049fe",
+      "title": "Technical Support Capstone",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e52b229e-1677-405b-8abf-d00a24bc3759/image.png",
+      "verificationUrl": "https://www.credly.com/badges/19fd622c-ecf5-45c7-b39a-2416e2f049fe"
+    },
+    {
+      "publicCredentialId": "bf188dfe-3e9a-46db-a2b9-b98390739c28",
+      "title": "Tech Support Career Guide & Interview Preparation",
+      "issuer": "Coursera",
+      "issueDate": "2025-05-19",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/662caa29-ffa6-4e67-acee-adc076d03394/image.png",
+      "verificationUrl": "https://www.credly.com/badges/bf188dfe-3e9a-46db-a2b9-b98390739c28"
+    },
+    {
+      "publicCredentialId": "23e0af11-3ce8-4ec7-87a9-9a9a259b41af",
+      "title": "LFEL1001: Understanding the EU Cyber Resilience Act (CRA)",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2025-05-05",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/cfc6d0bb-a517-4395-95e2-a95cc2213556/blob",
+      "verificationUrl": "https://www.credly.com/badges/23e0af11-3ce8-4ec7-87a9-9a9a259b41af"
+    },
+    {
+      "publicCredentialId": "fa7a94c6-b541-4462-b5fc-36f936e3a6c9",
+      "title": "Introduction to Greenhouse Gas Accounting for IT",
+      "issuer": "Cisco",
+      "issueDate": "2025-04-11",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/687574ff-1cd6-46e7-8a04-a440276be933/blob",
+      "verificationUrl": "https://www.credly.com/badges/fa7a94c6-b541-4462-b5fc-36f936e3a6c9"
+    },
+    {
+      "publicCredentialId": "d0e60ba8-582e-486e-a3f0-505c86f1b61b",
+      "title": "Industrial Networking Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-29",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/a5d515cf-f476-48b6-9d88-3210fc1fde11/blob",
+      "verificationUrl": "https://www.credly.com/badges/d0e60ba8-582e-486e-a3f0-505c86f1b61b"
+    },
+    {
+      "publicCredentialId": "9f7a9b0a-d94a-494c-a4b6-581cc3411f14",
+      "title": "Getting Ready to Teach Cybersecurity Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-27",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/4f7b8e9d-bc9f-4041-a75b-e3b4a2b59fed/blob",
+      "verificationUrl": "https://www.credly.com/badges/9f7a9b0a-d94a-494c-a4b6-581cc3411f14"
+    },
+    {
+      "publicCredentialId": "6aaaf759-3007-437b-8980-5052ade6535f",
+      "title": "Getting Ready to Teach Networking Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-27",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/23e55456-4107-4220-aef9-ccb947163d9e/blob",
+      "verificationUrl": "https://www.credly.com/badges/6aaaf759-3007-437b-8980-5052ade6535f"
+    },
+    {
+      "publicCredentialId": "ca63c94d-5889-4d39-8e27-5110c2e8ad80",
+      "title": "Artificial Intelligence Fundamentals",
+      "issuer": "IBM SkillsBuild",
+      "issueDate": "2025-03-25",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/82b908e1-fdcd-4785-9d32-97f11ccbcf08/image.png",
+      "verificationUrl": "https://www.credly.com/badges/ca63c94d-5889-4d39-8e27-5110c2e8ad80"
+    },
+    {
+      "publicCredentialId": "c88689db-3d96-4142-8847-4ce3032bff1e",
+      "title": "Linux Essentials",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-22",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/e8fe3d67-2967-43d0-bc4a-7a268a37f47b/image.png",
+      "verificationUrl": "https://www.credly.com/badges/c88689db-3d96-4142-8847-4ce3032bff1e"
+    },
+    {
+      "publicCredentialId": "951592d4-36a1-4211-8d7a-04becef94ecb",
+      "title": "Linux I",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-22",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/8eded507-0779-456d-9a27-72964c6af8a6/image.png",
+      "verificationUrl": "https://www.credly.com/badges/951592d4-36a1-4211-8d7a-04becef94ecb"
+    },
+    {
+      "publicCredentialId": "a7815eef-dd50-47fe-820f-4a8f593cba95",
+      "title": "Linux II",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-22",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/2575cde2-3250-47c8-b42e-2cec591fbf82/image.png",
+      "verificationUrl": "https://www.credly.com/badges/a7815eef-dd50-47fe-820f-4a8f593cba95"
+    },
+    {
+      "publicCredentialId": "8747fdda-6519-4021-a547-558e1aae5678",
+      "title": "Linux Unhatched",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-22",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/f25ec9d4-c59d-49b9-944a-f160012e81cd/image.png",
+      "verificationUrl": "https://www.credly.com/badges/8747fdda-6519-4021-a547-558e1aae5678"
+    },
+    {
+      "publicCredentialId": "a74d0bea-4555-4149-bfe5-bc5b2cf708e1",
+      "title": "LFD141: IT Specification Basics for New Developers",
+      "issuer": "The Linux Foundation",
+      "issueDate": "2025-03-20",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/fc243dc3-7b06-4a2f-b48a-0218a2003fd3/blob",
+      "verificationUrl": "https://www.credly.com/badges/a74d0bea-4555-4149-bfe5-bc5b2cf708e1"
+    },
+    {
+      "publicCredentialId": "724733c7-bee0-4498-bd89-32aae408bd5b",
+      "title": "IT Customer Support Basics",
+      "issuer": "Cisco",
+      "issueDate": "2025-03-16",
+      "expirationDate": null,
+      "status": "unavailable",
+      "badgeImage": "https://images.credly.com/images/474a03c6-b5e1-44df-b313-adf0fed6c531/blob",
+      "verificationUrl": "https://www.credly.com/badges/724733c7-bee0-4498-bd89-32aae408bd5b"
+    }
+  ]
+}

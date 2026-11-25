@@ -1,15 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-const grid=document.getElementById("badges-container"), search=document.getElementById("credential-search"), issuer=document.getElementById("credential-issuer"), count=document.getElementById("credential-count");
-if(!grid||!search||!issuer||!count)return;
-function refresh(){const cards=[...grid.querySelectorAll(".badge-card-pro")];const selected=issuer.value;const names=cards.map(c=>c.querySelector(".badge-card-pro__issuer")?.textContent.trim()||"").filter(Boolean);issuer.replaceChildren(new Option("All issuers",""),...[...new Set(names)].sort().map(n=>new Option(n,n)));issuer.value=selected;let visible=0;for(const card of cards){const name=card.querySelector(".badge-card-pro__issuer")?.textContent.trim()||"";card.hidden=!(card.textContent.toLowerCase().includes(search.value.toLowerCase())&&(!issuer.value||name===issuer.value));if(!card.hidden)visible++;}count.textContent=visible+" of "+cards.length+" listed credentials";}
-search.addEventListener("input",refresh);issuer.addEventListener("change",refresh);new MutationObserver(refresh).observe(grid,{childList:true});refresh();
-});
-document.addEventListener("DOMContentLoaded", async () => {
- const summary=document.getElementById("github-live-summary"), languages=document.getElementById("github-live-languages");
- if(!summary||!languages)return;
- const base="https://api.github.com/users/indrajithbandara";
- const get=async url=>{const r=await fetch(url);if(!r.ok)throw Error("GitHub API unavailable");return r.json();};
- function render(el,title,rows){const h=document.createElement("h3");h.textContent=title;el.replaceChildren(h);for(const [label,value] of rows){const p=document.createElement("p");p.textContent=label+": "+value;el.appendChild(p);}}
- try{const u=await get(base);render(summary,"GitHub profile",[["Public repositories",u.public_repos],["Followers",u.followers],["Following",u.following]]);}catch(e){summary.textContent="GitHub statistics temporarily unavailable. Visit the profile above.";}
- try{const counts=new Map();let page=1;for(;page<=10;page++){const repos=await get(base+"/repos?per_page=100&page="+page);for(const r of repos){if(!r.fork&&r.language)counts.set(r.language,(counts.get(r.language)||0)+1);}if(repos.length<100)break;}render(languages,"Primary repository languages"+(page>10?" (first 1,000 repositories)":""),[...counts].sort((a,b)=>b[1]-a[1]).slice(0,8));if(!counts.size)languages.append("No language data available.");}catch(e){languages.textContent="Repository language statistics temporarily unavailable.";}
+document.addEventListener('DOMContentLoaded',()=>{
+  const summary=document.getElementById('github-live-summary'),languages=document.getElementById('github-live-languages'),projects=document.getElementById('github-recent-projects');if(!summary||!languages||!projects)return;
+  const base='https://api.github.com/users/indrajithbandara';
+  const get=async url=>{const r=await fetch(url,{signal:AbortSignal.timeout(8000)});if(!r.ok)throw Error('GitHub API unavailable');return r.json();};
+  function element(tag,text){const e=document.createElement(tag);e.textContent=text;return e;}
+  function render(container,title,rows){container.replaceChildren(element('h3',title));for(const [label,value] of rows)container.append(element('p',label+': '+value));}
+  async function profile(){try{const u=await get(base);if(![u.public_repos,u.followers,u.following].every(Number.isFinite))throw Error();render(summary,'GitHub profile',[['Public repositories',u.public_repos],['Followers',u.followers],['Following',u.following]]);const f=document.getElementById('ghFollowers');if(f)f.textContent=u.followers;}catch{summary.textContent='GitHub profile statistics temporarily unavailable.';}}
+  async function repos(){try{const data=await get(base+'/repos?per_page=100&sort=updated&direction=desc&type=owner');if(!Array.isArray(data))throw Error();const pub=data.filter(r=>r.private===false&&r.owner?.login==='indrajithbandara'),counts=new Map();for(const r of pub)if(!r.fork&&r.language)counts.set(r.language,(counts.get(r.language)||0)+1);
+    render(languages,'Recently updated public repositories',[['Sample size',pub.length],['Stars in sample',pub.reduce((n,r)=>n+(Number.isFinite(r.stargazers_count)?r.stargazers_count:0),0)],...([...counts].sort((a,b)=>b[1]-a[1]).slice(0,8))]);
+    for(const r of pub.filter(r=>!r.fork).slice(0,6)){let u;try{u=new URL(r.html_url);if(u.protocol!=='https:'||u.hostname!=='github.com'||!u.pathname.startsWith('/indrajithbandara/'))continue;}catch{continue;}const card=element('article','');card.className='project-card';const a=element('a','Repository and documentation');a.href=u.href;a.rel='noopener noreferrer';a.target='_blank';card.append(element('h3',r.name),element('p',r.description||'Public repository'),element('p','Updated: '+(r.updated_at?.slice(0,10)||'Unavailable')+' · '+(r.language||'Language unavailable')),a);projects.append(card);}if(!projects.children.length)projects.textContent='No public project results available.';
+  }catch{languages.textContent='Repository statistics temporarily unavailable.';projects.textContent='Public projects could not be loaded. Visit GitHub for details.';}}
+  function whenVisible(target,callback){if(!target||!('IntersectionObserver' in window)){callback();return;}const io=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){io.disconnect();callback();}},{rootMargin:'350px'});io.observe(target);}
+  whenVisible(summary,profile);whenVisible(languages,repos);
 });

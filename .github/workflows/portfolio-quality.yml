@@ -1,16 +1,28 @@
 name: Portfolio quality
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 3 * * 1'
 permissions:
   contents: read
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node --check assets/js/main.js && node --check assets/js/roadmap.js
+      - run: for file in assets/js/*.js tools/*.mjs; do node --check "$file"; done
+      - run: node tools/validate.mjs
       - run: python3 -m json.tool badges.json > /dev/null
       - run: python3 -c "import xml.etree.ElementTree as E; E.parse('sitemap.xml')"
       - run: test -f assets/css/roadmap.css && test -f index.html
+      - run: npm install --no-save --package-lock=false playwright@1.58.2 @axe-core/playwright@4.10.2 parse5@7.3.0 ajv@8.17.1
+      - run: node tools/validate-structured.mjs
+      - run: npx playwright install --with-deps chromium
+      - run: |
+          python3 -m http.server 8000 &
+          node tools/browser-test.mjs
