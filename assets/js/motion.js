@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded',()=>{
   const reduce=window.PortfolioPreferences?.motionQuery||matchMedia('(prefers-reduced-motion: reduce)');
   const seen=new WeakSet(),running=new Map(),pending=new Set();
   const original='[data-aos],.hero__content,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num';
-  const selector=original+',.section > .container > .eyebrow,.section__lede,.section > .container > p,.platform-view > h2,.platform-view > .platform-note,.platform-card,.platform-row,.article-card,.blog-card,.ghstats__grid > *';
-  const signature='#skills,#experience,#education,#projects,#achievements,.platform-view';
+  const selector=original+',.section > .container > .eyebrow,.section__lede,.section > .container > p,.platform-view > h2,.platform-view > .platform-note,.platform-card,.platform-row,.article-card,.blog-card,.ghstats__grid > *,.rec-card';
+  const signature='#skills,#experience,#education,#projects,#achievements,#recommendations,.platform-view';
   function count(node){
     if(!/^\d+$/.test(node.textContent.trim()))return;
     const value=Number(node.textContent),original=document.createElement('span'),display=document.createElement('span');

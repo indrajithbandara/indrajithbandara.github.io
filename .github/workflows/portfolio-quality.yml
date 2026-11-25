@@ -19,6 +19,7 @@ jobs:
           node-version: '22'
       - run: for file in assets/js/*.js tools/*.mjs sw.js; do node --check "$file"; done
       - run: node tools/validate.mjs
+      - run: python3 tools/test_recommendations.py
       - run: python3 -m json.tool badges.json > /dev/null
       - run: python3 -c "import xml.etree.ElementTree as E; E.parse('sitemap.xml')"
       - run: test -f assets/css/roadmap.css && test -f index.html
@@ -31,6 +32,7 @@ jobs:
           trap 'kill "$test_pid" 2>/dev/null || true' EXIT
           node tools/browser-test.mjs
           node tools/platform-test.mjs
+          REC_CHROMIUM_ONLY=1 node tools/recommendations-test.mjs
       - name: Cross-engine skills checks over HTTPS
         run: |
           certdir=$(mktemp -d)
@@ -41,6 +43,7 @@ jobs:
           curl -k --retry 5 --retry-connrefused -fsS https://127.0.0.1:8443/ > /dev/null
           PORTFOLIO_URL=https://127.0.0.1:8443/ node tools/skills-smoke.mjs
           PORTFOLIO_URL=https://127.0.0.1:8443/ node tools/cinematic-test.mjs
+          PORTFOLIO_URL=https://127.0.0.1:8443/ node tools/recommendations-test.mjs
       - uses: actions/upload-artifact@v4
         with:
           name: technical-skills-screenshots
@@ -76,6 +79,7 @@ jobs:
           npm install --no-save --package-lock=false playwright@1.58.2 @axe-core/playwright@4.10.2
           node tools/platform-test.mjs
           node tools/cinematic-test.mjs
+          node tools/recommendations-test.mjs
       - name: Measure live production Lighthouse
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:

@@ -2,6 +2,8 @@
 
 ## 2026-11-25
 
+- Added Voices of My Professional Network, a privacy-gated recommendations homepage section and static searchable archive. Unapproved LinkedIn records remain private; no original export is shipped.
+
 - Introduced Cinematic Terminal scroll motion: section typography, staggered card entrances, emerald signature lines, quiet ambient accents, platform motion and progress tracking. Preserved native scrolling and reduced-motion behavior.
 
 - Redesigned Technical Skills in both the homepage and platform with 14 evidence-based categories, expandable credential links and decorative motion. Deferred dashboard API requests and reused the credential dataset across views; stabilized the mobile header and added cross-browser and production performance checks.
