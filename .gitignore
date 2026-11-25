@@ -1,0 +1,8 @@
+# Private LinkedIn export and approval work must never be tracked.
+Recommendations_Received.csv
+recommendation-approval-ledger.json
+recommendations-private-preview.html
+recommendations-private-review.zip
+recommendations-private/
+__pycache__/
+qa-screenshots/

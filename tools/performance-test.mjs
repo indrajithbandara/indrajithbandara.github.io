@@ -2,7 +2,7 @@ import lighthouse from 'lighthouse';
 import desktopConfig from 'lighthouse/core/config/desktop-config.js';
 import * as launcher from 'chrome-launcher';
 import {chromium} from 'playwright';
-const cases=process.env.LIGHTHOUSE_PRODUCTION_URL?[['production',process.env.LIGHTHOUSE_PRODUCTION_URL],['production-platform',new URL('platform.html',process.env.LIGHTHOUSE_PRODUCTION_URL).href]]:[['before','http://127.0.0.1:8001/'],['after','http://127.0.0.1:8000/'],['before-platform','http://127.0.0.1:8001/platform.html'],['platform','http://127.0.0.1:8000/platform.html']];
+const cases=process.env.LIGHTHOUSE_PRODUCTION_URL?[['production',process.env.LIGHTHOUSE_PRODUCTION_URL],['production-platform',new URL('platform.html',process.env.LIGHTHOUSE_PRODUCTION_URL).href],['production-recommendations',new URL('recommendations/',process.env.LIGHTHOUSE_PRODUCTION_URL).href]]:[['before','http://127.0.0.1:8001/'],['after','http://127.0.0.1:8000/'],['before-platform','http://127.0.0.1:8001/platform.html'],['platform','http://127.0.0.1:8000/platform.html'],['recommendations','http://127.0.0.1:8000/recommendations/']];
 for(const [label,url] of cases){
   for(const device of ['mobile','desktop']){
     const chrome=await launcher.launch({chromePath:chromium.executablePath(),chromeFlags:['--headless=new','--no-sandbox','--disable-dev-shm-usage']});
