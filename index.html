@@ -32,15 +32,9 @@
 
   <link rel="stylesheet" href="assets/css/style.css" />
 <meta name="referrer" content="strict-origin-when-cross-origin"><script src="assets/js/roadmap.js" defer></script><link rel="stylesheet" href="assets/css/roadmap.css"><link rel="stylesheet" href="assets/css/credentials.css"><script defer src="assets/js/credentials.js"></script>
+<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Indrajith Bandara","url":"https://indrajithbandara.is-a.dev/","sameAs":["https://github.com/indrajithbandara","https://www.linkedin.com/in/indrajithbandara","https://www.credly.com/users/indrajithbandara","https://dev.to/indrajithbandara"]},{"@type":"WebSite","name":"Indrajith Bandara — Professional Portfolio","url":"https://indrajithbandara.is-a.dev/"}]}</script></head>
 <body>
-
-  <!-- ============ PRELOADER ============ -->
-  <div class="preloader" id="preloader" aria-hidden="true">
-    <span class="preloader__bracket">&lt;</span>
-    <span class="preloader__text">IB</span>
-    <span class="preloader__bracket">/&gt;</span>
-  </div>
 
   <!-- ============ NAV ============ -->
   <header class="nav" id="nav">
@@ -88,10 +82,10 @@
             </div>
             <div class="terminal__body" id="terminalBody">
               <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> whoami</p>
-              <p class="terminal__out" id="typedName"></p>
+              <p class="terminal__out" id="typedName"><span>Indrajith Bandara</span></p>
               <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> cat role.txt</p>
-              <p class="terminal__out terminal__out--role" id="typedRole"></p>
-              <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> <span class="terminal__cursor" id="cmdCursor">_</span></p>
+              <p class="terminal__out terminal__out--role" id="typedRole"><span>Networking · Cybersecurity · AI · Cloud</span></p>
+              <p class="terminal__line"><span class="terminal__prompt">guest@indrajith:~$</span> <span class="terminal__cursor" id="cmdCursor" aria-hidden="true">_</span></p>
             </div>
           </div>
         </div>
@@ -598,6 +592,7 @@
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
+  <script src="assets/js/motion.js" defer></script>
   <script src="assets/js/main.js"></script>
 
 <script src="assets/js/articles.js" defer></script>

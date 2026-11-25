@@ -9,6 +9,8 @@ try{
   await page.route('https://api.github.com/**',route=>route.abort());
   await page.route('https://dev.to/**',route=>route.abort());
   await page.goto(process.env.PORTFOLIO_URL||'http://127.0.0.1:8000/');
+  assert.equal(await page.locator('#typedName').innerText(),'Indrajith Bandara');
+  assert.equal(await page.locator('#cmdCursor').evaluate(e=>getComputedStyle(e).animationName),'none');
   await page.locator('#badges').scrollIntoViewIfNeeded();
   await page.waitForFunction(()=>document.getElementById('cd-status').textContent==='Showing 1–18 of 280 records');
   assert.equal(await page.locator('.cd-card').count(),18);
@@ -28,4 +30,20 @@ try{
   for(const theme of ['light','dark']){if(theme==='dark')await page.locator('#themeToggle').click();const results=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa']).analyze();console.log('Axe '+theme+': '+JSON.stringify(results.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))));assert.equal(results.violations.length,0,'Accessibility violations in '+theme);}
   await page.locator('#name').fill('Portfolio QA');await page.locator('#email').fill('qa@example.invalid');await page.locator('#message').fill('Synthetic test only; no message is sent.');assert.match(await page.locator('#contactForm').getAttribute('action'),/^mailto:/);await page.locator('#contactForm button').click();assert.match(await page.locator('#formNote').innerText(),/Send the message there/);
   console.log('Directory, pagination, combined filters, details, CSV, sort, responsive widths and theme passed.');
+  const normal=await browser.newContext({reducedMotion:'no-preference',viewport:{width:1440,height:900}}),motion=await normal.newPage(),errors=[];motion.on('pageerror',error=>errors.push(error.message));
+  await motion.route('https://**',r=>r.abort());
+  await motion.goto(process.env.PORTFOLIO_URL||'http://127.0.0.1:8000/');
+  await motion.waitForFunction(()=>document.getElementById('terminalBody').classList.contains('terminal-animate'));
+  assert.equal(await motion.locator('#typedName span').evaluate(e=>getComputedStyle(e,'::after').animationName),'terminal-type');
+  assert.equal(await motion.locator('#typedRole span').evaluate(e=>getComputedStyle(e,'::after').animationName),'terminal-type');
+  assert.equal(await motion.locator('#typedName').innerText(),'Indrajith Bandara');
+  await motion.locator('#badges').scrollIntoViewIfNeeded();await motion.waitForFunction(()=>document.querySelector('#cd-status').textContent.includes('of 280 records'));
+  await motion.locator('.cd-card').first().scrollIntoViewIfNeeded();await motion.waitForFunction(()=>document.querySelector('.cd-card').classList.contains('motion-seen'));
+  await motion.waitForFunction(()=>!document.querySelector('.cd-card').classList.contains('motion-enter'));
+  await motion.locator('#cd-stats').scrollIntoViewIfNeeded();await motion.waitForFunction(()=>document.querySelector('#cd-stats .cd-stat').classList.contains('motion-seen')&&document.querySelector('#cd-stats strong').textContent==='280'&&!document.querySelector('#cd-stats strong').classList.contains('motion-count'));
+  for(const width of [320,360,390,430,768,1024,1440]){await motion.setViewportSize({width,height:900});assert.ok(await motion.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),`Motion overflow at ${width}px`);}
+  await motion.setViewportSize({width:390,height:900});await motion.locator('#navToggle').click();assert.equal(await motion.locator('#navToggle').getAttribute('aria-expanded'),'true');await motion.keyboard.press('Escape');assert.equal(await motion.locator('#navToggle').getAttribute('aria-expanded'),'false');
+  await motion.emulateMedia({reducedMotion:'reduce'});assert.equal(await motion.locator('#cmdCursor').evaluate(e=>getComputedStyle(e).animationName),'none');assert.equal(await motion.locator('#typedRole span').evaluate(e=>getComputedStyle(e,'::after').animationName),'none');assert.deepEqual(errors,[]);
+  const plain=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:900}}),fallback=await plain.newPage();await fallback.goto(process.env.PORTFOLIO_URL||'http://127.0.0.1:8000/');assert.equal(await fallback.locator('#typedName').innerText(),'Indrajith Bandara');assert.ok(await fallback.locator('.nav__link').first().isVisible());assert.ok(await fallback.locator('#about [data-aos]').first().isVisible());assert.equal(await fallback.locator('#about [data-aos]').first().evaluate(e=>getComputedStyle(e).opacity),'1');
+  console.log('Motion typing, once-only reveals, counters, normal-motion widths, mobile navigation, reduced motion and no-JS fallback passed.');
 }finally{await browser.close();}
