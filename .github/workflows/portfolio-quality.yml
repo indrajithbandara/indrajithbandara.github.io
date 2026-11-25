@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: for file in assets/js/*.js tools/*.mjs; do node --check "$file"; done
+      - run: for file in assets/js/*.js tools/*.mjs sw.js; do node --check "$file"; done
       - run: node tools/validate.mjs
       - run: python3 -m json.tool badges.json > /dev/null
       - run: python3 -c "import xml.etree.ElementTree as E; E.parse('sitemap.xml')"
@@ -30,7 +30,8 @@ jobs:
           test_pid=$!
           trap 'kill "$test_pid" 2>/dev/null || true' EXIT
           node tools/browser-test.mjs
-      - name: Compare Lighthouse before and after motion restoration
+          node tools/platform-test.mjs
+      - name: Compare Lighthouse before and after platform expansion
         if: github.event_name == 'pull_request'
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}

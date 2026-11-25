@@ -2,6 +2,9 @@
 
 ## 2026-11-25
 
+- Added the integrated professional platform with search and command palette, simulated terminal, deep-linkable credentials, issuer directory, evidence-based skills, learning and career timelines, knowledge graph, project case studies, public repositories/releases, article research and activity views.
+- Added local display preferences, reading progress, PWA and offline public cache, digital business card, categorized contact handoff and interactive changelog.
+
 - Restored the terminal typing sequence and finite cursor/scroll-indicator motion. Added opt-in viewport reveals, staggered dynamic credential cards, accessible data-driven counters and micro-interactions. Content remains visible without JavaScript and respects reduced motion.
 
 - Added a normalized public credential model, explicit unknown validity, multi-domain classification, detailed filtering, shareable URLs and detail dialogs.

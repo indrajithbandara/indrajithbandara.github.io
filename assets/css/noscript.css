@@ -1,2 +1,3 @@
 @media(max-width:760px){.nav{position:static}.nav__inner{height:auto;flex-wrap:wrap;padding-block:12px}.nav__links{position:static;visibility:visible;opacity:1;transform:none;flex-direction:row;flex-wrap:wrap;gap:8px;padding:8px 0;width:100%}.nav__link{width:auto;padding:4px 6px}.nav__toggle{display:none}}
 #cd-status,.cd-controls,.cd-toolbar,.cd-pagination{display:none}
+[data-open-palette],#install-app,#update-app{display:none!important}

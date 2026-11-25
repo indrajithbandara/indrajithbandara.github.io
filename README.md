@@ -23,3 +23,8 @@ See [credential data documentation](CREDENTIALS.md), [security reporting](SECURI
 ## Deployment
 
 Changes merged to `main` are served by the existing GitHub Pages configuration. Preserve `CNAME`, `.nojekyll`, canonical metadata, robots and sitemap. Verify the public custom domain after deployment.
+# Professional platform
+
+`platform.html` provides a separate integrated workspace: dashboard, global search, safe simulated terminal, credential detail routes, issuer collections, learning/career timelines, inferred knowledge graph, evidence-based skills, public projects, public releases, writing, activity feed, business card, categorized contact and changelog. `Ctrl/Cmd+K` opens the shared palette. Theme and motion preferences are stored locally; public API samples use a ten-minute session cache with stale fallback. No API keys, user tracking or real shell execution are used.
+
+`sw.js` caches only the explicit public asset allowlist and uses network-first retrieval; bump the cache version for content releases. The offline fallback cannot refresh external live records. The PWA manifest uses generated local icons; the QR encodes the official website. No private transcript or form submission data is cached. Public project releases and issuer links depend on verified public data; unsupported claims are omitted.

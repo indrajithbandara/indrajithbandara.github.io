@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' https://images.credly.com data:; connect-src 'self' https://api.github.com https://dev.to; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0d0c">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="assets/js/preferences.js"></script>
   <title>Indrajith Bandara — Technology Portfolio &amp; Digital Credentials</title>
   <meta name="title" content="Indrajith Bandara — Technology Portfolio & Digital Credentials" />
   <meta name="description" content="Explore Indrajith Bandara's professional learning, computer networking, cybersecurity, AI, cloud computing, open-source projects and digital credential directory." />
@@ -31,6 +34,7 @@
   <link rel="alternate icon" href="assets/icons/favicon.svg" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/platform.css" />
 <meta name="referrer" content="strict-origin-when-cross-origin"><script src="assets/js/roadmap.js" defer></script><link rel="stylesheet" href="assets/css/roadmap.css"><link rel="stylesheet" href="assets/css/credentials.css"><script defer src="assets/js/credentials.js"></script>
 <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","name":"Indrajith Bandara","url":"https://indrajithbandara.is-a.dev/","sameAs":["https://github.com/indrajithbandara","https://www.linkedin.com/in/indrajithbandara","https://www.credly.com/users/indrajithbandara","https://dev.to/indrajithbandara"]},{"@type":"WebSite","name":"Indrajith Bandara — Professional Portfolio","url":"https://indrajithbandara.is-a.dev/"}]}</script></head>
@@ -56,6 +60,7 @@
       </nav>
 
       <div class="nav__actions">
+        <button type="button" class="palette-launch" data-open-palette aria-label="Open command palette">Search</button>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
           <svg class="theme-toggle__sun" width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           <svg class="theme-toggle__moon" width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
@@ -104,6 +109,7 @@
           </p>
 
           <div class="hero__cta">
+            <a href="platform.html" class="btn btn--solid">Explore technology platform</a>
             <a href="#badges" class="btn btn--outline">Explore credentials</a>
             <a href="#projects" class="btn btn--ghost">
               <span>View Projects</span>
@@ -591,9 +597,12 @@
   </footer>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <div class="container platform-actions"><span id="offline-status" role="status" hidden></span><button type="button" id="install-app" class="btn btn--outline" hidden>Install portfolio</button><button type="button" id="update-app" class="btn btn--outline" hidden>Update portfolio</button><a href="platform.html#settings" class="btn btn--ghost">Display preferences</a></div>
 
   <script src="assets/js/motion.js" defer></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/platform-data.js" defer></script>
+  <script src="assets/js/platform-shell.js" defer></script>
 
 <script src="assets/js/articles.js" defer></script>
 </body>

@@ -2,7 +2,7 @@ import lighthouse from 'lighthouse';
 import desktopConfig from 'lighthouse/core/config/desktop-config.js';
 import * as launcher from 'chrome-launcher';
 import {chromium} from 'playwright';
-for(const [label,url] of [['before','http://127.0.0.1:8001/'],['after','http://127.0.0.1:8000/']]){
+for(const [label,url] of [['before','http://127.0.0.1:8001/'],['after','http://127.0.0.1:8000/'],['platform','http://127.0.0.1:8000/platform.html']]){
   for(const device of ['mobile','desktop']){
     const chrome=await launcher.launch({chromePath:chromium.executablePath(),chromeFlags:['--headless=new','--no-sandbox','--disable-dev-shm-usage']});
     try{

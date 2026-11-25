@@ -54,8 +54,8 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+  html:not([data-motion]) { scroll-behavior: auto; }
+  html:not([data-motion]) * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
 }
 
 body {
@@ -832,9 +832,10 @@ body::before {
 .motion-count-display{position:absolute;inset:0;pointer-events:none;animation:counter-hide 1ms 650ms forwards;}
 @keyframes counter-fallback{to{opacity:1;}}
 @keyframes counter-hide{to{visibility:hidden;}}
-@media(prefers-reduced-motion:reduce){.motion-enter,.terminal-animate #typedName>span,.terminal-animate #typedRole>span,.terminal-animate .terminal__line,.terminal__cursor,.scroll-cue span,.eyebrow__dot{animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important;}.motion-count-source{opacity:1}.motion-count-display{display:none}}
+@media(prefers-reduced-motion:reduce){html:not([data-motion]) :is(.motion-enter,.terminal-animate #typedName>span,.terminal-animate #typedRole>span,.terminal-animate .terminal__line,.terminal__cursor,.scroll-cue span,.eyebrow__dot){animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important;}html:not([data-motion]) .motion-count-source{opacity:1}html:not([data-motion]) .motion-count-display{display:none}}
 @media print{.motion-enter,.terminal-animate #typedName>span,.terminal-animate #typedRole>span,.terminal-animate .terminal__line{animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important}.motion-count-source{opacity:1}.motion-count-display{display:none}}
-@media(prefers-reduced-motion:reduce),print{.terminal-animate .terminal-source{opacity:1!important;animation:none!important}.terminal-typed{display:none!important;animation:none!important}}
+@media(prefers-reduced-motion:reduce){html:not([data-motion]) .terminal-animate .terminal-source{opacity:1!important;animation:none!important}html:not([data-motion]) .terminal-typed{display:none!important;animation:none!important}}
+@media print{.terminal-animate .terminal-source{opacity:1!important;animation:none!important}.terminal-typed{display:none!important;animation:none!important}}
 :root[data-theme="light"] .btn--solid{color:#fff;}
 :root[data-theme="light"] .photo-frame__tag{color:#b4f8d8;}
 a.text-accent-soft,p a{text-decoration:underline;text-underline-offset:.2em;}
