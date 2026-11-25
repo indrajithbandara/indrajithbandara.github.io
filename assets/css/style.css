@@ -808,6 +808,9 @@ body::before {
   .social-category{padding:16px;}
   .terminal__body{overflow-wrap:anywhere;}
   .eyebrow{display:block;overflow-wrap:anywhere;word-break:break-word;}
+  main,.footer{max-width:100%;overflow-x:clip;overflow-wrap:anywhere;}
+  main .container,main .container>*,main .container article,main .container section{min-width:0;max-width:100%;}
+  main p,main h2,main h3,main label,main a,main span{overflow-wrap:anywhere;word-break:break-word;}
 }
 [data-aos]{opacity:1!important;transform:none!important;}
 .terminal__cursor{animation:none!important;}

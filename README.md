@@ -8,7 +8,7 @@ A framework-free terminal-inspired portfolio hosted on GitHub Pages from `main`.
 
 - `index.html`: profile, education, credential directory, projects and contact.
 - `assets/js/credentials.js`: directory, filtering, analytics, details and exports.
-- `credentials.json`: historical public transcript records; `credential-directory.json`: normalized public dataset.
+- `credentials.json`: historical public transcript records; `credential-descriptions.json`: privacy-filtered excerpts and expiration dates; `credly-public-snapshot.json`: public badge metadata; `credential-directory.json`: normalized public dataset.
 - `assets/js/roadmap.js`: public GitHub API statistics; `assets/js/articles.js`: DEV article feed.
 - `assets/css`: theme, responsive layout and credential styles.
 - `tools/build-credentials.mjs`: deterministic transcript transformation; `tools/validate.mjs`: validation.

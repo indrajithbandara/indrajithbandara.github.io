@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded',()=>{
     for(const r of pub.filter(r=>!r.fork).slice(0,6)){let u;try{u=new URL(r.html_url);if(u.protocol!=='https:'||u.hostname!=='github.com'||!u.pathname.startsWith('/indrajithbandara/'))continue;}catch{continue;}const card=element('article','');card.className='project-card';const a=element('a','Repository and documentation');a.href=u.href;a.rel='noopener noreferrer';a.target='_blank';card.append(element('h3',r.name),element('p',r.description||'Public repository'),element('p','Updated: '+(r.updated_at?.slice(0,10)||'Unavailable')+' · '+(r.language||'Language unavailable')),a);projects.append(card);}if(!projects.children.length)projects.textContent='No public project results available.';
   }catch{languages.textContent='Repository statistics temporarily unavailable.';projects.textContent='Public projects could not be loaded. Visit GitHub for details.';}}
   function whenVisible(target,callback){if(!target||!('IntersectionObserver' in window)){callback();return;}const io=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){io.disconnect();callback();}},{rootMargin:'350px'});io.observe(target);}
-  whenVisible(document.getElementById('about'),profile);whenVisible(languages,repos);
+  whenVisible(summary,profile);whenVisible(languages,repos);
 });
