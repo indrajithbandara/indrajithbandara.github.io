@@ -44,3 +44,6 @@ jobs:
           baseline_pid=$!
           trap 'kill "$current_pid" "$baseline_pid" 2>/dev/null || true' EXIT
           node tools/performance-test.mjs
+      - name: Verify deployed website at mobile and desktop widths
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: node tools/production-test.mjs

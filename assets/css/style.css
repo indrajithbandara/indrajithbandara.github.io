@@ -173,6 +173,8 @@ body::before {
   color: var(--text);
 }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.btn--outline{border:1px solid var(--accent-dim);color:var(--accent);background:transparent;}
+.btn--outline:hover{border-color:var(--accent);background:var(--accent-glow);transform:translateY(-2px);}
 .btn--full { width: 100%; justify-content: center; }
 
 /* =========================================================
