@@ -15,7 +15,7 @@ try{for(const [width,height] of [[390,844],[1440,900]]){
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(base+'?release='+release,{waitUntil:'domcontentloaded'});
   await page.locator('#terminalBody').scrollIntoViewIfNeeded();await page.waitForFunction(()=>document.getElementById('terminalBody').classList.contains('terminal-animate'));
-  assert.equal(await page.locator('#typedName span').evaluate(e=>getComputedStyle(e,'::after').animationName),'terminal-type');
+  assert.equal(await page.locator('#typedName .terminal-typed').getAttribute('aria-hidden'),'true');
   await page.locator('#badges').scrollIntoViewIfNeeded();await page.waitForFunction(()=>document.querySelector('#cd-status').textContent.includes('of 280 records'));
   assert.equal(await page.locator('.cd-card').count(),18);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
   assert.deepEqual(errors,[]);console.log('PRODUCTION PASS '+width+'x'+height+' — typing, credential count, no horizontal overflow or JS errors');await context.close();

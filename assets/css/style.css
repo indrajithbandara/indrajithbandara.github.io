@@ -812,13 +812,12 @@ body::before {
   main .container,main .container>*,main .container article,main .container section{min-width:0;max-width:100%;}
   main p,main h2,main h3,main label,main a,main span{overflow-wrap:anywhere;word-break:break-word;}
 }
-.terminal__out > span { display:inline-block; max-width:100%; position:relative; overflow:hidden; }
-.terminal-animate .terminal__out > span::after { content:""; position:absolute; inset:0; background:var(--surface); pointer-events:none; }
-.terminal-animate #typedName > span::after { animation: terminal-type 720ms steps(17,end) both; }
-.terminal-animate #typedRole > span::after { animation: terminal-type 1050ms steps(38,end) 850ms both; }
+.terminal__out {position:relative;}
+.terminal__out > span { display:inline-block; max-width:100%; }
+.terminal-animate .terminal-source { opacity:0; animation:counter-fallback 1ms 2200ms forwards; }
+.terminal-typed { position:absolute; inset:0; overflow-wrap:anywhere; pointer-events:none; animation:counter-hide 1ms 2200ms forwards; }
 .terminal-animate .terminal__line:nth-of-type(3) { animation: terminal-line 220ms ease 730ms both; }
 .terminal-animate .terminal__line:last-child { animation: terminal-line 220ms ease 1900ms both; }
-@keyframes terminal-type { from { transform:translateX(0); } to { transform:translateX(101%); } }
 @keyframes terminal-line { from { opacity:0; } to { opacity:1; } }
 .terminal__cursor{animation:blink 1s step-end 4;}
 .eyebrow__dot{animation-iteration-count:2;}
@@ -835,7 +834,7 @@ body::before {
 @keyframes counter-hide{to{visibility:hidden;}}
 @media(prefers-reduced-motion:reduce){.motion-enter,.terminal-animate #typedName>span,.terminal-animate #typedRole>span,.terminal-animate .terminal__line,.terminal__cursor,.scroll-cue span,.eyebrow__dot{animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important;}.motion-count-source{opacity:1}.motion-count-display{display:none}}
 @media print{.motion-enter,.terminal-animate #typedName>span,.terminal-animate #typedRole>span,.terminal-animate .terminal__line{animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important}.motion-count-source{opacity:1}.motion-count-display{display:none}}
-@media(prefers-reduced-motion:reduce),print{.terminal-animate .terminal__out>span::after{display:none!important;animation:none!important}}
+@media(prefers-reduced-motion:reduce),print{.terminal-animate .terminal-source{opacity:1!important;animation:none!important}.terminal-typed{display:none!important;animation:none!important}}
 :root[data-theme="light"] .btn--solid{color:#fff;}
 :root[data-theme="light"] .photo-frame__tag{color:#b4f8d8;}
 a.text-accent-soft,p a{text-decoration:underline;text-underline-offset:.2em;}
