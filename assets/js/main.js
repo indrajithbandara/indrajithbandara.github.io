@@ -238,7 +238,7 @@
 
   /* ---------- animated counters ---------- */
   function initCounters() {
-    var counters = document.querySelectorAll(".stat__num, .badge-stat__num");
+    var counters = document.querySelectorAll(".stat__num[data-count], .badge-stat__num[data-count]");
     if (counters.length === 0 || !("IntersectionObserver" in window)) return;
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -356,7 +356,10 @@
         return;
       }
       note.style.color = "";
-      note.textContent = "Message ready — connect a form backend (e.g. Formspree) to deliver it.";
+      note.textContent = "Your email app will open. Send the message there to complete delivery.";
+      var subject = encodeURIComponent("Portfolio inquiry from " + form.elements.name.value);
+      var body = encodeURIComponent(form.elements.message.value + "\n\nReply email: " + form.elements.email.value);
+      window.location.href = "mailto:indrajithbandarasl@gmail.com?subject=" + subject + "&body=" + body;
       // Preserve the message until a real delivery mechanism is configured.
     });
   }
