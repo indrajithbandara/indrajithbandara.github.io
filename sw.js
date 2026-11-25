@@ -1,5 +1,5 @@
 /* Only explicit, public, same-origin resources are cached. Network first for pages. */
-const VERSION='ib-public-v20261125-recommendations-5';
+const VERSION='ib-public-v20261125-recommendations-6';
 const PATHS=['/','/index.html','/platform.html','/recommendations/','/recommendations/index.html','/offline.html','/manifest.webmanifest','/business-card.vcf','/CHANGELOG.md','/credential-directory.json','/dashboard-summary.json','/assets/css/style.css','/assets/css/roadmap.css','/assets/css/credentials.css','/assets/css/platform.css','/assets/css/recommendations.css','/assets/css/noscript.css','/assets/js/preferences.js','/assets/js/main.js','/assets/js/motion.js','/assets/js/recommendations.js','/assets/js/credentials.js','/assets/js/roadmap.js','/assets/js/articles.js','/assets/js/platform-data.js','/assets/js/platform-shell.js','/assets/js/platform.js','/assets/js/skills.js','/assets/icons/favicon.svg','/assets/icons/app-192.png','/assets/icons/app-512.png','/assets/images/profile.webp','/assets/images/business-card-qr.png'];
 const allowed=new Set(PATHS);
 self.addEventListener('install',event=>event.waitUntil((async()=>{const c=await caches.open(VERSION);await c.addAll(PATHS.map(p=>new Request(p,{cache:'reload'})));})()));
