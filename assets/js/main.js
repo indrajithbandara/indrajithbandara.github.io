@@ -108,6 +108,7 @@
       "Cloud Computing Trainer",
       "Open Source Developer"
     ];
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { nameEl.textContent = name; roleEl.textContent = roles[0]; return; }
     typeText(nameEl, name, 55, function () { cycleRoles(roleEl, roles, 0); });
   }
 
@@ -196,7 +197,7 @@
       for (var k = 0; k < nodes.length; k++) {
         ctx.beginPath(); ctx.arc(nodes[k].x, nodes[k].y, 1.6, 0, Math.PI * 2); ctx.fill();
       }
-      requestAnimationFrame(draw);
+      if (!reduceMotion) requestAnimationFrame(draw);
     }
     resize();
     window.addEventListener("resize", resize);
@@ -237,7 +238,7 @@
 
   /* ---------- animated counters ---------- */
   function initCounters() {
-    var counters = document.querySelectorAll(".stat__num, .badge-stat__num");
+    var counters = document.querySelectorAll(".stat__num[data-count], .badge-stat__num[data-count]");
     if (counters.length === 0 || !("IntersectionObserver" in window)) return;
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -268,6 +269,7 @@
       .then(function (data) {
         if (data && typeof data.followers === "number") {
           el.setAttribute("data-count", String(data.followers));
+          el.textContent = String(data.followers);
         }
       })
       .catch(function () {});
@@ -287,19 +289,40 @@
           var card = document.createElement("article");
           card.className = "badge-card-pro";
           card.setAttribute("data-aos", "");
-          card.innerHTML =
-            '<div class="badge-card-pro__img-wrap">' +
-              '<img src="' + b.image + '" alt="' + b.title + '" loading="lazy" ' +
-              'onerror="this.onerror=null;this.src=\'assets/icons/favicon.svg\'">' +
-            '</div>' +
-            '<div class="badge-card-pro__body">' +
-              '<h3 class="badge-card-pro__title">' + b.title + '</h3>' +
-              '<p class="badge-card-pro__issuer">' + b.issuer + '</p>' +
-              '<a href="' + b.url + '" target="_blank" rel="noopener" class="badge-card-pro__btn">' +
-                'View Badge ' +
-                '<svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
-              '</a>' +
-            '</div>';
+          function safeUrl(value) {
+            try {
+              var url = new URL(String(value || ""), document.baseURI);
+              return url.protocol === "https:" || (url.origin === location.origin && url.protocol === "http:") ? url.href : null;
+            } catch (e) { return null; }
+          }
+          var wrap = document.createElement("div");
+          wrap.className = "badge-card-pro__img-wrap";
+          var img = document.createElement("img");
+          img.alt = String(b.title || "");
+          img.loading = "lazy";
+          img.src = safeUrl(b.image) || "assets/icons/favicon.svg";
+          img.addEventListener("error", function () { img.src = "assets/icons/favicon.svg"; }, { once: true });
+          wrap.appendChild(img);
+          var body = document.createElement("div");
+          body.className = "badge-card-pro__body";
+          var title = document.createElement("h3");
+          title.className = "badge-card-pro__title";
+          title.textContent = String(b.title || "");
+          var issuer = document.createElement("p");
+          issuer.className = "badge-card-pro__issuer";
+          issuer.textContent = String(b.issuer || "");
+          body.append(title, issuer);
+          var url = safeUrl(b.url);
+          if (url) {
+            var link = document.createElement("a");
+            link.href = url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.className = "badge-card-pro__btn";
+            link.textContent = "View Badge";
+            body.appendChild(link);
+          }
+          card.append(wrap, body);
           container.appendChild(card);
         });
         /* trigger scroll reveal on newly added cards */
@@ -333,8 +356,11 @@
         return;
       }
       note.style.color = "";
-      note.textContent = "Message ready — connect a form backend (e.g. Formspree) to deliver it.";
-      form.reset();
+      note.textContent = "Your email app will open. Send the message there to complete delivery.";
+      var subject = encodeURIComponent("Portfolio inquiry from " + form.elements.name.value);
+      var body = encodeURIComponent(form.elements.message.value + "\n\nReply email: " + form.elements.email.value);
+      window.location.href = "mailto:indrajithbandarasl@gmail.com?subject=" + subject + "&body=" + body;
+      // Preserve the message until a real delivery mechanism is configured.
     });
   }
 
