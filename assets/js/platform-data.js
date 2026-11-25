@@ -11,6 +11,8 @@
   function safeExternal(value,hosts){try{const u=new URL(value);return u.protocol==='https:'&&hosts.includes(u.hostname)&&!u.username&&!u.password?u.href:null;}catch{return null;}}
   const idLink=id=>'platform.html#credential/'+encodeURIComponent(id),issuerLink=issuer=>'platform.html#issuer/'+encodeURIComponent(issuer);
   let credentialsPromise;
+  let dashboardPromise;
+  function dashboard(){return dashboardPromise??=fetch('dashboard-summary.json',{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Dashboard data unavailable');return r.json();}).catch(e=>{dashboardPromise=null;throw e;});}
   function credentials(){return credentialsPromise??=fetch('credential-directory.json',{credentials:'same-origin'}).then(r=>{if(!r.ok)throw Error('Credential data unavailable');return r.json();}).then(d=>{if(!Array.isArray(d.records))throw Error('Invalid credential data');return d;}).catch(e=>{credentialsPromise=null;throw e;});}
   const cache=new Map(),inflight=new Map();
   function cacheRead(key){if(cache.has(key))return cache.get(key);try{const v=JSON.parse(sessionStorage.getItem('ib-public-v1-'+key));if(v&&Number.isFinite(v.at)&&v.data!==undefined)return v;}catch{}return null;}
@@ -24,5 +26,5 @@
 function search(items,query,limit=50){const terms=normalize(query).trim().split(/\s+/).filter(Boolean);if(!terms.length)return items.slice(0,limit);return items.map(item=>{let cached=normalizedIndex.get(item);if(!cached){cached={title:normalize(item.title),hay:normalize([item.title,item.description,item.kind,item.keywords].join(' '))};normalizedIndex.set(item,cached);}const {title,hay}=cached;return {item,score:terms.every(t=>hay.includes(t))?terms.reduce((n,t)=>n+(title.includes(t)?4:1),0):0};}).filter(x=>x.score).sort((a,b)=>b.score-a.score||a.item.title.localeCompare(b.item.title)).slice(0,limit).map(x=>x.item);}
   async function index(){const d=await credentials().catch(()=>null);return [...sections,...(d?.records||[]).map(r=>({kind:'Credential',title:r.title,description:r.issuer+' · '+r.issueDate,keywords:[r.description,r.authorizingOrganization,...r.domains,...r.skills].join(' '),url:idLink(r.id)})),...projectInfo.map(r=>({kind:'Project',title:r.name,description:r.description,url:'platform.html#project/'+encodeURIComponent(r.slug)})),...milestones.map(r=>({kind:'Milestone',title:r.title,description:r.description,url:r.url}))];}
   async function remoteIndex(){const [r,a]=await Promise.all([repos(),articles()]);return [...(r.data||[]).map(x=>({kind:'Public repository',title:x.name,description:x.description,keywords:x.language,url:'platform.html#project/'+encodeURIComponent(x.name)})),...(a.data||[]).map(x=>({kind:'Article',title:x.title,description:x.description,keywords:x.tags.join(' '),url:x.url}))];}
-  window.PortfolioData={owner,site,sections,milestones,projectInfo,by,sorted,safeExternal,idLink,issuerLink,credentials,repos,profile,articles,releases,search,index,remoteIndex};
+  window.PortfolioData={owner,site,sections,milestones,projectInfo,by,sorted,safeExternal,idLink,issuerLink,credentials,dashboard,repos,profile,articles,releases,search,index,remoteIndex};
 })();

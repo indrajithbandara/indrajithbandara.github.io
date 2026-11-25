@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, renameSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { summarize } from './dashboard-summary.mjs';
 
 const source = JSON.parse(readFileSync('credentials.json', 'utf8'));
 const badges = JSON.parse(readFileSync('badges.json', 'utf8'));
@@ -50,3 +51,4 @@ if (records.length !== 280 || new Set(records.map(r=>r.id)).size !== records.len
 if(snapshot&&records.filter(r=>r.publicCredentialId).length!==snapshot.records.length)throw Error('Unreconciled public cards require review before replacing the directory');
 writeFileSync('credential-directory.json.tmp', JSON.stringify({schemaVersion:1, transcriptDate:'2026-11-22', lastSuccessfulSync:snapshot?.capturedAt??null, publicCredentialCount:snapshot?.records.length??null, otherPublicCredentialCount:snapshot?.otherPublicCount??null, records})+'\n');
 renameSync('credential-directory.json.tmp','credential-directory.json');
+writeFileSync('dashboard-summary.json',JSON.stringify(summarize(JSON.parse(readFileSync('credential-directory.json','utf8'))))+'\n');

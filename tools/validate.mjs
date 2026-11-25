@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
+import {summarize} from './dashboard-summary.mjs';
 const data=JSON.parse(readFileSync('credential-directory.json','utf8'));
+assert.deepEqual(JSON.parse(readFileSync('dashboard-summary.json','utf8')),summarize(data),'Dashboard summary must match the credential dataset');
 const original=JSON.parse(readFileSync('credentials.json','utf8'));
 assert.equal(data.records.length,original.length);assert.equal(original.length,280);
 assert.equal(new Set(data.records.map(r=>r.id)).size,280);
