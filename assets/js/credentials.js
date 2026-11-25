@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const link=(url,label)=>{const a=el('a',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
   async function load(){status.textContent='Loading credentials…';
   try {
-    const response=await fetch('credential-directory.json');if(!response.ok)throw Error('Unavailable');
-    const dataset=await response.json(),data=dataset.records.map(r=>({...r,year:r.issueDate.slice(0,4)}));
+    const dataset=await (window.PortfolioData?window.PortfolioData.credentials():fetch('credential-directory.json').then(r=>{if(!r.ok)throw Error('Unavailable');return r.json();})),data=dataset.records.map(r=>({...r,year:r.issueDate.slice(0,4)}));
     const fields={'cd-issuer':'issuer','cd-org':'authorizingOrganization','cd-year':'year','cd-topic':'domains','cd-state':'status','cd-type':'type'};
     const values=key=>[...new Set(data.flatMap(r=>r[key]??['Unavailable']))].sort();
     for(const [id,key] of Object.entries(fields))for(const v of key==='status'?Object.keys(states):values(key))$(id).add(new Option(key==='status'?states[v]:v,v));
