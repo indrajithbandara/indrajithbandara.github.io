@@ -1,6 +1,6 @@
 /* Progressive enhancement: no hidden content before an observer runs. */
 document.addEventListener('DOMContentLoaded',()=>{
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)');
+  const reduce=window.PortfolioPreferences?.motionQuery||matchMedia('(prefers-reduced-motion: reduce)');
   const seen=new WeakSet(),running=new Map(),pending=new Set();
   const selector='[data-aos],.hero__content,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num';
   function count(node){
