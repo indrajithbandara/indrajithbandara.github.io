@@ -994,6 +994,9 @@ html[data-zen="true"] .zen-toolbar { display: inline-flex; }
 html[data-zen="true"] body::before { opacity: 0.25; }
 html[data-zen="true"] :is(#rec-archive, .rec-grid, .platform-view, #blog .container, #recommendations .container) { max-width: 68ch; margin-inline: auto; grid-template-columns: 1fr; }
 html[data-zen="true"] :is(.rec-quote, .rec-excerpt, .platform-view p, .article-card p) { font-size: calc(1.03rem * var(--zen-scale, 1)); line-height: 1.78; }
+:root[data-theme="light"] .btn--solid { color: #FFFFFF; }
+:root[data-theme="light"] .photo-frame__tag { color: #b4f8d8; }
+.text-accent-soft { text-decoration: underline; text-underline-offset: 3px; }
 
 /* Reduced-Motion & Print Safety */
 .motion-enter:focus-within, .motion-enter:focus-within::after { animation: none !important; clip-path: none !important; opacity: 1 !important; transform: none !important; }
