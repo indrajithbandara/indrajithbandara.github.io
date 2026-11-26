@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-26
+
+- Published all 36 LinkedIn recommendations after the owner confirmed republication permission. Six representative cards are featured; the archive preserves full original wording and historical attribution. Updated offline cache and optimized client-side filtering.
+
 ## 2026-11-25
 
 - Added Voices of My Professional Network, a privacy-gated recommendations homepage section and static searchable archive. Unapproved LinkedIn records remain private; no original export is shipped.
