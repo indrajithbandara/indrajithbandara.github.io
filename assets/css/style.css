@@ -5,21 +5,23 @@
    ========================================================= */
 
 :root {
-  /* colors */
-  --bg: #0a0d0c;
-  --bg-alt: #0d1110;
-  --surface: #121615;
-  --surface-2: #181d1c;
-  --border: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.14);
-  --text: #edf2f0;
-  --text-dim: #93a39e;
-  --text-faint: #93a39e;
-  --accent: #00e08f;
-  --accent-dim: #0a8f5f;
-  --accent-soft: #7fe9bf;
-  --accent-glow: rgba(0, 224, 143, 0.18);
-  --danger: #ff5d5d;
+  /* Calm Obsidian — Dark Mode */
+  --bg: #000000;
+  --bg-alt: #080808;
+  --surface: #0D0D0D;
+  --surface-2: #161616;
+  --border: #252525;
+  --border-strong: #323232;
+  --text: #F5F5F5;
+  --text-body: #DADADA;
+  --text-dim: #A5A5A5;
+  --text-faint: #A5A5A5;
+  --accent: #79CDA5;
+  --accent-dim: #8DAE9B;
+  --accent-soft: #8DAE9B;
+  --accent-glow: rgba(121, 205, 165, 0.08);
+  --shadow-soft: 0 18px 40px -22px rgba(0, 0, 0, 0.85);
+  --danger: #ff6b6b;
 
   /* type */
   --font-display: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -35,19 +37,22 @@
 
 /* ---------- light theme override ---------- */
 :root[data-theme="light"] {
-  --bg: #f6f8f7;
-  --bg-alt: #eef2f0;
-  --surface: #ffffff;
-  --surface-2: #eef2f0;
-  --border: rgba(10, 20, 17, 0.08);
-  --border-strong: rgba(10, 20, 17, 0.14);
-  --text: #0e1412;
-  --text-dim: #4a5751;
-  --text-faint: #52615a;
-  --accent: #087847;
-  --accent-dim: #06794a;
-  --accent-soft: #086e45;
-  --accent-glow: rgba(7, 163, 99, 0.14);
+  /* Calm Editorial — Light Mode */
+  --bg: #F8F9F5;
+  --bg-alt: #E8EFE7;
+  --surface: #FFFFFF;
+  --surface-2: #E8EFE7;
+  --border: #DCE4DD;
+  --border-strong: #C6D2C7;
+  --text: #293630;
+  --text-body: #293630;
+  --text-dim: #596960;
+  --text-faint: #596960;
+  --accent: #365B48;
+  --accent-dim: #72917C;
+  --accent-soft: #365B48;
+  --accent-glow: rgba(114, 145, 124, 0.10);
+  --shadow-soft: 0 10px 28px -18px rgba(41, 54, 48, 0.14);
 }
 
 /* ---------- reset ---------- */
@@ -60,7 +65,7 @@ html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
-  color: var(--text);
+  color: var(--text-body, var(--text));
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.65;
@@ -761,7 +766,7 @@ body::before {
    SCROLL-REVEAL ANIMATION
    ========================================================= */
 /* Content is visible by default; only intersecting elements animate once. */
-/* Fluid Spatial Motion System (Apple / Linear / Vercel-inspired, GPU-composited) */
+/* body { System (Apple / Linear / Vercel-inspired, GPU-composited) */
 :root {
   --spatial-ease: cubic-bezier(0.16, 1, 0.3, 1);
   --spatial-spring: cubic-bezier(0.22, 1, 0.36, 1);
@@ -802,9 +807,9 @@ body::before {
 :is(.project-card, .cd-card, .cert-card, .teaching-card, .achieve-card, .blog-card, .platform-card, .platform-row, .timeline__item):nth-child(3n).motion-enter { animation-delay: 90ms; }
 @keyframes spatial-card { from { opacity: 0.65; transform: translate3d(0, 18px, 0) scale(0.978); } to { opacity: 1; transform: none; } }
 :is(#skills, #experience, #education, #projects, #achievements, #recommendations) {
-  background-image: radial-gradient(ellipse 68% 44% at calc(82% - var(--scroll-p) * 14%) 6%, var(--accent-glow), transparent 62%);
+  background-image: radial-gradient(ellipse 60% 38% at calc(82% - var(--scroll-p) * 12%) 6%, rgba(121, 205, 165, 0.035), transparent 62%);
   background-size: 100% 100%; background-repeat: no-repeat;
-}
+} :root[data-theme="light"] :is(#skills, #experience, #education, #projects, #achievements, #recommendations) { background-image: radial-gradient(ellipse 60% 38% at calc(82% - var(--scroll-p) * 12%) 6%, var(--accent-glow), transparent 62%); }
 :is(#skills, #experience, #education, #projects, #achievements, #recommendations)::after, .platform-view::after { content: none; }
 @supports (animation-timeline: view()) {
   html[data-motion=full] :is(#skills, #experience, #education, #projects, #achievements, #recommendations) > .container {
@@ -819,7 +824,7 @@ body::before {
   :is(.project-card, .cert-card, .blog-card, .platform-card, .rec-card, .premium-skill):hover {
     border-color: var(--accent); transform: translate3d(0, -3px, 0);
     background-image: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), var(--accent-glow), transparent 65%);
-    box-shadow: 0 16px 36px -18px rgba(0, 224, 143, 0.14);
+    box-shadow: var(--shadow-soft);
   }
 }
 @media (hover: none) {
