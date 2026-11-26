@@ -71,7 +71,6 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-  transition: background var(--transition), color var(--transition);
 }
 
 img { max-width: 100%; display: block; }
