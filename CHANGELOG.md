@@ -1,5 +1,7 @@
 # Changelog
-
+## 2026-11-26 — Fluid Spatial Motion Experience
+- Replaced the legacy terminal typing and cinematic trace animations with the new GPU-composited Fluid Spatial Motion system (masked typography reveals, scroll-driven spatial section transitions, desktop pointer-tracked surface spotlight, refined skills/recommendations motion, and reduced-motion/no-JS fallbacks).
+  
 ## 2026-11-26
 
 - Published all 36 LinkedIn recommendations after the owner confirmed republication permission. Six representative cards are featured; the archive preserves full original wording and historical attribution. Updated offline cache and optimized client-side filtering.
