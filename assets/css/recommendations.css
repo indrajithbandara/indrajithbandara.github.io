@@ -7,5 +7,5 @@ html:not([data-theme=light]) .rec-card{background:var(--surface);color:var(--tex
 html:not([data-theme=light]) #recommendations,
 html[data-theme=light] #recommendations { position: relative; z-index: 1; background-color: var(--bg-alt); color: var(--text); }
 html[data-theme=light] #recommendations :is(h1, h2, p, label, span, #rec-results) { color: var(--text); }
-html[data-theme=light] #recommendations nav[aria-label="Breadcrumb"] a { color: var(--accent); }
+html[data-theme=light] #recommendations nav[aria-label="Breadcrumb"] a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 body.recommendations-page::before { content: none; }
