@@ -1,4 +1,4 @@
-/* Fluid Spatial Motion Experience — progressive enhancement, GPU-composited, reduced-motion safe. */
+/* Fluid Spatial Motion + Kinetic Editorial Typography + Spatial Scroll Navigator + Zen Reading Mode */
 document.addEventListener('DOMContentLoaded', () => {
   const reduce = window.PortfolioPreferences?.motionQuery || matchMedia('(prefers-reduced-motion: reduce)');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const running = new Map();
   const pending = new Set();
 
-  const original = '[data-aos],.hero__content,.hero__terminal,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num';
+  const original = '[data-aos],.hero__content,.hero__terminal,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num,.bento-card';
   const selector = original + ',.section > .container > .eyebrow,.section__lede,.section > .container > p,.platform-view > h2,.platform-view > .platform-note,.platform-card,.platform-row,.article-card,.blog-card,.ghstats__grid > *,.rec-card,.cert-card,.teaching-card,.achieve-card,.timeline__item';
   const signature = '#skills,#experience,#education,#projects,#achievements,#recommendations,.platform-view';
 
@@ -46,7 +46,46 @@ document.addEventListener('DOMContentLoaded', () => {
     frame = requestAnimationFrame(tick);
   }
 
-  /* Spatial hero command surface entrance (replaces legacy typewriter effect). */
+  /* Kinetic Editorial Typography: accessible word-flow splitting for short display headings. */
+  function initKineticHeadings() {
+    if (reduce.matches) return;
+    const heroTitle = document.querySelector('.hero__title');
+    if (heroTitle && !heroTitle.dataset.ktReady) {
+      heroTitle.dataset.ktReady = '1';
+      const fullText = heroTitle.textContent.replace(/\s+/g, ' ').trim();
+      if (fullText) heroTitle.setAttribute('aria-label', fullText);
+      let wordIdx = 0;
+      const walk = node => {
+        for (const child of [...node.childNodes]) {
+          if (child.nodeType === 3) {
+            const parts = child.textContent.split(/(\s+)/);
+            const frag = document.createDocumentFragment();
+            for (const part of parts) {
+              if (!part) continue;
+              if (/^\s+$/.test(part)) {
+                frag.append(document.createTextNode(part));
+              } else {
+                const span = document.createElement('span');
+                span.className = 'kt-word';
+                span.setAttribute('aria-hidden', 'true');
+                span.style.setProperty('--kt-i', String(wordIdx++));
+                span.textContent = part;
+                frag.append(span);
+              }
+            }
+            child.replaceWith(frag);
+          } else if (child.nodeType === 1 && child.tagName !== 'BR') {
+            walk(child);
+          }
+        }
+      };
+      walk(heroTitle);
+      heroTitle.classList.add('kt-hero-ready');
+    }
+  }
+  initKineticHeadings();
+
+  /* Spatial hero command surface entrance (no repetitive typewriter). */
   const terminal = document.getElementById('terminalBody');
   let heroEntered = false;
   const heroObserver = terminal && 'IntersectionObserver' in window
@@ -60,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     : null;
   if (!reduce.matches && terminal) heroObserver?.observe(terminal);
 
-  /* Main spatial reveal observer. */
+  /* Main spatial & kinetic reveal observer. */
   const observer = 'IntersectionObserver' in window
     ? new IntersectionObserver(entries => {
         for (const e of entries) {
@@ -79,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (scrollY < 16 && el.matches(original)) continue;
           if (el.closest('.premium-skill')) continue;
           el.classList.add('motion-enter');
-          setTimeout(() => el.classList.remove('motion-enter'), 760);
+          setTimeout(() => el.classList.remove('motion-enter'), 780);
           if (el.matches('.stat__num')) count(el);
           else if (el.matches('.cd-stat')) {
             const n = el.querySelector('strong');
@@ -131,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function applySpotlight() {
     pointerRaf = 0;
     if (!lastPointer || reduce.matches || !finePointer.matches) return;
-    const card = lastPointer.target?.closest?.('.project-card,.platform-card,.rec-card,.premium-skill,.cert-card,.blog-card');
+    const card = lastPointer.target?.closest?.('.project-card,.platform-card,.rec-card,.premium-skill,.cert-card,.blog-card,.bento-card');
     if (activeCard && activeCard !== card) {
       activeCard.style.removeProperty('--mx');
       activeCard.style.removeProperty('--my');
@@ -153,19 +192,160 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  /* Passive scroll progress custom property for spatial ambient coordination. */
+  /* Spatial Scroll Navigator (integrated with native scrolling & reading progress). */
+  const trackedSections = [...document.querySelectorAll('main section[id], .hero[id]')];
+  let spatialNav = null;
+  let spatialLabel = null;
+  let spatialFill = null;
+  if (trackedSections.length >= 4 && !document.querySelector('.platform-shell')) {
+    spatialNav = document.createElement('nav');
+    spatialNav.className = 'spatial-scroll-nav';
+    spatialNav.setAttribute('aria-label', 'Section navigator');
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'spatial-scroll-nav__toggle';
+    toggle.setAttribute('aria-expanded', 'false');
+    const dot = document.createElement('span');
+    dot.className = 'spatial-scroll-nav__dot';
+    dot.setAttribute('aria-hidden', 'true');
+    spatialLabel = document.createElement('span');
+    spatialLabel.className = 'spatial-scroll-nav__label';
+    spatialLabel.textContent = 'Overview';
+    const track = document.createElement('span');
+    track.className = 'spatial-scroll-nav__track';
+    track.setAttribute('aria-hidden', 'true');
+    spatialFill = document.createElement('span');
+    spatialFill.className = 'spatial-scroll-nav__fill';
+    track.append(spatialFill);
+    toggle.append(dot, spatialLabel, track);
+
+    const list = document.createElement('ul');
+    list.className = 'spatial-scroll-nav__list';
+    const quickIds = ['home', 'overview', 'skills', 'badges', 'projects', 'recommendations', 'contact'];
+    for (const id of quickIds) {
+      const sec = document.getElementById(id);
+      if (!sec) continue;
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + id;
+      const h = sec.querySelector('h1,h2');
+      a.textContent = id === 'home' ? 'Top' : (h ? h.textContent.replace(/\s+/g, ' ').trim().slice(0, 26) : id);
+      a.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        list.classList.remove('is-open');
+      });
+      li.append(a);
+      list.append(li);
+    }
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      list.classList.toggle('is-open', !open);
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && list.classList.contains('is-open')) {
+        toggle.setAttribute('aria-expanded', 'false');
+        list.classList.remove('is-open');
+        toggle.focus();
+      }
+    });
+    spatialNav.append(list, toggle);
+    document.body.append(spatialNav);
+  }
+
+  /* Passive scroll progress custom property + Spatial Scroll Navigator update. */
   let scrollRaf = 0;
   function updateScrollProgress() {
     scrollRaf = 0;
-    if (reduce.matches) return;
     const max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
     const p = Math.min(1, Math.max(0, scrollY / max));
-    document.documentElement.style.setProperty('--scroll-p', p.toFixed(4));
+    if (!reduce.matches) {
+      document.documentElement.style.setProperty('--scroll-p', p.toFixed(4));
+    }
+    if (spatialNav && spatialFill) {
+      spatialFill.style.transform = `scaleX(${p.toFixed(3)})`;
+      spatialNav.classList.toggle('is-visible', scrollY > 180);
+    }
   }
   window.addEventListener('scroll', () => {
-    if (reduce.matches || scrollRaf) return;
-    scrollRaf = requestAnimationFrame(updateScrollProgress);
+    if (!scrollRaf) scrollRaf = requestAnimationFrame(updateScrollProgress);
   }, { passive: true });
+  updateScrollProgress();
+
+  /* Zen Reading Mode (for recommendations, articles, case studies & long descriptions). */
+  const zenSupported = Boolean(document.querySelector('.recommendations-page, .platform-shell, #blog, #recommendations'));
+  if (zenSupported) {
+    const ZEN_KEY = 'portfolio_zen_reading';
+    const SCALE_KEY = 'portfolio_zen_scale';
+    let scale = Number(localStorage.getItem(SCALE_KEY) || '1');
+    if (![1, 1.1, 1.2].includes(scale)) scale = 1;
+
+    const bar = document.createElement('div');
+    bar.className = 'zen-toolbar';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', 'Zen Reading Mode controls');
+
+    const dec = document.createElement('button');
+    dec.type = 'button';
+    dec.className = 'zen-btn';
+    dec.textContent = 'A-';
+    dec.setAttribute('aria-label', 'Decrease reading font size');
+
+    const inc = document.createElement('button');
+    inc.type = 'button';
+    inc.className = 'zen-btn';
+    inc.textContent = 'A+';
+    inc.setAttribute('aria-label', 'Increase reading font size');
+
+    const exit = document.createElement('button');
+    exit.type = 'button';
+    exit.className = 'zen-btn zen-btn--exit';
+    exit.textContent = 'Exit Zen';
+    exit.setAttribute('aria-label', 'Exit Zen Reading Mode');
+
+    bar.append(dec, inc, exit);
+    document.body.append(bar);
+
+    const trigger = document.createElement('button');
+    trigger.type = 'button';
+    trigger.className = 'zen-toggle';
+    trigger.textContent = 'Zen Read';
+    trigger.setAttribute('aria-pressed', 'false');
+
+    const mountTarget = document.querySelector('.rec-controls') || document.querySelector('.platform-header-actions') || document.querySelector('#recommendations .section__head');
+    if (mountTarget) mountTarget.append(trigger);
+
+    function setZen(active, focusExit = false) {
+      document.documentElement.dataset.zen = active ? 'true' : 'false';
+      document.documentElement.style.setProperty('--zen-scale', String(scale));
+      trigger.setAttribute('aria-pressed', String(active));
+      trigger.textContent = active ? 'Zen Active' : 'Zen Read';
+      try { localStorage.setItem(ZEN_KEY, active ? '1' : '0'); } catch {}
+      if (active && focusExit) exit.focus();
+    }
+
+    function stepScale(delta) {
+      const steps = [1, 1.1, 1.2];
+      const idx = Math.max(0, Math.min(steps.length - 1, steps.indexOf(scale) + delta));
+      scale = steps[idx];
+      document.documentElement.style.setProperty('--zen-scale', String(scale));
+      try { localStorage.setItem(SCALE_KEY, String(scale)); } catch {}
+    }
+
+    trigger.addEventListener('click', () => setZen(document.documentElement.dataset.zen !== 'true', true));
+    exit.addEventListener('click', () => { setZen(false); trigger.focus(); });
+    dec.addEventListener('click', () => stepScale(-1));
+    inc.addEventListener('click', () => stepScale(1));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && document.documentElement.dataset.zen === 'true') {
+        setZen(false);
+        trigger.focus();
+      }
+    });
+    try {
+      if (localStorage.getItem(ZEN_KEY) === '1') setZen(true);
+    } catch {}
+  }
 
   /* Fluid recommendation filter/sort transition without layout shift. */
   const recArchive = document.getElementById('rec-archive');
@@ -203,16 +383,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* Active section indicator in navigation. */
+  /* Active section indicator in navigation & Spatial Scroll Navigator. */
   if ('IntersectionObserver' in window) {
     const links = [...document.querySelectorAll('.nav__link[href^="#"]')];
-    const sections = links.map(a => document.getElementById(a.hash.slice(1))).filter(Boolean);
+    const sections = trackedSections.length ? trackedSections : links.map(a => document.getElementById(a.hash.slice(1))).filter(Boolean);
     const active = new IntersectionObserver(entries => {
       for (const e of entries) {
         if (e.isIntersecting) {
           for (const a of links) {
             if (a.hash === '#' + e.target.id) a.setAttribute('aria-current', 'location');
             else a.removeAttribute('aria-current');
+          }
+          if (spatialLabel) {
+            const h = e.target.querySelector('h1,h2');
+            spatialLabel.textContent = e.target.id === 'home' ? 'Hero' : (h ? h.textContent.replace(/\s+/g, ' ').trim().slice(0, 24) : e.target.id);
           }
         }
       }
