@@ -766,6 +766,54 @@ body::before {
    SCROLL-REVEAL ANIMATION
    ========================================================= */
 /* Content is visible by default; only intersecting elements animate once. */
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 980px) {
+  .hero__grid { grid-template-columns: 1fr; }
+  .hero__terminal { order: 2; }
+  .about__grid { grid-template-columns: 1fr; }
+  .photo-frame { max-width: 320px; }
+  .skills__grid { grid-template-columns: repeat(2, 1fr); }
+  .contact__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 760px) {
+  .ghstats__grid { grid-template-columns: 1fr; }
+  .nav__links {
+    position: absolute; top: 72px; left: 0; right: 0;
+    background: var(--bg);
+    flex-direction: column; align-items: flex-start;
+    gap: 0; padding: 8px 24px 18px;
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-8px);
+    opacity: 0; visibility: hidden;
+    transition: var(--transition);
+  }
+  .nav__links.is-open { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav__link { width: 100%; padding: 12px 0; border-bottom: 1px solid var(--border); }
+  .nav__link--cta { margin-top: 10px; text-align: center; border-bottom: 1px solid var(--accent-dim); }
+  .nav__toggle { display: flex; }
+  .skills__grid { grid-template-columns: 1fr; }
+  
+  .hero { padding-top: 100px; }
+}
+@media (max-width: 480px) {
+  .hero__cta { flex-direction: column; align-items: stretch; }
+  .btn { justify-content: center; max-width:100%; white-space:normal; overflow-wrap:anywhere; }
+.container { padding-inline: 16px; }
+.hero__grid,.about__grid,.skills__grid,.ghstats__grid,.contact__grid { grid-template-columns:minmax(0,1fr); }
+.projects__grid,.cert__grid,.teaching__grid,.achieve__grid,.blog__grid { grid-template-columns: minmax(0,1fr); }
+.project-card,.contact-link,.contact-link span,.social-pill,.chip,.hero__terminal,.hero__content { min-width:0; }
+.contact-link{padding:14px;gap:10px;}
+.social-category{padding:16px;}
+.terminal__body{overflow-wrap:anywhere;}
+.eyebrow{display:block;overflow-wrap:anywhere;word-break:break-word;}
+main,.footer{max-width:100%;overflow-x:clip;overflow-wrap:anywhere;}
+.photo-frame__img{max-width:100%;height:auto;}
+}
+
 /* =====================================================================
    QUIET PRECISION MOTION SYSTEM, RESTORED TERMINAL TYPING &
    REFINED KINETIC EDITORIAL TYPOGRAPHY
