@@ -1,4 +1,6 @@
 # Changelog
+## 2026-11-26 — Calm Obsidian Dark Mode & Calm Editorial Light Mode
+- Centralized semantic design tokens (`--bg`, `--surface`, `--text`, `--text-dim`, `--accent`, `--border`) across `style.css`, `platform.css`, `credentials.css`, `recommendations.css`, and `404.css` for Calm Obsidian dark mode and Calm Editorial light mode, alongside Fluid Spatial Motion refinements.
 ## 2026-11-26 — Fluid Spatial Motion Experience
 - Replaced the legacy terminal typing and cinematic trace animations with the new GPU-composited Fluid Spatial Motion system (masked typography reveals, scroll-driven spatial section transitions, desktop pointer-tracked surface spotlight, refined skills/recommendations motion, and reduced-motion/no-JS fallbacks).
   

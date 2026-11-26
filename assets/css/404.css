@@ -1,8 +1,9 @@
     :root {
-      --bg: #0a0d0c; --text: #edf2f0; --text-dim: #93a39e;
-      --accent: #00e08f; --border: rgba(255,255,255,0.1);
+      --bg: #000000; --text: #F5F5F5; --text-dim: #A5A5A5;
+      --accent: #79CDA5; --border: #252525;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+   :root[data-theme="light"] { --bg: #F8F9F5; --text: #293630; --text-dim: #596960; --accent: #365B48; --border: #DCE4DD; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       background: var(--bg); color: var(--text);
       font-family: ui-monospace, monospace;
