@@ -761,39 +761,95 @@ body::before {
    SCROLL-REVEAL ANIMATION
    ========================================================= */
 /* Content is visible by default; only intersecting elements animate once. */
-.motion-enter { animation: portfolio-enter 520ms cubic-bezier(.2,.75,.25,1) both; }
-@keyframes portfolio-enter { from { opacity:.65; transform:translateY(14px) scale(.992); } to { opacity:1; transform:none; } }
-.motion-enter:focus-within { animation:none; }
-
-/* Cinematic Terminal — progressive enhancement, no pre-hidden content. */
-:root{--cinematic-ease:cubic-bezier(.22,.72,.26,1);--cinematic-accent:var(--accent)}
-.section__title.motion-enter,.platform-view>h2.motion-enter{animation:cinematic-title 640ms var(--cinematic-ease) both}
-.section__title,.platform-view>h2{position:relative}
-.section__title::after,.platform-view>h2::after{content:"";display:block;width:48px;height:2px;margin-top:10px;background:linear-gradient(90deg,var(--cinematic-accent),transparent);transform-origin:left}
-.section__title.motion-enter::after,.platform-view>h2.motion-enter::after{animation:cinematic-draw 680ms var(--cinematic-ease) both}
-.section__title.motion-enter .text-accent{animation:cinematic-accent 600ms var(--cinematic-ease) both}
-.section__lede.motion-enter,.section>.container>.eyebrow.motion-enter,.platform-view>.platform-note.motion-enter{animation:cinematic-copy 560ms var(--cinematic-ease) both}
-:is(.project-card,.cd-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card,.platform-row,.timeline__item).motion-enter{animation:cinematic-card 510ms var(--cinematic-ease) both}
-:is(.project-card,.cd-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card,.platform-row,.timeline__item):nth-child(3n+2).motion-enter{animation-delay:55ms}
-:is(.project-card,.cd-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card,.platform-row,.timeline__item):nth-child(3n).motion-enter{animation-delay:110ms}
-@keyframes cinematic-title{from{clip-path:inset(0 0 14% 0);opacity:.72;transform:translateY(10px)}to{clip-path:inset(0);opacity:1;transform:none}}
-@keyframes cinematic-copy{from{opacity:.72;transform:translateY(8px)}to{opacity:1;transform:none}}
-@keyframes cinematic-card{from{opacity:.75;transform:translateY(12px)}to{opacity:1;transform:none}}
-@keyframes cinematic-draw{from{transform:scaleX(.15);opacity:.45}to{transform:scaleX(1);opacity:1}}
-@keyframes cinematic-accent{from{opacity:.65}to{opacity:1}}
-:is(#skills,#experience,#education,#projects,#achievements,#recommendations){background-image:radial-gradient(ellipse at 88% 8%,var(--accent-glow),transparent 45%);background-size:100% 100%;background-repeat:no-repeat}
-:is(#skills,#experience,#education,#projects,#achievements,#recommendations)::after,.platform-view::after{content:"";pointer-events:none;position:absolute;inset:24px auto 24px max(8px,calc((100% - var(--container))/2 + 7px));width:1px;background:linear-gradient(180deg,transparent,var(--accent),var(--accent-glow),transparent);opacity:.45;transform-origin:top}
-.platform-view{position:relative}.platform-view::after{inset:0 auto 0 -14px}
-.cinematic-signature-seen::after{animation:cinematic-trace 780ms var(--cinematic-ease) both}
-@keyframes cinematic-trace{from{transform:scaleY(.08);opacity:.15}to{transform:scaleY(1);opacity:.45}}
-@supports(animation-timeline:view()){html[data-motion=full] :is(#skills,#experience,#education,#projects,#achievements,#recommendations)::after{animation:cinematic-trace linear both;animation-timeline:view();animation-range:entry 0% cover 85%}}
-@media(hover:hover) and (pointer:fine){:is(.project-card,.cert-card,.teaching-card,.achieve-card,.blog-card,.platform-card):hover{border-color:var(--accent);transform:translateY(-2px)}}
-@media(max-width:760px){.platform-view::after{inset-inline-start:-8px}:is(#skills,#experience,#education,#projects,#achievements,#recommendations){background-image:radial-gradient(ellipse at 100% 0%,var(--accent-glow),transparent 35%)}}
-html[data-motion=reduce] .motion-enter,html[data-motion=reduce] .motion-enter::after,html[data-motion=reduce] .motion-enter .text-accent,html[data-motion=reduce] .cinematic-signature-seen::after{animation:none!important;transform:none!important;clip-path:none!important;opacity:1!important}
-@media(prefers-reduced-motion:reduce){html:not([data-motion]) .motion-enter,html:not([data-motion]) .motion-enter::after,html:not([data-motion]) .motion-enter .text-accent,html:not([data-motion]) .cinematic-signature-seen::after{animation:none!important;transform:none!important;clip-path:none!important;opacity:1!important}}
-.motion-enter:focus-within,.motion-enter:focus-within::after{animation:none!important;clip-path:none!important;opacity:1!important;transform:none!important}
-@media print{.section__title::after,.platform-view::after,.cinematic-signature-seen::after{animation:none!important}}
-
+/* Fluid Spatial Motion System (Apple / Linear / Vercel-inspired, GPU-composited) */
+:root {
+  --spatial-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --spatial-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --spatial-accent: var(--accent);
+  --scroll-p: 0;
+}
+.spatial-terminal-enter .terminal__line,
+.spatial-terminal-enter .terminal__out {
+  animation: spatial-line-in 480ms var(--spatial-ease) both;
+}
+.spatial-terminal-enter .terminal__line:nth-of-type(1) { animation-delay: 0ms; }
+.spatial-terminal-enter .terminal__out:nth-of-type(1) { animation-delay: 60ms; }
+.spatial-terminal-enter .terminal__line:nth-of-type(2) { animation-delay: 120ms; }
+.spatial-terminal-enter .terminal__out:nth-of-type(2) { animation-delay: 180ms; }
+.spatial-terminal-enter .terminal__line:nth-of-type(3) { animation-delay: 240ms; }
+@keyframes spatial-line-in {
+  from { opacity: 0.25; transform: translate3d(0, 8px, 0); }
+  to { opacity: 1; transform: none; }
+}
+.section__title, .platform-view > h2 { position: relative; }
+.section__title::after, .platform-view > h2::after {
+  content: ""; display: block; width: 56px; height: 2px; margin-top: 10px;
+  background: linear-gradient(90deg, var(--spatial-accent), transparent); transform-origin: left;
+}
+.section__title.motion-enter, .platform-view > h2.motion-enter { animation: spatial-title 620ms var(--spatial-ease) both; }
+.section__title.motion-enter::after, .platform-view > h2.motion-enter::after { animation: spatial-hairline 680ms var(--spatial-ease) 60ms both; }
+.section__title.motion-enter .text-accent { animation: spatial-accent-glow 620ms var(--spatial-ease) both; }
+.section__lede.motion-enter, section > .container > .eyebrow.motion-enter, .section > .container > p.motion-enter, .platform-view > .platform-note.motion-enter {
+  animation: spatial-copy 540ms var(--spatial-ease) 40ms both;
+}
+@keyframes spatial-title { from { clip-path: inset(0 0 100% 0); opacity: 0.4; transform: translate3d(0, 14px, 0); } to { clip-path: inset(0 0 0% 0); opacity: 1; transform: none; } }
+@keyframes spatial-hairline { from { transform: scaleX(0.08); opacity: 0.3; } to { transform: scaleX(1); opacity: 1; } }
+@keyframes spatial-accent-glow { from { opacity: 0.55; } to { opacity: 1; } }
+@keyframes spatial-copy { from { opacity: 0.5; transform: translate3d(0, 10px, 0); } to { opacity: 1; transform: none; } }
+.motion-enter { animation: spatial-card 560ms var(--spatial-ease) both; }
+:is(.project-card, .cd-card, .cert-card, .teaching-card, .achieve-card, .blog-card, .platform-card, .platform-row, .timeline__item).motion-enter { animation: spatial-card 560ms var(--spatial-ease) both; }
+:is(.project-card, .cd-card, .cert-card, .teaching-card, .achieve-card, .blog-card, .platform-card, .platform-row, .timeline__item):nth-child(3n+2).motion-enter { animation-delay: 45ms; }
+:is(.project-card, .cd-card, .cert-card, .teaching-card, .achieve-card, .blog-card, .platform-card, .platform-row, .timeline__item):nth-child(3n).motion-enter { animation-delay: 90ms; }
+@keyframes spatial-card { from { opacity: 0.65; transform: translate3d(0, 18px, 0) scale(0.978); } to { opacity: 1; transform: none; } }
+:is(#skills, #experience, #education, #projects, #achievements, #recommendations) {
+  background-image: radial-gradient(ellipse 68% 44% at calc(82% - var(--scroll-p) * 14%) 6%, var(--accent-glow), transparent 62%);
+  background-size: 100% 100%; background-repeat: no-repeat;
+}
+:is(#skills, #experience, #education, #projects, #achievements, #recommendations)::after, .platform-view::after { content: none; }
+@supports (animation-timeline: view()) {
+  html[data-motion=full] :is(#skills, #experience, #education, #projects, #achievements, #recommendations) > .container {
+    animation: spatial-section-glide linear both; animation-timeline: view(); animation-range: entry 0% entry 34%;
+  }
+  @keyframes spatial-section-glide { from { opacity: 0.78; transform: translate3d(0, 20px, 0) scale(0.988); } to { opacity: 1; transform: none; } }
+}
+@media (hover: hover) and (pointer: fine) {
+  :is(.project-card, .cert-card, .teaching-card, .achieve-card, .blog-card, .platform-card, .rec-card, .premium-skill) {
+    transition: transform 320ms var(--spatial-ease), border-color 280ms var(--spatial-ease), box-shadow 320ms var(--spatial-ease), background-image 280ms ease;
+  }
+  :is(.project-card, .cert-card, .blog-card, .platform-card, .rec-card, .premium-skill):hover {
+    border-color: var(--accent); transform: translate3d(0, -3px, 0);
+    background-image: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), var(--accent-glow), transparent 65%);
+    box-shadow: 0 16px 36px -18px rgba(0, 224, 143, 0.14);
+  }
+}
+@media (hover: none) {
+  :is(.project-card, .cert-card, .blog-card, .platform-card, .rec-card, .premium-skill):active {
+    transform: scale(0.992); transition: transform 140ms var(--spatial-ease);
+  }
+}
+.nav__link::after { transition: width 320ms var(--spatial-ease); }
+.btn { transition: transform 260ms var(--spatial-ease), box-shadow 260ms var(--spatial-ease), background 240ms ease, border-color 240ms ease; }
+.back-to-top { transition: opacity 280ms var(--spatial-ease), visibility 280ms var(--spatial-ease), transform 320ms var(--spatial-spring), background 220ms ease, color 220ms ease; }
+.theme-toggle { transition: transform 260ms var(--spatial-ease), border-color 240ms ease, background 240ms ease; }
+.theme-toggle:active { transform: scale(0.94); }
+.motion-enter:focus-within, .motion-enter:focus-within::after { animation: none !important; clip-path: none !important; opacity: 1 !important; transform: none !important; }
+html[data-motion=reduce] :is(.motion-enter, .motion-enter::after, .motion-enter .text-accent, .spatial-terminal-enter .terminal__line, .spatial-terminal-enter .terminal__out, .cinematic-signature-seen::after),
+html[data-motion=reduce] :is(#skills, #experience, #education, #projects, #achievements, #recommendations) > .container,
+html[data-motion=reduce] :is(#skills, #experience, #education, #projects, #achievements, #recommendations)::after {
+  animation: none !important; transform: none !important; clip-path: none !important; opacity: 1 !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-motion]) :is(.motion-enter, .motion-enter::after, .motion-enter .text-accent, .spatial-terminal-enter .terminal__line, .spatial-terminal-enter .terminal__out, .cinematic-signature-seen::after),
+  html:not([data-motion]) :is(#skills, #experience, #education, #projects, #achievements, #recommendations) > .container,
+  html:not([data-motion]) :is(#skills, #experience, #education, #projects, #achievements, #recommendations)::after {
+    animation: none !important; transform: none !important; clip-path: none !important; opacity: 1 !important;
+  }
+}
+@media (max-width: 760px) {
+  :is(#skills, #experience, #education, #projects, #achievements, #recommendations) {
+    background-image: radial-gradient(ellipse 85% 32% at 90% 2%, var(--accent-glow), transparent 52%);
+  }
+}
 /* =========================================================
    RESPONSIVE
    ========================================================= */

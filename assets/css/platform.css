@@ -19,3 +19,12 @@ html[data-motion=reduce] .premium-skill,html[data-motion=reduce] .skill-accent-l
 /* Explicit descendant colors avoid stale inherited custom-property paint in WebKit when switching themes. */
 html:not([data-theme=light]) .premium-skill :is(summary,.skill-heading,.skill-heading span){color:#edf2f0}html[data-theme=light] .premium-skill :is(summary,.skill-heading,.skill-heading span){color:#0e1412}html:not([data-theme=light]) .premium-skill :is(.skill-count,.skill-evidence,.skill-evidence p,.skill-evidence li){color:#93a39e}html[data-theme=light] .premium-skill :is(.skill-count,.skill-evidence,.skill-evidence p,.skill-evidence li){color:#4a5751}html:not([data-theme=light]) .premium-skill .skill-evidence a{color:#00e08f}html[data-theme=light] .premium-skill .skill-evidence a{color:#087847}
 @media(prefers-reduced-motion:reduce){html:not([data-motion]) .premium-skill,html:not([data-motion]) .skill-accent-line,html:not([data-motion]) .skill-evidence{animation:none!important;transform:none!important;opacity:1!important}}
+/* Fluid Spatial Motion overrides for Platform & Technical Skills */
+.premium-skill.skill-in-view { animation: spatial-skill 520ms var(--spatial-ease, cubic-bezier(0.16, 1, 0.3, 1)) both; }
+.premium-skill:nth-child(2n).skill-in-view { animation-delay: 55ms; }
+.premium-skill.skill-in-view .skill-accent-line { animation: spatial-hairline 620ms var(--spatial-ease, cubic-bezier(0.16, 1, 0.3, 1)) 60ms both; }
+.premium-skill[open] .skill-evidence { animation: spatial-copy 280ms var(--spatial-ease, cubic-bezier(0.16, 1, 0.3, 1)) both; }
+@keyframes spatial-skill { from { opacity: 0.72; transform: translate3d(0, 14px, 0) scale(0.985); } to { opacity: 1; transform: none; } }
+dialog#platform-palette[open] { animation: spatial-card 260ms var(--spatial-ease, cubic-bezier(0.16, 1, 0.3, 1)) both; }
+html[data-motion=reduce] dialog#platform-palette[open],
+html[data-motion=reduce] .rec-archive--reflow .rec-card { animation: none !important; transform: none !important; opacity: 1 !important; }
