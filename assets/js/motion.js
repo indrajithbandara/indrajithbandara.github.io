@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     function tick(now) {
       const elapsed = now - start;
-      if (reduce.matches || elapsed >= 2200 || !terminal.isConnected) {
+      if (reduce.matches || elapsed >= 3200 || !terminal.isConnected) {
         stopTyping();
         return;
       }
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
       frame = requestAnimationFrame(tick);
     }
     frame = requestAnimationFrame(tick);
-    setTimeout(stopTyping, 2300);
+    setTimeout(stopTyping, 3300);
   }
 
   const typingObserver = terminal && 'IntersectionObserver' in window
