@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-26 — Quiet Precision Motion & Original Terminal Restoration
+- Restored the original terminal typing experience (`typeTerminal()`), replaced Fluid Spatial Motion with Quiet Precision Motion, refined Kinetic Editorial Typography, and preserved Calm Obsidian, Calm Editorial, and all five Premium Visual Experience features.
+- 
 ## 2026-11-26 — Premium Visual Experience & Kinetic Editorial Typography
 - Introduced Kinetic Editorial Typography, Dynamic Bento Grid overview, Spatial Scroll Navigator, Seamless View Transitions, Zen Reading Mode, and a Signature Generative Background across the platform.
   
