@@ -1,52 +1,72 @@
-/* Fluid Spatial Motion + Kinetic Editorial Typography + Spatial Scroll Navigator + Zen Reading Mode */
+/* Quiet Precision Motion System + Restored Original Terminal Typing + Kinetic Editorial Typography */
 document.addEventListener('DOMContentLoaded', () => {
   const reduce = window.PortfolioPreferences?.motionQuery || matchMedia('(prefers-reduced-motion: reduce)');
-  const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
   const seen = new WeakSet();
-  const running = new Map();
   const pending = new Set();
 
-  const original = '[data-aos],.hero__content,.hero__terminal,.section__title,.project-card,.cd-card,.cd-stat,.cd-chart,.stat__num,.bento-card';
-  const selector = original + ',.section > .container > .eyebrow,.section__lede,.section > .container > p,.platform-view > h2,.platform-view > .platform-note,.platform-card,.platform-row,.article-card,.blog-card,.ghstats__grid > *,.rec-card,.cert-card,.teaching-card,.achieve-card,.timeline__item';
+  /* Only major display headings, signature hairlines, and key cards animate once on reveal; no ordinary paragraphs or full-section shifts. */
+  const original = '[data-aos],.hero__content,.section__title,.cd-card,.cd-stat';
+  const selector = original + ',.platform-view > h2,.bento-card,.project-card,.rec-card';
   const signature = '#skills,#experience,#education,#projects,#achievements,#recommendations,.platform-view';
 
-  function count(node) {
-    if (!/^\d+$/.test(node.textContent.trim())) return;
-    const value = Number(node.textContent);
-    if (!Number.isSafeInteger(value) || value < 2) return;
-    const source = document.createElement('span');
-    const display = document.createElement('span');
-    source.className = 'motion-count-source';
-    source.textContent = String(value);
-    display.className = 'motion-count-display';
-    display.setAttribute('aria-hidden', 'true');
-    display.textContent = '0';
-    node.classList.add('motion-count');
-    node.replaceChildren(source, display);
+  /* Restored Original Terminal Typing Experience (from pre-PR #15 main) */
+  const terminal = document.getElementById('terminalBody');
+  let typingStarted = false;
+  let stopTyping = () => {};
+
+  function typeTerminal() {
+    const sequence = [['typedName', 0, 720], ['typedRole', 850, 1050]].map(([id, delay, duration]) => {
+      const source = document.getElementById(id)?.querySelector('span');
+      if (!source) return null;
+      const visual = document.createElement('span');
+      visual.className = 'terminal-typed';
+      visual.setAttribute('aria-hidden', 'true');
+      source.classList.add('terminal-source');
+      source.after(visual);
+      return { source, visual, text: source.textContent, delay, duration, last: -1 };
+    }).filter(Boolean);
+    if (!sequence.length || !terminal) return;
+    terminal.classList.add('terminal-animate');
     let frame;
-    const started = performance.now();
-    function finish() {
+    const start = performance.now();
+    stopTyping = () => {
       cancelAnimationFrame(frame);
-      node.replaceChildren(String(value));
-      node.classList.remove('motion-count');
-      running.delete(node);
-    }
+      for (const { source, visual } of sequence) {
+        source.classList.remove('terminal-source');
+        visual.remove();
+      }
+      terminal.classList.remove('terminal-animate');
+    };
     function tick(now) {
-      if (reduce.matches || !node.isConnected) {
-        finish();
+      const elapsed = now - start;
+      if (reduce.matches || elapsed >= 2200 || !terminal.isConnected) {
+        stopTyping();
         return;
       }
-      const fraction = Math.min(1, (now - started) / 620);
-      const eased = 1 - (1 - fraction) ** 4;
-      display.textContent = String(Math.round(value * eased));
-      if (fraction === 1) finish();
-      else frame = requestAnimationFrame(tick);
+      for (const item of sequence) {
+        const n = Math.floor(item.text.length * Math.max(0, Math.min(1, (elapsed - item.delay) / item.duration)));
+        if (n !== item.last) {
+          item.visual.textContent = item.text.slice(0, n);
+          item.last = n;
+        }
+      }
+      frame = requestAnimationFrame(tick);
     }
-    running.set(node, finish);
     frame = requestAnimationFrame(tick);
+    setTimeout(stopTyping, 2300);
   }
 
-  /* Kinetic Editorial Typography: accessible word-flow splitting for short display headings. */
+  const typingObserver = terminal && 'IntersectionObserver' in window
+    ? new IntersectionObserver(entries => {
+        if (typingStarted || reduce.matches || !entries.some(e => e.isIntersecting && e.intersectionRatio >= 0.4)) return;
+        typingStarted = true;
+        typingObserver.disconnect();
+        typeTerminal();
+      }, { threshold: 0.4 })
+    : null;
+  if (!reduce.matches && terminal) typingObserver?.observe(terminal);
+
+  /* Kinetic Editorial Typography: accessible letter & word flow on short hero display heading only. */
   function initKineticHeadings() {
     if (reduce.matches) return;
     const heroTitle = document.querySelector('.hero__title');
@@ -54,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroTitle.dataset.ktReady = '1';
       const fullText = heroTitle.textContent.replace(/\s+/g, ' ').trim();
       if (fullText) heroTitle.setAttribute('aria-label', fullText);
+      let charIdx = 0;
       let wordIdx = 0;
       const walk = node => {
         for (const child of [...node.childNodes]) {
@@ -64,6 +85,19 @@ document.addEventListener('DOMContentLoaded', () => {
               if (!part) continue;
               if (/^\s+$/.test(part)) {
                 frag.append(document.createTextNode(part));
+              } else if (wordIdx === 0 && part.length <= 14) {
+                const wordWrap = document.createElement('span');
+                wordWrap.className = 'kt-word-group';
+                wordWrap.setAttribute('aria-hidden', 'true');
+                for (const ch of part) {
+                  const cs = document.createElement('span');
+                  cs.className = 'kt-char';
+                  cs.style.setProperty('--kt-c', String(charIdx++));
+                  cs.textContent = ch;
+                  wordWrap.append(cs);
+                }
+                wordIdx++;
+                frag.append(wordWrap);
               } else {
                 const span = document.createElement('span');
                 span.className = 'kt-word';
@@ -85,21 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   initKineticHeadings();
 
-  /* Spatial hero command surface entrance (no repetitive typewriter). */
-  const terminal = document.getElementById('terminalBody');
-  let heroEntered = false;
-  const heroObserver = terminal && 'IntersectionObserver' in window
-    ? new IntersectionObserver(entries => {
-        if (heroEntered || reduce.matches || !entries.some(e => e.isIntersecting && e.intersectionRatio >= 0.25)) return;
-        heroEntered = true;
-        heroObserver.disconnect();
-        terminal.classList.add('spatial-terminal-enter');
-        setTimeout(() => terminal.classList.remove('spatial-terminal-enter'), 700);
-      }, { threshold: 0.25 })
-    : null;
-  if (!reduce.matches && terminal) heroObserver?.observe(terminal);
-
-  /* Main spatial & kinetic reveal observer. */
+  /* Quiet Precision once-only reveal observer. */
   const observer = 'IntersectionObserver' in window
     ? new IntersectionObserver(entries => {
         for (const e of entries) {
@@ -118,14 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
           if (scrollY < 16 && el.matches(original)) continue;
           if (el.closest('.premium-skill')) continue;
           el.classList.add('motion-enter');
-          setTimeout(() => el.classList.remove('motion-enter'), 780);
-          if (el.matches('.stat__num')) count(el);
-          else if (el.matches('.cd-stat')) {
-            const n = el.querySelector('strong');
-            if (n) count(n);
-          }
+          setTimeout(() => el.classList.remove('motion-enter'), 700);
         }
-      }, { threshold: 0.1, rootMargin: '0px 0px -4% 0px' })
+      }, { threshold: 0.12 })
     : null;
 
   function observe(scope = document) {
@@ -161,35 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
     for (const root of document.querySelectorAll('#platform-view,#blog,#github-stats')) {
       dynamic.observe(root, { childList: true, subtree: true });
     }
-  }
-
-  /* Desktop-only pointer-tracked spatial surface spotlight. */
-  let activeCard = null;
-  let pointerRaf = 0;
-  let lastPointer = null;
-  function applySpotlight() {
-    pointerRaf = 0;
-    if (!lastPointer || reduce.matches || !finePointer.matches) return;
-    const card = lastPointer.target?.closest?.('.project-card,.platform-card,.rec-card,.premium-skill,.cert-card,.blog-card,.bento-card');
-    if (activeCard && activeCard !== card) {
-      activeCard.style.removeProperty('--mx');
-      activeCard.style.removeProperty('--my');
-    }
-    activeCard = card || null;
-    if (!activeCard) return;
-    const rect = activeCard.getBoundingClientRect();
-    if (!rect.width || !rect.height) return;
-    const x = ((lastPointer.clientX - rect.left) / rect.width) * 100;
-    const y = ((lastPointer.clientY - rect.top) / rect.height) * 100;
-    activeCard.style.setProperty('--mx', x.toFixed(1) + '%');
-    activeCard.style.setProperty('--my', y.toFixed(1) + '%');
-  }
-  if (finePointer.matches) {
-    document.addEventListener('pointermove', e => {
-      if (reduce.matches) return;
-      lastPointer = e;
-      if (!pointerRaf) pointerRaf = requestAnimationFrame(applySpotlight);
-    }, { passive: true });
   }
 
   /* Spatial Scroll Navigator (integrated with native scrolling & reading progress). */
@@ -253,19 +239,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.append(spatialNav);
   }
 
-  /* Passive scroll progress custom property + Spatial Scroll Navigator update. */
   let scrollRaf = 0;
   function updateScrollProgress() {
     scrollRaf = 0;
+    if (!spatialNav || !spatialFill) return;
     const max = Math.max(1, document.documentElement.scrollHeight - innerHeight);
     const p = Math.min(1, Math.max(0, scrollY / max));
-    if (!reduce.matches) {
-      document.documentElement.style.setProperty('--scroll-p', p.toFixed(4));
-    }
-    if (spatialNav && spatialFill) {
-      spatialFill.style.transform = `scaleX(${p.toFixed(3)})`;
-      spatialNav.classList.toggle('is-visible', scrollY > 180);
-    }
+    spatialFill.style.transform = `scaleX(${p.toFixed(3)})`;
+    spatialNav.classList.toggle('is-visible', scrollY > 180);
   }
   window.addEventListener('scroll', () => {
     if (!scrollRaf) scrollRaf = requestAnimationFrame(updateScrollProgress);
@@ -347,39 +328,20 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch {}
   }
 
-  /* Fluid recommendation filter/sort transition without layout shift. */
-  const recArchive = document.getElementById('rec-archive');
-  const recSearch = document.getElementById('rec-search');
-  const recSort = document.getElementById('rec-sort');
-  function pulseRecommendations() {
-    if (!recArchive || reduce.matches) return;
-    recArchive.classList.remove('rec-archive--reflow');
-    void recArchive.offsetWidth;
-    recArchive.classList.add('rec-archive--reflow');
-    setTimeout(() => recArchive.classList.remove('rec-archive--reflow'), 360);
-  }
-  recSearch?.addEventListener('input', pulseRecommendations);
-  recSort?.addEventListener('change', pulseRecommendations);
-
   /* Reduced-motion live toggle handling. */
   reduce.addEventListener('change', () => {
     if (reduce.matches) {
       observer?.disconnect();
-      heroObserver?.disconnect();
+      typingObserver?.disconnect();
       pending.clear();
-      if (pointerRaf) cancelAnimationFrame(pointerRaf);
+      stopTyping();
       if (scrollRaf) cancelAnimationFrame(scrollRaf);
-      for (const stop of [...running.values()]) stop();
-      document.querySelectorAll('.motion-enter,.spatial-terminal-enter,.rec-archive--reflow').forEach(el => {
-        el.classList.remove('motion-enter', 'spatial-terminal-enter', 'rec-archive--reflow');
+      document.querySelectorAll('.motion-enter,.terminal-animate').forEach(el => {
+        el.classList.remove('motion-enter', 'terminal-animate');
       });
-      if (activeCard) {
-        activeCard.style.removeProperty('--mx');
-        activeCard.style.removeProperty('--my');
-        activeCard = null;
-      }
     } else {
       observe();
+      if (!typingStarted && terminal) typingObserver?.observe(terminal);
     }
   });
 
