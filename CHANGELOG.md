@@ -1,4 +1,7 @@
 # Changelog
+## 2026-11-27 — Multi-Platform Deployment Synchronization & Infrastructure Hardening
+- Added `.github/workflows/deploy-multi-platform.yml` to synchronize and verify deployments across GitHub Pages, Cloudflare Pages, Netlify, Vercel, and Surge after Portfolio quality passes on `main`, plus `DEPLOYMENT.md` documenting hosting platforms, redirect domains, secrets, SEO `X-Robots-Tag` headers, tooling scripts, rollback, and free-tier limits.
+
 ## 2026-11-26 — Quiet Precision Motion & Original Terminal Restoration
 - Restored the original terminal typing experience (`typeTerminal()`), replaced Fluid Spatial Motion with Quiet Precision Motion, refined Kinetic Editorial Typography, and preserved Calm Obsidian, Calm Editorial, and all five Premium Visual Experience features.
 - 
