@@ -1,0 +1,59 @@
+name: Multi-platform deployment & verification
+on:
+  workflow_run:
+    workflows: ["Portfolio quality"]
+    branches: [main]
+    types: [completed]
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * 1'
+permissions:
+  contents: read
+concurrency:
+  group: deploy-multi-platform-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  sync-and-verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Generate deployment version manifest
+        run: node tools/generate-version.mjs
+      - name: Deploy to Surge (when secrets configured)
+        env:
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        run: |
+          if [ -n "$SURGE_LOGIN" ] && [ -n "$SURGE_TOKEN" ]; then
+            npx --yes surge@0.24.6 --project . --domain indrajithbandara.surge.sh
+          else
+            echo "SURGE_LOGIN/SURGE_TOKEN not configured; skipping Surge deployment."
+          fi
+      - name: Trigger Netlify Build Hook (when secret configured)
+        env:
+          NETLIFY_BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -n "$NETLIFY_BUILD_HOOK" ]; then
+            curl -fsS -X POST -d '{}' "$NETLIFY_BUILD_HOOK"
+          else
+            echo "NETLIFY_BUILD_HOOK not configured; relying on Netlify GitHub integration."
+          fi
+      - name: Trigger Vercel Deploy Hook (when secret configured)
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$VERCEL_DEPLOY_HOOK" ]; then
+            curl -fsS -X POST "$VERCEL_DEPLOY_HOOK"
+          else
+            echo "VERCEL_DEPLOY_HOOK not configured; relying on Vercel GitHub integration."
+          fi
+      - name: Verify all hosting platforms and redirects
+        run: node tools/verify-deployments.mjs | tee -a "$GITHUB_STEP_SUMMARY"
